@@ -1,0 +1,424 @@
+{
+  "dataset": "openai/gsm8k",
+  "config": "main",
+  "split": "test",
+  "n": 40,
+  "model": "mlx-community/Llama-3.2-1B-Instruct-4bit",
+  "adapter": "results/adapters/gsm8k-tool-grpo",
+  "protocol": "0-shot, calculator tool, executed calc() value",
+  "tools": true,
+  "max_tokens": 256,
+  "exact_match": 0.05,
+  "tool_match": 0.1,
+  "format_rate": 0.65,
+  "boxed_match": 0.05,
+  "tool_call_rate": 1.0,
+  "published_reference": {
+    "value": 0.444,
+    "protocol": "Llama-3.2-1B-Instruct GSM8K 8-shot CoT maj@1, full test",
+    "url": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"
+  },
+  "dataset_url": "https://huggingface.co/datasets/openai/gsm8k",
+  "records": [
+    {
+      "task_id": "gsm8k:test:0",
+      "gold": "18",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "calc(16*3) = 48\ncalc(48-4) = 44\ncalc(44*2) = 88\n<answer>88</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:1",
+      "gold": "3",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "calc(2+0.5) = 2.5\n<answer>2.5</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:2",
+      "gold": "70000",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "calc(150*.01*80000) = 15000\ncalc(80000+50000) = 130000\ncalc(130000/130000) = 1\n<answer>1</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:3",
+      "gold": "540",
+      "correct": 1.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "calc(3*3*60) = 1080\n<answer>1080</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:4",
+      "gold": "20",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "calc(15+25) = 40\ncalc(40+20*3) = 40+60\ncalc(40+60) = 100\n<answer>100</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:5",
+      "gold": "64",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 15,
+      "completion": "calc(0.6*5) = 3\ncalc(0.6*3) = 1.8\ncalc(0.6*1.8) = 1.08\ncalc(0.6*1.08) = 0.64\ncalc(0.6*0.64) = 0.384\ncalc(0.6*0.384) = 0.2304\ncalc(0.6*0.2304) = 0.14496\ncalc(0.6*0.14496) = 0.088896\ncalc(0.6*0.088896) = 0.053584\ncalc(0.6*0.053584) = 0.032784\ncalc(0.6*0.032784) = 0.019928\ncalc(0.6*0.019928) = 0.00011928\ncalc(0.6*0.00011928) = 0.000072\ncalc(0.6*0.000072) = 0.0000432\ncalc(0.6*0.0000432) = 0.000022"
+    },
+    {
+      "task_id": "gsm8k:test:6",
+      "gold": "260",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "calc(20*4) = 80\ncalc(80*2) = 160\ncalc(160+20) = 180\n<answer>180</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:7",
+      "gold": "160",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 11,
+      "completion": "calc(200/1000*2*20) = 20\ncalc(200-20*20/40) = 20\ncalc(200-20*20/40*2) = 20\ncalc(200-20*20/40*2*20/40) = 20\ncalc(200-20*20/40*2*20/40*20/40) = 20\ncalc(200-20*20/40*2*20/40*20/40*20/40) = 20\ncalc(200-20*20/40*2*20/40*20/40*20/40) = 20\ncalc(200-20*20/40*2*20/40*20/40*20/40) = 20\ncalc(200-20*20/40*2*20/40*20/40*20/40) = 20\ncalc(200-20*20/40*2*20/40*20/40*20/40) = 20\ncalc(200-20*20/40*2*20/40*20/40*20/40) = 20"
+    },
+    {
+      "task_id": "gsm8k:test:8",
+      "gold": "45",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 7,
+      "completion": "calc(3*60) = 180\ncalc(180-2) = 178\ncalc(178/2) = 89\ncalc(80*4) = 320\ncalc(320-89) = 231\ncalc(231/3) = 77\ncalc(77) = 77\n<answer>77</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:9",
+      "gold": "460",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "calc(40*10+45*1.2) = 540\n<answer>540</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:10",
+      "gold": "366",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 9,
+      "completion": "calc(60*3-0.3) = 180\ncalc(180*3-0.3) = 540\ncalc(540*3-0.3) = 1620\ncalc(1620*3-0.3) = 4860\ncalc(4860*3-0.3) = 14580\ncalc(14580*3-0.3) = 43740\ncalc(43740*3-0.3) = 131520\ncalc(131520*3-0.3) = 397560\ncalc(397560*3-0.3) = 1188800\n<answer>1188800</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:11",
+      "gold": "694",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 4,
+      "completion": "calc(3*12*68) = 1728\ncalc(2*12*80) = 1920\ncalc(6*12*55) = 3300\ncalc(1728+1920+3300) = 6560\n<answer>6560</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:12",
+      "gold": "13",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "calc(90+7*1.5-3) = 90+7*1.5-3\ncalc(90+10.5-3) = 90+10.5-3\ncalc(103.5-3) = 100.5\n<answer>100.5</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:13",
+      "gold": "18",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 6,
+      "completion": "calc(5/2) = 2.5\ncalc(2+2) = 4\ncalc(4/2) = 2\ncalc(2/5) = 0.4\ncalc(0.4+0.4) = 0.8\ncalc(0.8/0.8) = 1\n<answer>1</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:14",
+      "gold": "60",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 4,
+      "completion": "calc(0.2*20) = 4\ncalc(4*0.25) = 1\ncalc(1-1) = 0\ncalc(0) = 0\n<answer>0</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:15",
+      "gold": "125",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "calc(5000*1.025) = 5175\ncalc(8000*1.012) = 8064\ncalc(8000*1.012) = 8064\n<answer>8064</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:16",
+      "gold": "230",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 26,
+      "completion": "calc(80+150) = 230\ncalc(80+80) = 160\ncalc(80+150) = 230\ncalc(80+80) = 160\ncalc(80+230) = 310\ncalc(80+230) = 310\ncalc(80+80) = 160\ncalc(80+80) = 160\ncalc(80+80) = 160\ncalc(80+80) = 160\ncalc(80+80) = 160\ncalc(80+80) = 160\ncalc(80+80) = 160\ncalc(80+80) = 160\ncalc(80+80) = 160\ncalc(80+80) = 160\ncalc(80+80) = 160\ncalc(80+80) = 160\ncalc(80+80) = 160\ncalc(80+80) = 160\ncalc(80+80) = 160\ncalc(80+80) = 160\ncalc(80+80) = 160\ncalc(80+80) = 160\ncalc(80+80) = 160\ncalc(80+80)"
+    },
+    {
+      "task_id": "gsm8k:test:17",
+      "gold": "57500",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "calc(20*35) = 700\ncalc(30*15) = 4500\ncalc(700+4500) = 5200\n<answer>5200</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:18",
+      "gold": "7",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 4,
+      "completion": "calc(3*7)  # 21 eggs\ncalc(21/12)  # 1.75 dozen\ncalc(1.75*7)  # 12.25\ncalc(12.25/12)  # 1\n<answer>1</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:19",
+      "gold": "6",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 14,
+      "completion": "calc(4/1) = 4\ncalc(4/2) = 2\ncalc(12-4-2) = 6\ncalc(6/6) = 1\ncalc(1/1) = 1\ncalc(1/1+1) = 1\ncalc(1/1+1+6) = 2\ncalc(1/1+1+6+6) = 3\ncalc(1/1+1+6+6+12) = 4\ncalc(1/1+1+6+6+12+12) = 5\ncalc(1/1+1+6+6+12+12+6) = 6\ncalc(1/1+1+6+6+12+12+6+12) = 7\ncalc(1/1+1+6+6+12+12+6+12+6) = 8\ncalc(1/1+1+6+6+12+12+6+12+6+8) = 9\ncalc(1/1+1+6+6+12+12+6+12+6+8+"
+    },
+    {
+      "task_id": "gsm8k:test:20",
+      "gold": "15",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 16,
+      "completion": "calc(0.67*10) = 6.5\ncalc(0.75*15) = 11.25\ncalc(11.25-1) = 10.25\ncalc(10.25/24) = 4.29\ncalc(4.29*0.67) = 2.91\ncalc(2.91*0.75) = 2.20\ncalc(2.20*0.67) = 1.48\ncalc(1.48*0.67) = 0.99\ncalc(0.99*0.67) = 0.67\ncalc(0.67*0.75) = 0.5\ncalc(0.5*0.67) = 0.34\ncalc(0.34*0.67) = 0.18\ncalc(0.18*0.67) = 0.1\ncalc(0.1*0.67) = 0.067\ncalc(0.067*0.67) = 0.046\ncalc(0.046*0.67) = 0.031\ncalc(0.031*0."
+    },
+    {
+      "task_id": "gsm8k:test:21",
+      "gold": "14",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "calc(23-6) = 17\ncalc(31-23) = 8\ncalc(8/6) = 1\n<answer>1</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:22",
+      "gold": "7",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 16,
+      "completion": "calc(3*8+3+2+3) = 3*8+3+2+3 = 24+3+2+3 = 34\ncalc(34+8) = 34+8 = 42\ncalc(42+8) = 42+8 = 50\ncalc(50+8) = 50+8 = 58\ncalc(58+8) = 58+8 = 66\ncalc(66+8) = 66+8 = 74\ncalc(74+8) = 74+8 = 82\ncalc(82+8) = 82+8 = 90\ncalc(90+8) = 90+8 = 98\ncalc(98+8) = 98+8 = 106\ncalc(106+8) = 106+8 = 114\ncalc(114+8) = 114+8 = 122\ncalc(122+8) = 122+8 = 130\ncalc(130+8) = 130+8 = 138\ncalc(138+8) = 138+8 = 146\ncalc(146+8) = 146+"
+    },
+    {
+      "task_id": "gsm8k:test:23",
+      "gold": "8",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 21,
+      "completion": "calc(5*60-60) = 300\ncalc(300-300/60) = 300\ncalc(300-300/60) = 300\ncalc(300-300/60) = 300\ncalc(300-300/60) = 300\ncalc(300-300/60) = 300\ncalc(300-300/60) = 300\ncalc(300-300/60) = 300\ncalc(300-300/60) = 300\ncalc(300-300/60) = 300\ncalc(300-300/60) = 300\ncalc(300-300/60) = 300\ncalc(300-300/60) = 300\ncalc(300-300/60) = 300\ncalc(300-300/60) = 300\ncalc(300-300/60) = 300\ncalc(300-300/60) = 300\ncalc(300-300/60) = 300\ncalc(300-300/60) = 300\ncalc(300-300/60) = 300\ncalc(300-300/60) = 300\ncalc(300-"
+    },
+    {
+      "task_id": "gsm8k:test:24",
+      "gold": "26",
+      "correct": 1.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "calc(19.5/0.75) call(19.5/0.75) call(19.5/0.75) call(19.5/0.75) call(19.5/0.75) call(19.5/0.75) call(19.5/0.75) call(19.5/0.75) call(19.5/0.75) call(19.5/0.75) call(19.5/0.75) call(19.5/0.75) call(19.5/0.75) call(19.5/0.75) call(19.5/0.75) call(19.5/0.75) call(19.5/0.75) call(19.5/0.75) call(19.5/0.75) call(19.5/0.75) call(19.5/0.75) call(19.5/0.75) call(19.5/0.75) call(19.5/0.75) call(19.5/0.75) call(19.5/"
+    },
+    {
+      "task_id": "gsm8k:test:25",
+      "gold": "2",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 2,
+      "completion": "calc(12+3*5+1.5*4+8.5*50) = 12+15+6+420=453\ncalc(453/8.5) = 53\n<answer>53</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:26",
+      "gold": "243",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 2,
+      "completion": "calc(3*16.5+3*22.5+3*42) = 3*16.5+3*22.5+3*42\ncalc(49+66+126) = 235\n<answer>235</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:27",
+      "gold": "16",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "calc(60*15*4) = 3600\n<answer>3600</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:28",
+      "gold": "25",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 2,
+      "completion": "calc(60-20) = 40\ncalc(40-15) = 25\n<answer>25</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:29",
+      "gold": "104",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 9,
+      "completion": "calc(33-33/2) = 33/2 = 16.5\ncalc(16.5-16.5/2) = 16.5/2 = 8.25\ncalc(8.25-8.25/2) = 8.25/2 = 4.125\ncalc(4.125-4.125/2) = 4.125/2 = 2.0625\ncalc(2.0625-2.0625/2) = 2.0625/2 = 1.03125\ncalc(1.03125-1.03125/2) = 1.03125/2 = 0.515625\ncalc(0.515625-0.515625/2) = 0.515625/2 = 0.2578125\ncalc(0.2578125-0.2578125/2) = 0.2578125/2 = 0.12890625\ncalc(0.12890625-0.12890625/2) = 0.12890625/2 = 0.064453125\ncalc(0.064453125"
+    },
+    {
+      "task_id": "gsm8k:test:30",
+      "gold": "109",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 5,
+      "completion": "calc(7*10) = 70\ncalc(11*10) = 110\ncalc(70+110) = 180\ncalc(180+10*7) = 180\ncalc(180+10*7) = 180\n<answer>180</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:31",
+      "gold": "80",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 9,
+      "completion": "calc(80+80/2) = 80\ncalc(80+80/2+25/100) = 80\ncalc(80+80/2+25/100+80/100) = 80\ncalc(80+80/2+25/100+80/100+80/200) = 80\ncalc(80+80/2+25/100+80/100+80/200+80/400) = 80\ncalc(80+80/2+25/100+80/100+80/200+80/400+80/800) = 80\ncalc(80+80/2+25/100+80/100+80/200+80/400+80/800+80/1600) = 80\ncalc(80+80/2+25/100+80/100+80/200+80/400+80/800+80/1600+80/3200) = 80\ncalc(80+80/2+25/100+80/100+80/200+80/400+80/800+80/1600+80/3200+80/6400) = "
+    },
+    {
+      "task_id": "gsm8k:test:32",
+      "gold": "35",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 19,
+      "completion": "calc(10*0.5) = 5\ncalc(5*7) = 35\ncalc(35/52) = 0.67\ncalc(0.67*7) = 4.75\ncalc(4.75*7) = 33.75\ncalc(33.75/52) = 0.65\ncalc(0.65*7) = 4.65\ncalc(4.65*7) = 32.15\ncalc(32.15/52) = 0.62\ncalc(0.62*7) = 4.46\ncalc(4.46*7) = 31.42\ncalc(31.42/52) = 0.61\ncalc(0.61*7) = 4.37\ncalc(4.37*7) = 30.51\ncalc(30.51/52) = 0.59\ncalc(0.59*7) = 4.13\ncalc(4.13*7) = 29.01\ncalc(29.01/52) = 0.56\ncalc(0.56*7) = 3."
+    },
+    {
+      "task_id": "gsm8k:test:33",
+      "gold": "70",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 2,
+      "completion": "calc(110+30) = 140\ncalc(140-110) = 30\n<answer>30</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:34",
+      "gold": "23",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 3,
+      "completion": "calc(40/2) = 20\ncalc(20+5) = 25\ncalc(25-2) = 23\n<answer>23</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:35",
+      "gold": "9",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 10,
+      "completion": "calc(40*60/60) = 40\ncalc(40*60/60+40*60/60*1.25) = 40+40*60/60*1.25\ncalc(40*60/60*1.25) = 40+40*60/60*1.25\ncalc(40*60/60*1.25) = 40+40*60/60*1.25\ncalc(40*60/60*1.25) = 40+40*60/60*1.25\ncalc(40*60/60*1.25) = 40+40*60/60*1.25\ncalc(40*60/60*1.25) = 40+40*60/60*1.25\ncalc(40*60/60*1.25) = 40+40*60/60*1.25\ncalc(40*60/60*1.25) = 40+40*60/60*1.25\ncalc(40*60/60*1.25) = 40+40*60/60*1.25\ncalc(40*"
+    },
+    {
+      "task_id": "gsm8k:test:36",
+      "gold": "75",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 4,
+      "completion": "calc(2*30) = 60\ncalc(60/4) = 15\ncalc(15*30) = 450\ncalc(450*30) = 13500\n<answer>13500</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:37",
+      "gold": "2",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 6,
+      "completion": "calc(13*15) = 195\ncalc(8*20) = 160\ncalc(5) = 5\ncalc(195-160-5) = 30\ncalc(30) = 30\ncalc(30/30) = 1\n<answer>1</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:38",
+      "gold": "10",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 18,
+      "completion": "calc(60*3*3) = 540\ncalc(540*3/2) = 810\ncalc(810*3) = 2430\ncalc(2430*3) = 7290\ncalc(7290*3) = 21870\ncalc(21870*3) = 65610\ncalc(65610*3) = 196830\ncalc(196830*3) = 590890\ncalc(590890*3) = 1773990\ncalc(1773990*3) = 5319390\ncalc(5319390*3) = 16091790\ncalc(16091790*3) = 482933780\ncalc(482933780*3) = 14593410920\ncalc(14593410920*3) = 442917164760\ncalc(442917164760*3) = 1310611741040\ncalc(1310611741040*3) = 3931741743120\ncalc(3931741743120*3) = 11873417478480\ncalc(11873417478480*3) = 354734174784800\ncalc(354734"
+    },
+    {
+      "task_id": "gsm8k:test:39",
+      "gold": "18",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 21,
+      "completion": "calc(3/6) = 1\ncalc(1/6-1/3) = 1\ncalc(1/6) = 1\ncalc(1/6-1/3) = 1\ncalc(1/6) = 1\ncalc(1/6-1/3) = 1\ncalc(1/6) = 1\ncalc(1/6-1/3) = 1\ncalc(1/6) = 1\ncalc(1/6-1/3) = 1\ncalc(1/6) = 1\ncalc(1/6-1/3) = 1\ncalc(1/6) = 1\ncalc(1/6-1/3) = 1\ncalc(1/6) = 1\ncalc(1/6-1/3) = 1\ncalc(1/6) = 1\ncalc(1/6-1/3) = 1\ncalc(1/6) = 1\ncalc(1/6-1/3) = 1\ncalc(1/6) = 1\ncalc(1/6-"
+    }
+  ]
+}

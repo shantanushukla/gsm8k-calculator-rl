@@ -1,0 +1,18 @@
+expression rows 120
+loading reference results/adapters/gsm8k-expr-1
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 1643.75it/s]
+loading policy mlx-community/Llama-3.2-1B-Instruct-4bit
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 1829.31it/s]
+trainable params 425984 init results/adapters/gsm8k-expr-1 ref results/adapters/gsm8k-expr-1
+grpo questions 120 lr 5e-07 kl_beta 0.01 temp 0.4
+grad check 1698.783936
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+step 000 loss=0.0007 kl=0.0 reward=0.5424 gap=0.6008 hack=0.125 questions=4 updated=1 tries=14
+step 001 loss=0.0043 kl=0.0 reward=0.4226 gap=0.5467 hack=0.0 questions=4 updated=1 tries=11
+step 002 loss=-0.0019 kl=0.0 reward=0.3347 gap=0.4511 hack=0.2 questions=4 updated=1 tries=9
+step 003 loss=-0.0078 kl=0.0 reward=0.5101 gap=0.7641 hack=0.0 questions=4 updated=1 tries=7
+step 004 loss=0.0028 kl=0.0 reward=0.3911 gap=0.4984 hack=0.0833 questions=4 updated=1 tries=11
+step 005 loss=0.0089 kl=0.0 reward=0.4726 gap=0.6851 hack=0.0 questions=4 updated=1 tries=13
+step 006 loss=-0.0073 kl=0.0 reward=0.4751 gap=0.7125 hack=0.0 questions=4 updated=1 tries=7
+step 007 loss=-0.0006 kl=0.0 reward=0.2928 gap=0.5 hack=0.3333 questions=4 updated=1 tries=9
+saved results/adapters/gsm8k-expr-6 in 504s

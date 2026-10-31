@@ -1,0 +1,62 @@
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 1661.99it/s]
+1/52 acc=0.000 gold=30 ok=0.0
+2/52 acc=0.000 gold=360 ok=0.0
+3/52 acc=0.000 gold=6 ok=0.0
+4/52 acc=0.000 gold=66 ok=0.0
+5/52 acc=0.000 gold=100 ok=0.0
+6/52 acc=0.000 gold=109200000 ok=0.0
+7/52 acc=0.000 gold=3 ok=0.0
+8/52 acc=0.000 gold=27 ok=0.0
+9/52 acc=0.000 gold=150 ok=0.0
+10/52 acc=0.000 gold=18 ok=0.0
+11/52 acc=0.000 gold=3 ok=0.0
+12/52 acc=0.000 gold=216 ok=0.0
+13/52 acc=0.077 gold=45 ok=1.0
+14/52 acc=0.143 gold=145 ok=1.0
+15/52 acc=0.133 gold=72 ok=0.0
+16/52 acc=0.188 gold=6 ok=1.0
+17/52 acc=0.235 gold=322 ok=1.0
+18/52 acc=0.278 gold=9 ok=1.0
+19/52 acc=0.316 gold=15 ok=1.0
+20/52 acc=0.350 gold=4 ok=1.0
+21/52 acc=0.333 gold=46 ok=0.0
+22/52 acc=0.364 gold=19 ok=1.0
+23/52 acc=0.348 gold=91 ok=0.0
+24/52 acc=0.333 gold=736 ok=0.0
+25/52 acc=0.320 gold=10 ok=0.0
+26/52 acc=0.308 gold=3 ok=0.0
+27/52 acc=0.296 gold=70 ok=0.0
+28/52 acc=0.286 gold=22 ok=0.0
+29/52 acc=0.276 gold=295 ok=0.0
+30/52 acc=0.267 gold=57 ok=0.0
+31/52 acc=0.258 gold=1500 ok=0.0
+32/52 acc=0.250 gold=60 ok=0.0
+33/52 acc=0.242 gold=12 ok=0.0
+34/52 acc=0.235 gold=13 ok=0.0
+35/52 acc=0.229 gold=920 ok=0.0
+36/52 acc=0.222 gold=10 ok=0.0
+37/52 acc=0.216 gold=250 ok=0.0
+38/52 acc=0.237 gold=9 ok=1.0
+39/52 acc=0.231 gold=135 ok=0.0
+40/52 acc=0.225 gold=49 ok=0.0
+41/52 acc=0.220 gold=45 ok=0.0
+42/52 acc=0.214 gold=2 ok=0.0
+43/52 acc=0.209 gold=3 ok=0.0
+44/52 acc=0.205 gold=50 ok=0.0
+45/52 acc=0.222 gold=146 ok=1.0
+46/52 acc=0.239 gold=15400 ok=1.0
+47/52 acc=0.234 gold=8 ok=0.0
+48/52 acc=0.229 gold=220000 ok=0.0
+49/52 acc=0.224 gold=5 ok=0.0
+50/52 acc=0.220 gold=8 ok=0.0
+51/52 acc=0.216 gold=36 ok=0.0
+52/52 acc=0.212 gold=30 ok=0.0
+{
+  "n": 52,
+  "exact_match": 0.21153846153846154,
+  "tool_match": 0.21153846153846154,
+  "tool_call_rate": 1.0,
+  "expression_f1": 0.30375735375735374,
+  "hack_rate": 0.057692307692307696
+}
+wrote /Users/shantanu/Desktop/repos/rl_env/gsm8k_rl/results/baselines/v14_probe.json

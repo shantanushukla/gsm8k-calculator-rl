@@ -1,0 +1,11 @@
+{
+  "flags": {
+    "always_zero": false,
+    "always_one": false,
+    "collapse_groups": true,
+    "format_hack": false,
+    "length_spike": true,
+    "eval_drop": false
+  },
+  "notes": ""
+}

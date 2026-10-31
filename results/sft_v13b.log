@@ -1,0 +1,91 @@
+loading mlx-community/Llama-3.2-1B-Instruct-4bit
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 1720.27it/s]
+continued from gsm8k_rl/results/adapters/gsm8k-sft-v7
+trainable params 1703936
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+sft examples 42 epochs 2 updates 84 skipped 0 lr 5e-07
+sft 000 loss=0.0034 tokens=351 trained=9 skip
+sft 001 loss=0.0037 tokens=273 trained=9 skip
+sft 002 loss=0.0030 tokens=188 trained=9 skip
+sft 003 loss=0.4549 tokens=213 trained=88
+sft 004 loss=0.3181 tokens=199 trained=83
+sft 005 loss=0.0005 tokens=216 trained=11 skip
+sft 006 loss=0.5549 tokens=200 trained=64
+sft 007 loss=0.0024 tokens=259 trained=9 skip
+sft 008 loss=0.0078 tokens=192 trained=9 skip
+sft 009 loss=0.1026 tokens=192 trained=80
+sft 010 loss=0.0025 tokens=232 trained=9 skip
+sft 011 loss=0.0031 tokens=243 trained=9 skip
+sft 012 loss=0.3807 tokens=191 trained=68
+sft 013 loss=0.0011 tokens=168 trained=9 skip
+sft 014 loss=0.0141 tokens=299 trained=9 skip
+sft 015 loss=0.0031 tokens=184 trained=10 skip
+sft 016 loss=0.3954 tokens=155 trained=47
+sft 017 loss=0.2727 tokens=205 trained=83
+sft 018 loss=0.5891 tokens=216 trained=91
+sft 019 loss=0.0010 tokens=227 trained=9 skip
+sft 020 loss=0.0011 tokens=248 trained=9 skip
+sft 021 loss=0.0240 tokens=363 trained=13
+sft 022 loss=0.3321 tokens=197 trained=74
+sft 023 loss=1.0822 tokens=246 trained=99
+sft 024 loss=0.4406 tokens=199 trained=71
+sft 025 loss=0.0218 tokens=319 trained=9
+sft 026 loss=0.0017 tokens=241 trained=11 skip
+sft 027 loss=0.5688 tokens=197 trained=93
+sft 028 loss=0.3984 tokens=199 trained=67
+sft 029 loss=0.1448 tokens=176 trained=50
+sft 030 loss=0.0016 tokens=277 trained=9 skip
+sft 031 loss=0.0049 tokens=263 trained=9 skip
+sft 032 loss=0.2824 tokens=207 trained=91
+sft 033 loss=0.0047 tokens=193 trained=9 skip
+sft 034 loss=0.0021 tokens=210 trained=9 skip
+sft 035 loss=0.0011 tokens=279 trained=9 skip
+sft 036 loss=0.0015 tokens=271 trained=9 skip
+sft 037 loss=0.0042 tokens=329 trained=9 skip
+sft 038 loss=0.0066 tokens=240 trained=9 skip
+sft 039 loss=0.0018 tokens=318 trained=9 skip
+sft 040 loss=0.0010 tokens=260 trained=9 skip
+sft 041 loss=0.9778 tokens=179 trained=76
+sft 042 loss=0.0022 tokens=351 trained=9 skip
+sft 043 loss=0.0028 tokens=273 trained=9 skip
+sft 044 loss=0.0024 tokens=188 trained=9 skip
+sft 045 loss=0.4210 tokens=213 trained=88
+sft 046 loss=0.2907 tokens=199 trained=83
+sft 047 loss=0.0003 tokens=216 trained=11 skip
+sft 048 loss=0.5104 tokens=200 trained=64
+sft 049 loss=0.0015 tokens=259 trained=9 skip
+sft 050 loss=0.0059 tokens=192 trained=9 skip
+sft 051 loss=0.0930 tokens=192 trained=80
+sft 052 loss=0.0017 tokens=232 trained=9 skip
+sft 053 loss=0.0021 tokens=243 trained=9 skip
+sft 054 loss=0.3659 tokens=191 trained=68
+sft 055 loss=0.0010 tokens=168 trained=9 skip
+sft 056 loss=0.0095 tokens=299 trained=9 skip
+sft 057 loss=0.0030 tokens=184 trained=10 skip
+sft 058 loss=0.3446 tokens=155 trained=47
+sft 059 loss=0.2590 tokens=205 trained=83
+sft 060 loss=0.5569 tokens=216 trained=91
+sft 061 loss=0.0008 tokens=227 trained=9 skip
+sft 062 loss=0.0007 tokens=248 trained=9 skip
+sft 063 loss=0.0175 tokens=363 trained=13 skip
+sft 064 loss=0.3183 tokens=197 trained=74
+sft 065 loss=1.0473 tokens=246 trained=99
+sft 066 loss=0.4167 tokens=199 trained=71
+sft 067 loss=0.0107 tokens=319 trained=9 skip
+sft 068 loss=0.0012 tokens=241 trained=11 skip
+sft 069 loss=0.5236 tokens=197 trained=93
+sft 070 loss=0.3843 tokens=199 trained=67
+sft 071 loss=0.1302 tokens=176 trained=50
+sft 072 loss=0.0013 tokens=277 trained=9 skip
+sft 073 loss=0.0030 tokens=263 trained=9 skip
+sft 074 loss=0.2732 tokens=207 trained=91
+sft 075 loss=0.0032 tokens=193 trained=9 skip
+sft 076 loss=0.0020 tokens=210 trained=9 skip
+sft 077 loss=0.0008 tokens=279 trained=9 skip
+sft 078 loss=0.0012 tokens=271 trained=9 skip
+sft 079 loss=0.0034 tokens=329 trained=9 skip
+sft 080 loss=0.0047 tokens=240 trained=9 skip
+sft 081 loss=0.0014 tokens=318 trained=9 skip
+sft 082 loss=0.0009 tokens=260 trained=9 skip
+sft 083 loss=0.9631 tokens=179 trained=76
+saved gsm8k_rl/results/adapters/gsm8k-sft-v13b in 25s applied 34 of 84

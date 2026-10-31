@@ -1,0 +1,424 @@
+{
+  "dataset": "openai/gsm8k",
+  "config": "main",
+  "split": "test",
+  "n": 40,
+  "model": "mlx-community/Llama-3.2-1B-Instruct-4bit",
+  "adapter": "results/adapters/gsm8k-sft-v3",
+  "protocol": "0-shot, calculator tool, executed calc() value",
+  "tools": true,
+  "max_tokens": 256,
+  "exact_match": 0.05,
+  "tool_match": 0.0,
+  "format_rate": 0.3,
+  "boxed_match": 0.0,
+  "tool_call_rate": 0.125,
+  "published_reference": {
+    "value": 0.444,
+    "protocol": "Llama-3.2-1B-Instruct GSM8K 8-shot CoT maj@1, full test",
+    "url": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"
+  },
+  "dataset_url": "https://huggingface.co/datasets/openai/gsm8k",
+  "records": [
+    {
+      "task_id": "gsm8k:test:0",
+      "gold": "18",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "To solve this problem, we'll break it down into steps.\n\n### Step 1: Calculate the number of eggs Janet sells per day\nJanet's ducks lay 16 eggs per day. She eats 3 for breakfast every morning. So, she bakes muffins for 4 friends every day. That's a total of 3 + 4 = 7 muffins per day. Since each muffin contains 16 eggs, she sells 7 * 16 = 112 eggs per day.\n\n### Step 2: Calculate the number of eggs Janet sells at the farmers' market per day\nJanet sells the remainder at the farmers' market daily for $2 per fresh duck egg. She sells 112 - 16 = 96 eggs per day.\n\n### Step 3: Calculate the daily income in dollars\nJanet sells 96 eggs per day at $2 per egg. So, her daily income is 96 * 2 = $<<96*2=192>>192 per day.\n\n#### <answer>...</answer>\n#### $<<192=192>>192\n#### $<<192=192>>192"
+    },
+    {
+      "task_id": "gsm8k:test:1",
+      "gold": "3",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "To solve this problem, I'll break it down into steps.\n\nFirst, I need to find out how many bolts of blue fiber and white fiber it takes. \n\nA robe takes 2 bolts of blue fiber and half that much white fiber. \nSo, it takes 2 bolts of blue fiber and 2/2 = 1 bolt of white fiber.\n\nNow, I'll write a calculator call for each fiber type:\n```python\n# Calculate the number of bolts of blue fiber\nbols_blue = 2\n\n# Calculate the number of bolts of white fiber\nbols_white = 1\n```\nNext, I'll add the number of bolts of blue fiber and white fiber together:\n```python\n# Add the number of bolts of blue fiber and white fiber\ntotal_bols = bols_blue + bols_white\n```\nNow, I'll put the final number in <answer>...</answer>:\n```python\n# Print the final answer\nprint(\"<answer> {}\".format(total_bols))\n```\nLet's run the code:\n```python\n# Calculate the number of bolts of blue fiber\nbols_blue = 2\n\n# Calculate the number of bolts of white fiber\nbols_white = 1\n\n# Add the number of bolts"
+    },
+    {
+      "task_id": "gsm8k:test:2",
+      "gold": "70000",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "To solve this problem, we'll break it down step by step.\n\nFirst, let's calculate the new value of the house after the repairs:\n$80,000 + $50,000 = $130,000\n\nNow, let's calculate the 150% increase:\n$130,000 x 1.5 = $195,000\n\nNow, let's calculate the profit Josh made:\n$195,000 - $80,000 = $115,000\n\n#### <answer>...</answer>\n\n#### $115,000"
+    },
+    {
+      "task_id": "gsm8k:test:3",
+      "gold": "540",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "## Step 1: Calculate the total number of sprints James runs in a week\nJames runs 3 sprints 3 times a week, so he runs 3 * 3 = 9 sprints in a week.\n\n## Step 2: Calculate the total number of meters James runs in a week\nJames runs 60 meters each sprint, so he runs 9 * 60 = 540 meters in a week.\n\n## Step 3: Write a Python expression to calculate the total number of meters\n```python\n# Define the variables\nsprints = 9\nmeters_per_sprint = 60\n\n# Calculate the total number of meters\ntotal_meters = sprints * meters_per_sprint\n\n# Print the final answer\nprint(\"<answer>...\", total_meters)\n```\n\n## Step 4: Run the Python expression\n```python\n# Define the variables\nsprints = 9\nmeters_per_sprint = 60\n\n# Calculate the total number of meters\ntotal_meters = sprints * meters_per_sprint\n\n# Print the final answer\nprint(\"<answer>...\", total_meters)\n```"
+    },
+    {
+      "task_id": "gsm8k:test:4",
+      "gold": "20",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 2,
+      "completion": "Let's break down the problem step by step:\n\n1. Wendi gives 15 cups of feed to her chickens in the morning.\n2. Wendi gives 25 cups of feed to her chickens in the afternoon.\n3. Wendi gives 3 cups of feed to each of her 20 chickens in the final meal of the day.\n4. To find the total number of cups of feed Wendi needs, we multiply the number of cups of feed per chicken by the number of chickens:\n   15 cups/chicken * 20 chickens = <<15*20=300>>300 cups\n5. Finally, we need to subtract the number of cups of feed Wendi already gave to her chickens (15 cups) from the total number of cups of feed she needs (300 cups):\n   300 cups - 15 cups = <<300-15=285>>285 cups\n   <answer>285"
+    },
+    {
+      "task_id": "gsm8k:test:5",
+      "gold": "64",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "To solve this problem, I'll break it down into steps.\n\n## Step 1: Calculate the cost of the first 10 glasses\nFirst, let's calculate the cost of the first 10 glasses. Since every second glass costs 60% of the price, we can calculate the cost of the first 10 glasses as follows:\n- The cost of the first 10 glasses is 10 * $5 = $50.\n- The cost of the first 10 glasses is 10 * 0.6 * $5 = $30.\n- The cost of the first 10 glasses is 10 * 0.6 * $5 = $30.\n- The cost of the first 10 glasses is 10 * 0.6 * $5 = $30.\n- The cost of the first 10 glasses is 10 * 0.6 * $5 = $30.\n- The cost of the first 10 glasses is 10 * 0.6 * $5 = $30.\n- The cost of the first 10 glasses is 10 * 0.6 * $5 = $30.\n- The cost of the first 10 glasses is 10 * 0.6 * $5 = $30.\n-"
+    },
+    {
+      "task_id": "gsm8k:test:6",
+      "gold": "260",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "To solve this problem, we'll break it down step by step.\n\n### Step 1: Calculate the number of sheep in Charleston\nSince Charleston has 4 times as many sheep as Seattle, and Seattle has 20 sheep, we can calculate the number of sheep in Charleston:\n```python\n# Seattle has 20 sheep\nseattle_sheep = 20\n\n# Charleston has 4 times as many sheep as Seattle\ncharleston_sheep = 4 * seattle_sheep\nprint(\"Charleston has\", charleston_sheep, \"sheep\")\n```\n\n### Step 2: Calculate the number of sheep in Toulouse\nSince Toulouse has twice as many sheep as Charleston, we can calculate the number of sheep in Toulouse:\n```python\n# Toulouse has twice as many sheep as Charleston\ntoulouse_sheep = 2 * charleston_sheep\nprint(\"Toulouse has\", toulouse_sheep, \"sheep\")\n```\n\n### Step 3: Calculate the total number of sheep\nNow, we'll add up the number of sheep in Toulouse, Charleston, and Seattle:\n```python\n# Total number of sheep\ntotal_sheep = charleston_sheep + toulouse"
+    },
+    {
+      "task_id": "gsm8k:test:7",
+      "gold": "160",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "## Step 1: Calculate the time Carla spends downloading the file normally.\nCarla can download 2 GB/minute. The total file size is 200 GB. So, the time spent downloading normally is 200 GB / 2 GB/minute = 100 minutes.\n\n## Step 2: Calculate the actual time Carla spends downloading the file.\n40% of the file size is 200 GB * 0.4 = 80 GB. This means Carla has to download the remaining 20 GB at a rate of 2 GB/minute. So, the time spent downloading the remaining 20 GB is 20 GB / 2 GB/minute = 10 minutes.\n\n## Step 3: Calculate the total time Carla spends downloading the file.\nThe total time spent downloading the file is the sum of the time spent downloading normally and the time spent downloading the remaining 20 GB. So, the total time is 100 minutes + 10 minutes = 110 minutes.\n\n## Step 4: Calculate the actual time Carla spends downloading the file in hours.\nCarla spends 110 minutes downloading the file. Converting this to hours, we get 110 minutes / 60 minutes/minute = 1.833 hours.\n\n## Step 5: Calculate the"
+    },
+    {
+      "task_id": "gsm8k:test:8",
+      "gold": "45",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "To solve this problem, we'll break it down step by step.\n\n### Step 1: Calculate the distance covered by John in the first 2 hours\nDistance = Speed x Time\nDistance covered in the first 2 hours = 60 mph x 2 hours = 120 miles\n\n### Step 2: Calculate the distance covered by John in the first 2 hours, but with standstill traffic\nSince John spends 2 hours in standstill traffic, we need to subtract the distance covered in those 2 hours from the total distance.\nDistance covered in the first 2 hours, but with standstill traffic = 120 miles - 2 hours x 60 mph = 120 miles - 120 miles = 0 miles\n\n### Step 3: Calculate the distance covered by John in the first 2 hours, but with standstill traffic, but with the remaining time of the 4 hours going at 80 mph\nSince John spends the remaining 2 hours of the 4 hours driving at 80 mph, we need to calculate the distance covered in those 2 hours.\nDistance covered in the first 2 hours, but with standstill traffic, but with the remaining time of the 4 hours going at 80 mph = 80 mph"
+    },
+    {
+      "task_id": "gsm8k:test:9",
+      "gold": "460",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Let's break down the problem step by step.\n\n## Step 1: Calculate Eliza's regular hourly rate\nEliza's regular hourly rate is $10. This is given in the problem.\n\n## Step 2: Calculate Eliza's overtime pay rate\nEliza's overtime pay rate is 1.2 times her regular hourly rate. This is calculated as 1.2 * $10 = $12.\n\n## Step 3: Calculate Eliza's earnings for the first 40 hours\nEliza's earnings for the first 40 hours are calculated as 40 hours * $10/hour = $400.\n\n## Step 4: Calculate Eliza's earnings for the remaining 5 hours\nEliza worked for 45 hours this week. She worked for 5 hours overtime. Her overtime pay rate is $12/hour. So, her overtime pay is 5 hours * $12/hour = $60. Her earnings for the remaining 5 hours are 5 hours * $12/hour = $60.\n\n## Step 5: Calculate Eliza's total earnings for the week\nEliza's total earnings for the week are $400 + $60 = $460.\n\n## Step 6: Put the final number in <answer"
+    },
+    {
+      "task_id": "gsm8k:test:10",
+      "gold": "366",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "## Step 1: Calculate the number of downloads in the first month\nThe program had 60 downloads in the first month.\n\n## Step 2: Calculate the number of downloads in the second month\nThe number of downloads in the second month was three times as many as the downloads in the first month. So, it was 3 * 60 = 180 downloads.\n\n## Step 3: Calculate the number of downloads in the third month\nThe number of downloads in the third month was reduced by 30% from the downloads in the second month. So, it was 0.7 * 180 = 126 downloads.\n\n## Step 4: Calculate the total number of downloads over the three months\nThe total number of downloads over the three months was 60 + 180 + 126 = 336 downloads.\n\n## Step 5: Write a Python expression for the calculation\n```python\n# Define the variables\nfirst_month_downloads = 60\nsecond_month_downloads = 3 * first_month_downloads\nthird_month_downloads = 0.7 * second_month_downloads\n\n# Calculate the total number of downloads\ntotal_downloads = first_month_downloads + second_month_downloads + third_month_downloads\n\n# Print the final"
+    },
+    {
+      "task_id": "gsm8k:test:11",
+      "gold": "694",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "## Step 1: Calculate the cost of donuts\nFirst, we need to calculate the total cost of the donuts. We know that 1 dozen donuts cost $68. Since there are 12 donuts in a dozen, we can calculate the cost of 3 dozen donuts as follows:\n3 dozen donuts = 3 * 12 = 36 donuts\nCost of donuts = 36 donuts * $68 per dozen = $36 * $68 = $24,800\n\n## Step 2: Calculate the cost of mini cupcakes\nNext, we need to calculate the total cost of the mini cupcakes. We know that 1 dozen mini cupcakes cost $80. Since there are 12 mini cupcakes in a dozen, we can calculate the cost of 2 dozen mini cupcakes as follows:\n2 dozen mini cupcakes = 2 * 12 = 24 mini cupcakes\nCost of mini cupcakes = 24 mini cupcakes * $80 per dozen = $24 * $80 = $1,920\n\n## Step 3: Calculate the cost of mini cheesecakes\nNow, we need to calculate the total cost of the mini cheesecakes. We know that 1 dozen mini cheesecakes cost $55. Since there"
+    },
+    {
+      "task_id": "gsm8k:test:12",
+      "gold": "13",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Let's break down the problem step by step:\n\n1. Carlos plants the lemon tree for $90.\n2. Each year, the tree grows 7 lemons, which he can sell for $1.5 each.\n3. It costs $3 a year to water and feed the tree.\n4. We need to find out how many years it will take for the tree to grow enough lemons to cover its cost.\n\nFirst, let's calculate the total number of lemons the tree will grow in one year:\n7 lemons/year x 1 year = 7 lemons/year\n\nNow, let's calculate the total number of lemons the tree will grow in x years:\n7 lemons/year x x years = 7x lemons/year\n\nThe total number of lemons the tree will grow in x years is:\n7x lemons/year\n\nNow, let's calculate the total cost of the tree in x years:\n$90 (initial cost) + $3 (annual cost) x x years = $90 + $3x years\n\nNow, let's set up an equation to represent the situation:\n7x = 90 + 3x years\n\nNow, let's solve for x:\n7x - 3x = 90"
+    },
+    {
+      "task_id": "gsm8k:test:13",
+      "gold": "18",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "## Step 1: Let's denote the number of vacuum cleaners Melanie started with as x.\nWe know that Melanie sold a third of her vacuum cleaners at the green house, which is x/3. She also sold 2 more vacuum cleaners at the red house, making it x/3 + 2. After that, she sold half of what was left at the orange house, which is (x/3 + 2)/2.\n\n## Step 2: We know that Melanie has 5 vacuum cleaners left.\nThis means that the number of vacuum cleaners she has left is 5. We can write this as an equation: (x/3 + 2)/2 = 5.\n\n## Step 3: Now, let's solve the equation for x.\nFirst, we multiply both sides of the equation by 2 to get rid of the fraction: x/3 + 2 = 10.\nNext, we subtract 2 from both sides: x/3 = 8.\nFinally, we multiply both sides by 3 to solve for x: x = 24.\n\nThe final answer is: $\\boxed{24}$"
+    },
+    {
+      "task_id": "gsm8k:test:14",
+      "gold": "60",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "## Step 1: Calculate the number of students enrolled in contemporary dance\n20% of 20 students enrolled in contemporary dance. This is equal to 0.20 * 20 = 4 students.\n\n## Step 2: Calculate the number of students remaining after contemporary dance\nThe remaining students are 20 - 4 = 16 students.\n\n## Step 3: Calculate the number of students enrolled in jazz dance\n25% of the remaining 16 students enrolled in jazz dance. This is equal to 0.25 * 16 = 4 students.\n\n## Step 4: Calculate the number of students remaining after jazz dance\nThe remaining students are 16 - 4 = 12 students.\n\n## Step 5: Calculate the number of students enrolled in hip-hop dance\nThe rest of the students enrolled in hip-hop dance. This is equal to 12 students.\n\n## Step 6: Calculate the percentage of students enrolled in hip-hop dance\nThe percentage of students enrolled in hip-hop dance is (12 / 20) * 100 = 60%.\n\n## Step 7: Calculate the final percentage of students enrolled in hip-hop dance\nThe final percentage of students enrolled in hip-hop dance is 60%.\n\n#### <answer>...</answer>\n"
+    },
+    {
+      "task_id": "gsm8k:test:15",
+      "gold": "125",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "First, let's calculate the profit from each plan:\n\nJewelry Plan:\n- Cost: $5,000\n- Market Up: 2.5%\n- Up: $5,000 x 2.5% = $125\n- Total Profit: $5,000 + $125 = $5,125\n\nElectronic Gadgets Plan:\n- Cost: $8,000\n- Market Up: 1.2%\n- Up: $8,000 x 1.2% = $96\n- Total Profit: $8,000 + $96 = $8,096\n\nNow, let's write a calculator expression for each plan:\n\nExpression for Jewelry Plan: 5,000 + 5,125\nExpression for Electronic Gadgets Plan: 8,000 + 8,096\n\nNow, let's put the final numbers in <answer>...</answer>:\n\n#### Final Answer\n#### 5,125\n#### 8,096"
+    },
+    {
+      "task_id": "gsm8k:test:16",
+      "gold": "230",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Let's break it down step by step:\n\n**Day 1:**\nTrain 1 travels westward for 80 miles. Since they're traveling westward, we can assume they're moving in the same direction. So, the distance covered by Train 1 is 80 miles.\n\n**Day 2:**\nTrain 2 travels northwards for 150 miles. Since they're traveling northwards, we can assume they're moving in the same direction. So, the distance covered by Train 2 is 150 miles.\n\nNow, let's calculate the total distance covered by each train:\n\n**Train 1:**\nDistance covered = 80 miles (Day 1) + 80 miles (Day 2) = 160 miles\n\n**Train 2:**\nDistance covered = 150 miles (Day 1) + 150 miles (Day 2) = 300 miles\n\n**Final Answer:**\nThe distance covered by each train in the two days is:\n<160 miles>  <300 miles>"
+    },
+    {
+      "task_id": "gsm8k:test:17",
+      "gold": "57500",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Let's break down Jill's annual salary step by step:\n\n1. Calculate Jill's annual salary as a teacher:\n   50 weeks/year * $20/hour = $1,000,000\n\n2. Calculate Jill's annual salary as a cheerleading coach:\n   15 hours/week * $30/hour = $4,500\n\n3. Add the two salaries together to get Jill's annual salary:\n   $1,000,000 + $4,500 = $1,000,500\n\n#### <answer> $1,000,500"
+    },
+    {
+      "task_id": "gsm8k:test:18",
+      "gold": "7",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Let's break it down step by step:\n\n1. First, we need to find out how many eggs Claire makes in 4 weeks. Since she makes a 3-egg omelet every morning, we multiply the number of omelets by the number of eggs per omelet:\n   3 omelets/day * 7 days/week * 4 weeks = 3 * 7 * 4 = 84 eggs/day\n   84 eggs/day * 7 days/week = 588 eggs/week\n   588 eggs/week * 4 weeks = 2352 eggs\n\n2. Now, we need to convert the number of eggs to dozens. There are 12 eggs in a dozen:\n   2352 eggs / 12 eggs/dozen = 196 dozens\n\n3. Finally, we need to convert dozens to eggs. There are 12 eggs in a dozen:\n   196 dozens * 12 eggs/dozen = 2352 eggs\n\n#### <answer>...</answer>\n\n#### 2352"
+    },
+    {
+      "task_id": "gsm8k:test:19",
+      "gold": "6",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 8,
+      "completion": "Let's break down the problem step by step:\n\n1. Marissa walked 4 miles in the first 1 hour, so her speed is 4 miles / 1 hour = <<4/1=4>>4 miles per hour.\n2. She walked another 2 miles in the next 1 hour, so her speed is 2 miles / 1 hour = <<2/1=2>>2 miles per hour.\n3. The total distance walked is 4 miles + 2 miles = <<4+2=6>>6 miles.\n4. The total time taken is 1 hour + 1 hour = <<1+1=2>>2 hours.\n5. The total time taken is 2 hours + 1 hour = <<2+1=3>>3 hours.\n6. The total time taken is 3 hours + 1 hour = <<3+1=4>>4 hours.\n7. Marissa wants her average speed to be 4 miles per hour, so the total distance she needs to walk is 12 miles - 6 miles = <<12-6=6>>6 miles.\n8. The total time she needs to walk is 4 hours + 3 hours = <<4+3=7>>"
+    },
+    {
+      "task_id": "gsm8k:test:20",
+      "gold": "15",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Let's solve the problem step by step.\n\nFirst, let's find the amount of water in the orange drink. Since it's two-thirds water, we can calculate the amount of water as follows:\n\n10 liters * (2/3) = 10 * (2/3) = 20/3 = 6.67 liters (approximately)\n\nNow, let's find the amount of water in the pineapple drink. Since it's three-fifths water, we can calculate the amount of water as follows:\n\n15 liters * (3/5) = 15 * (3/5) = 15 * (3/5) = 9 liters (approximately)\n\nNow, let's find the total amount of water in the orange drink. We already calculated it as 6.67 liters.\n\nNow, let's find the total amount of water in the pineapple drink. We already calculated it as 9 liters.\n\nNow, let's find the total amount of water in the orange drink and the pineapple drink. We already calculated it as 6.67 + 9 = 15.67 liters.\n\nNow, let's find the amount of water spilled. We know that 1 liter of orange drink was spilled, so the amount of water spilled is "
+    },
+    {
+      "task_id": "gsm8k:test:21",
+      "gold": "14",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "## Step 1: Calculate the age difference between Raymond and Samantha\nRaymond was born 6 years before Samantha. So, the age difference between them is 6 years.\n\n## Step 2: Calculate the age of Raymond's son\nRaymond had a son at the age of 23. This means the son is currently 23 years old.\n\n## Step 3: Calculate the age difference between Raymond and Samantha\nSince Raymond was born 6 years before Samantha, the age difference between them is 6 years.\n\n## Step 4: Calculate the age of Raymond's son\nLet x be the number of years ago Raymond's son was born. Then, the age of the son is x + 23. Since the son is currently 23 years old, we can set up the equation x + 23 = 23 + x - 6.\n\n## Step 5: Solve the equation for x\nx + 23 = 23 + x - 6\nx + 23 = x + 17\nSubtracting x from both sides gives:\n23 = 17\nThis equation is not solvable for x. Let's re-examine the equation.\nx + 23 = 23 + x - 6\nx + "
+    },
+    {
+      "task_id": "gsm8k:test:22",
+      "gold": "7",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 4,
+      "completion": "## Step 1: Calculate the number of DVDs sold to the first 3 customers\nBilly's first 3 customers buy one DVD each, so they buy 3 DVDs. 8 customers * 1 DVD/customer = <<8*1=8>>8 DVDs\n## Step 2: Calculate the number of DVDs sold to the next 2 customers\nBilly's next 2 customers buy 2 DVDs each, so they buy 4 DVDs. 2 customers * 2 DVDs/customer = <<2*2=4>>4 DVDs\n## Step 3: Calculate the number of DVDs sold to the last 3 customers\nBilly's last 3 customers don't buy any DVDs, so they buy 0 DVDs. 3 customers * 0 DVDs/customer = <<3*0=0>>0 DVDs\n## Step 4: Add up the number of DVDs sold to all customers\n8 DVDs + 4 DVDs + 0 DVDs = <<8+4+0=12>>12 DVDs\n## Step 5: Write a calculator expression for the total number of DVDs sold\n```python\n# Define the variables\nfirst_3_customers = 3\nnext_2_customers = 2\nlast_3_customers = "
+    },
+    {
+      "task_id": "gsm8k:test:23",
+      "gold": "8",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "To solve this problem, we need to calculate the total melting time of the candle.\n\nFirst, we need to calculate the total burning time of the candle. The candle burns from 1:00 PM to 5:00 PM, which is 4 hours.\n\nNext, we need to calculate the total melting time of the candle. The candle melts by 2 centimeters every hour that it burns, so we multiply the total burning time by 2:\n\n4 hours * 2 centimeters/hour = 8 centimeters\n\nNow, we need to calculate the difference between the total melting time and the total burning time:\n\n8 centimeters - 4 hours = 8 centimeters - 2 hours = 6 hours\n\nSince there are 60 minutes in an hour, we need to convert 6 hours to minutes:\n6 hours * 60 minutes/hour = 360 minutes\n\nNow, we need to convert 360 minutes to centimeters:\n360 minutes * 2 centimeters/minute = 720 centimeters\n\nNow, we need to calculate the difference between the total melting time and the total burning time:\n720 centimeters - 8 centimeters = 712 centimeters\n\n#### <answer>...</answer>\n\n#### 712"
+    },
+    {
+      "task_id": "gsm8k:test:24",
+      "gold": "26",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "To find the original price of the book, we need to calculate the discount amount first. \n\nThe discount amount is 25% of the original price. We can calculate this as follows:\n\n25% of the original price = 0.25 * $19.50\n= $4.875\n= $19.50 - $4.875\n= $14.725\n\nNow, we know the original price of the book was $19.50. We can now calculate the original price of the book.\n\nThe original price of the book was $19.50. We can now calculate the original price of the book.\n\nThe original price of the book was $19.50. We can now calculate the original price of the book.\n\nThe original price of the book was $19.50. We can now calculate the original price of the book.\n\nThe original price of the book was $19.50. We can now calculate the original price of the book.\n\nThe original price of the book was $19.50. We can now calculate the original price of the book.\n\nThe original price of the book was $19.50. We can now calculate the original price of the book.\n\nThe original price of the book was $19.50. We"
+    },
+    {
+      "task_id": "gsm8k:test:25",
+      "gold": "2",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "## Step 1: Calculate the cost of chicken meals\nThe cost of one chicken meal is $12. Since Marie ordered one chicken meal, the cost is $12.\n\n## Step 2: Calculate the cost of milk\nThe cost of 5 packs of milk is $3 each. So, the total cost of milk is $3 * 5 = $15.\n\n## Step 3: Calculate the cost of apples\nThe cost of 4 apples is $1.50 each. So, the total cost of apples is $1.50 * 4 = $6.\n\n## Step 4: Calculate the total cost of non-pizza items\nThe total cost of non-pizza items (chicken meals, milk, apples) is $12 + $15 + $6 = $33.\n\n## Step 5: Calculate the remaining amount for pizza\nMarie paid a total of $50. So, the remaining amount for pizza is $50 - $33 = $17.\n\n## Step 6: Calculate the number of boxes of pizza\nEach box of pizza costs $8.50. So, the number of boxes of pizza is $17 / $8.50 = 2.\n\n## Step 7: Calculate the final answer\nThe"
+    },
+    {
+      "task_id": "gsm8k:test:26",
+      "gold": "243",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Let's break down the problem step by step:\n\n1. Mishka bought 3 pairs of shorts, so the total cost of shorts is:\n   3 pairs of shorts * $16.50/pair = $16.50 * 3 = $16.50\n   Expression: 3 * $16.50 = $16.50\n   Calculation: $16.50\n   <answer> $16.50\n\n2. Mishka bought 3 pairs of pants, so the total cost of pants is:\n   3 pairs of pants * $22.50/pair = $22.50 * 3 = $22.50\n   Expression: 3 * $22.50 = $22.50\n   Calculation: $22.50\n   <answer> $22.50\n\n3. Mishka bought 3 pairs of shoes, so the total cost of shoes is:\n   3 pairs of shoes * $42/pair = $42 * 3 = $42\n   Expression: 3 * $42 = $42\n   Calculation: $42\n   <answer> $42\n\nNow, let's add up the total cost of all clothing items:\n   $16.50 + $22."
+    },
+    {
+      "task_id": "gsm8k:test:27",
+      "gold": "16",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "To solve this problem, we'll break it down into steps.\n\n## Step 1: Calculate the number of servings of ice cream Cynthia eats in 60 days\nSince Cynthia eats one serving of ice cream every night, she eats 15 servings of ice cream per day. In 60 days, she'll eat 15 * 60 = 900 servings of ice cream.\n\n## Step 2: Calculate the cost of the ice cream for 900 servings\nThe cost of the ice cream is $4.00 per carton, and each carton has 15 servings of ice cream. So, the cost of the ice cream for 900 servings is 900 * 15 * 4 = $108,000.\n\n## Step 3: Write a calculator expression to calculate the total cost\nWe can write a calculator expression to calculate the total cost: 900 * 15 * 4 = 108,000.\n\n## Step 4: Write a calculator expression to calculate the total cost\nWe can write a calculator expression to calculate the total cost: 900 * 15 * 4 = 108,000.\n\n## Step 5: Write a calculator expression to calculate the total cost\nWe can write a calculator expression to calculate the total cost:"
+    },
+    {
+      "task_id": "gsm8k:test:28",
+      "gold": "25",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "## Step 1: Calculate the distance traveled after the first stop\nDistance traveled after the first stop = 20 miles.\n\n## Step 2: Calculate the distance traveled before the second stop\nDistance traveled before the second stop = 15 miles.\n\n## Step 3: Calculate the total distance traveled between the first and second stops\nTotal distance traveled = Distance traveled after the first stop + Distance traveled before the second stop = 20 + 15 = 35 miles.\n\n## Step 4: Write a calculator expression for the total distance traveled\nLet x be the distance traveled between the first and second stops. Then, the total distance traveled = x + 20 + 15 = x + 35.\n\n## Step 5: Write a calculator expression for the total distance traveled\nLet x be the distance traveled between the first and second stops. Then, the total distance traveled = x + 35.\n\n## Step 6: Write a calculator expression for the total distance traveled\nLet x be the distance traveled between the first and second stops. Then, the total distance traveled = x + 35.\n\n## Step 7: Write a calculator expression for the total distance traveled\nLet x be the distance traveled between the first and second stops. Then, the total distance"
+    },
+    {
+      "task_id": "gsm8k:test:29",
+      "gold": "104",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Let's break it down step by step:\n\n1. Let B be the cost of the boots.\n2. Since the boots cost B dollars and the two pairs of heels together cost 5 dollars less than the boots, the total cost of the heels is B - 5 dollars.\n3. The total cost of the heels is the cost of the heels plus the cost of the boots, so we can write an equation:\n   B - 5 + B = 2B - 5\n4. Now, let H be the cost of the high heels. Since one pair of heels costs $33 and the other costs twice as much, the cost of one pair of heels is $33 * 2 = $66. So, the total cost of the heels is 2 * $33 * 2 = $528.\n5. The total cost of the heels is the cost of the heels plus the cost of the boots, so we can write another equation:\n   2B - 5 + B = 528\n6. Now, let's solve for B. Combine like terms:\n   3B - 5 = 528\n7. Add 5 to both sides:\n   3B = 533\n8. Divide both sides"
+    },
+    {
+      "task_id": "gsm8k:test:30",
+      "gold": "109",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "## Step 1: Calculate Darrell's age\nLet's assume Darrell's age is 7x and Allen's age is 11x, where x is a constant. We know that Darrell's age now is 7x + 11x = 162. So, 18x = 162.\n\n## Step 2: Solve for x\nDivide both sides by 18: x = 162 / 18 = 9.\n\n## Step 3: Calculate Darrell's age\nDarrell's age now is 7x = 7 * 9 = 63.\n\n## Step 4: Calculate Allen's age now\nAllen's age now is 11x = 11 * 9 = 99.\n\n## Step 5: Calculate Allen's age 10 years from now\nAllen's age 10 years from now is 11x + 10 = 11 * 9 + 10 = 99 + 10 = 109.\n\n## Step 6: Write the final number in <answer>...</answer>\nThe final answer is: $\\boxed{109}$"
+    },
+    {
+      "task_id": "gsm8k:test:31",
+      "gold": "80",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "Let's break it down step by step:\n\n1. The first person says 80 jelly beans.\n2. The second person says 80 + 20 = 100 jelly beans.\n3. The third person says 80 + 20 = 100 + 25% = 100 + 0.25 = 100 + 0.25*80 = 100 + 20 = 120 jelly beans.\n4. Now, we need to calculate the average of these three guesses. To do this, we need to add up all the guesses and divide by the number of guesses.\n\nLet's call the guesses:\n- Person 1: 80 jelly beans\n- Person 2: 100 jelly beans\n- Person 3: 120 jelly beans\n\nNow, let's add up all the guesses:\n80 + 100 + 120 = 300\n\nNow, let's divide by the number of guesses:\n3 guesses / 3 guesses = 1\n\nSo, the average guess is 300/3 = <<300/3=100>>100 jelly beans.\n#### <answer>...</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:32",
+      "gold": "35",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "To find out how many hours a week John spends taking care of dogs, we need to calculate the total hours spent per day and then multiply that by the number of days in a week.\n\nFirst, let's calculate the total hours spent per day:\n10 dogs * 0.5 hours per dog = 5 hours per day\n\nNow, let's calculate the total hours spent per week:\n5 hours per day * 7 days per week = 35 hours per week\n\n#### <answer>...</answer>\n\n#### 35"
+    },
+    {
+      "task_id": "gsm8k:test:33",
+      "gold": "70",
+      "correct": 0.0,
+      "text_correct": 1.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Let's break it down step by step:\n\n1. Gretchen has 110 coins.\n2. There are 30 more gold coins than silver coins. Let's call the number of silver coins \"s\" and the number of gold coins \"g\". Then, g = s + 30.\n3. Gretchen has 110 coins, so s + g = 110. We can substitute g = s + 30 into this equation:\n   s + (s + 30) = 110\n4. Combine like terms:\n   2s + 30 = 110\n5. Subtract 30 from both sides:\n   2s = 80\n6. Divide both sides by 2:\n   s = 40\n7. Now that we know s = 40, we can find g:\n   g = s + 30\n   g = 40 + 30\n   g = 70\n\nSo, Gretchen has 70 gold coins."
+    },
+    {
+      "task_id": "gsm8k:test:34",
+      "gold": "23",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Let's solve the problem step by step.\n\n## Step 1: Find out how many jewels Raymond has.\nRaymond has 40 jewels.\n\n## Step 2: Calculate half of Raymond's jewels.\nHalf of Raymond's jewels = 40 / 2 = 20 jewels.\n\n## Step 3: Find out how many jewels Aaron has.\nAaron has 5 more jewels than half of Raymond's jewels.\nSo, Aaron has 20 + 5 = 25 jewels.\n\n## Step 4: Find out how many jewels Siobhan has.\nSiobhan has 2 fewer jewels than Aaron.\nSo, Siobhan has 25 - 2 = 23 jewels.\n\n## Step 5: Write a calculator expression for Siobhan's jewels.\n23 (jewels Siobhan has) = <answer>...</answer>\n\nThe final answer is: $\\boxed{23}$"
+    },
+    {
+      "task_id": "gsm8k:test:35",
+      "gold": "9",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "## Step 1: Calculate points scored in the first 20 minutes\nMike scores 4 points in the first 20 minutes.\n\n## Step 2: Calculate points scored in the second 20 minutes\nIn the second 20 minutes, Mike scores 25% more points. 25% of 4 points is 1 point. So, he scores 4 + 1 = 5 points in the second 20 minutes.\n\n## Step 3: Calculate total points scored\nTotal points scored = points scored in the first 20 minutes + points scored in the second 20 minutes\n= 4 + 5\n= 9\n\n## Step 4: Write a calculator expression for the total points scored\n9 = 9\n\n## Step 5: Put the final number in <answer>...</answer>\nThe final answer is: $\\boxed{9}$"
+    },
+    {
+      "task_id": "gsm8k:test:36",
+      "gold": "75",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "## Step 1: Calculate the number of yogurts Terry eats in 30 days\nTerry eats 2 yogurts a day, so in 30 days, he eats 2 * 30 = 60 yogurts.\n\n## Step 2: Calculate the cost of the yogurts Terry eats in 30 days\nThe yogurts are currently on sale at 4 yogurts for $5.00. So, the cost of 60 yogurts is 60 * 4 * 5 = 2400.\n\n## Step 3: Write a Python expression to calculate the final number\n```python\n# Define the variables\nyogurts_eaten = 60\nyogurt_price = 4\nyogurt_price_per_yogurt = 5\n\n# Calculate the final number\nfinal_number = yogurts_eaten * yogurt_price * yogurt_price_per_yogurt\n\n# Print the final number\nprint(final_number)\n```\n\n## Step 4: Execute the Python expression\n```python\n# Execute the Python expression\nprint(final_number)\n```\n\nThe final answer is: $\\boxed{9600}$"
+    },
+    {
+      "task_id": "gsm8k:test:37",
+      "gold": "2",
+      "correct": 0.0,
+      "text_correct": 1.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "### Step 1: Calculate the total amount of money John has\nFirst, let's calculate the total amount of money John has. He has 13 Lego sets and sells them for $15 each. So, the total amount of money he has is:\n13 * 15 = 195\n\n### Step 2: Calculate the total amount of money John spent on video games\nNext, let's calculate the total amount of money John spent on video games. He bought 8 video games for $20 each. So, the total amount of money he spent on video games is:\n8 * 20 = 160\n\n### Step 3: Calculate the total amount of money John has left\nNow, let's calculate the total amount of money John has left. He has $5 left after buying the video games. So, the total amount of money he has left is:\n195 - 160 = 35\n\n### Step 4: Calculate the number of Lego sets John still has\nFinally, let's calculate the number of Lego sets John still has. He has $5 left and the total amount of money he has left is $35. So, the number of Lego sets he still has is:\n35 / 15 = 2\n\n#### <answer"
+    },
+    {
+      "task_id": "gsm8k:test:38",
+      "gold": "10",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "## Step 1: Calculate the total miles John runs in a week\nFirst, we need to calculate the total miles John runs in a week. He runs 60 miles a week.\n\n## Step 2: Calculate the total miles John runs in a week\nSince John runs 3 days a week, we multiply the miles he runs in a day by the number of days he runs in a week. miles_per_day = 60, days_per_week = 3, miles_per_day = miles_per_day * days_per_week = 60 * 3 = 180 miles per week.\n\n## Step 3: Calculate the total miles John runs in a week\nNow, we multiply the miles per day by the number of days he runs in a week. miles_per_day = 180, days_per_week = 3, miles_per_day = miles_per_day * days_per_week = 180 * 3 = 540 miles per week.\n\n## Step 4: Calculate the total hours John runs in a week\nSince John runs 3 hours the first day and half as much the other two days he runs, we need to calculate the total hours he runs in a week. hours_per_day = 3, hours_per_day = hours_per_day * "
+    },
+    {
+      "task_id": "gsm8k:test:39",
+      "gold": "18",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "To solve this problem, we'll break it down into steps.\n\n### Step 1: Calculate the speed at which Dana skips.\n\nDana skips at 3 miles per hour. Since she skips at a rate that is half as fast as she can run, we need to find the speed at which she can run. Let's call the speed at which she can run \"x\". Then, the speed at which she skips is x/2.\n\nWe know that the speed at which Dana skips is 3 miles per hour. So, we can set up the equation:\n\nx/2 = 3\n\nTo solve for x, we can multiply both sides by 2:\n\nx = 6\n\nSo, the speed at which Dana can run is 6 miles per hour.\n\n### Step 2: Calculate the time spent running.\n\nDana spends one-third of the time running. Let's call the total time she spends running \"t\". Then, the time spent running is t/3.\n\nWe know that the total time she spends running is the sum of the time spent running and the time spent walking. Let's call the time spent walking \"w\". Then, the time spent walking is w.\n\nSince Dana spends one-third of the time running, we can set"
+    }
+  ]
+}

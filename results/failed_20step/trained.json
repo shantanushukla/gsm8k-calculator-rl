@@ -1,0 +1,299 @@
+{
+  "dataset": "openai/gsm8k",
+  "config": "main",
+  "split": "test",
+  "n": 40,
+  "model": "mlx-community/Llama-3.2-1B-Instruct-4bit",
+  "adapter": "results/adapters/gsm8k-lora",
+  "protocol": "0-shot, answer in <answer>, exact number",
+  "exact_match": 0.1,
+  "format_rate": 0.0,
+  "published_reference": {
+    "value": 0.444,
+    "protocol": "Llama-3.2-1B-Instruct GSM8K 8-shot CoT maj@1, full test",
+    "url": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"
+  },
+  "dataset_url": "https://huggingface.co/datasets/openai/gsm8k",
+  "records": [
+    {
+      "task_id": "gsm8k:test:0",
+      "gold": "18",
+      "correct": 1.0,
+      "format": 0.0,
+      "completion": "16 (eggs) - 3 (breakfast) - 4 (muffins) = 9\n\n9 * $2 = $18"
+    },
+    {
+      "task_id": "gsm8k:test:1",
+      "gold": "3",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "6"
+    },
+    {
+      "task_id": "gsm8k:test:2",
+      "gold": "70000",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "$80,000 + ($50,000 \\* 1.5) = $80,000 + $75,000 = $155,000"
+    },
+    {
+      "task_id": "gsm8k:test:3",
+      "gold": "540",
+      "correct": 1.0,
+      "format": 0.0,
+      "completion": "To find the total meters James runs a week, we need to multiply the number of sprints by the number of meters per sprint, and then multiply that by the number of times a week he runs.\n\nNumber of sprints = 3\nNumber of meters per sprint = 60\nNumber of times a week = 3\n\nTotal meters = 3 * 60 * 3\nTotal meters = 540\n\nSo, James runs 540 meters a week."
+    },
+    {
+      "task_id": "gsm8k:test:4",
+      "gold": "20",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "To solve this problem, we need to find the total number of cups of feed Wendi needs to give her chickens in the final meal.\n\nFirst, let's find the total number of cups of feed Wendi gives her chickens in the morning and afternoon:\n\n15 cups (morning) + 25 cups (afternoon) = 40 cups\n\nNow, we need to find the total number of cups of feed Wendi needs to give her chickens in the final meal. Since the size of Wendi's flock is 20 chickens, we need to multiply the number of chickens by the number of cups of feed each chicken gets:\n\n20 chickens * 15 cups/chicken = 300 cups\n\nSo, Wendi needs 300 cups of feed to give her chickens in the final meal."
+    },
+    {
+      "task_id": "gsm8k:test:5",
+      "gold": "64",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "To solve this problem, we need to calculate the cost of the glasses Kylar wants to buy.\n\nLet's break it down:\n\n- The cost of one glass is $5.\n- Every second glass costs 60% of the price, which is $5 * 0.6 = $3.\n\nNow, let's calculate the cost of 16 glasses:\n\n- 16 glasses will cost 16 * $5 = $80.\n- 8 glasses will cost 8 * $3 = $24.\n- 8 glasses will cost 8 * $3 = $24.\n\nThe total cost of the glasses Kylar wants to buy is $80 + $24 = $104.\n\nSo, the final answer is: $104"
+    },
+    {
+      "task_id": "gsm8k:test:6",
+      "gold": "260",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "Seattle has 20 sheep.\nCharleston has 4 * 20 = 80 sheep.\nToulouse has 2 * 80 = 160 sheep.\n\nAnswer: 160"
+    },
+    {
+      "task_id": "gsm8k:test:7",
+      "gold": "160",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "To solve this problem, we need to break it down into steps.\n\nStep 1: Calculate the total time Carla spends downloading the file.\n- Carla can download 2 GB/minute. \n- She can download 200 GB in 100 minutes (1 hour).\n- However, Windows takes 20 minutes to restart, so she spends 120 minutes downloading the file.\n\nStep 2: Calculate the effective download speed.\n- Carla spends 120 minutes downloading the file.\n- We need to convert this to hours: 120 minutes / 60 = 2 hours.\n- Now, we need to calculate the effective download speed. \n- Carla can download 2 GB/minute. \n- She spends 2 hours downloading the file. \n- So, the effective download speed is 2 GB/minute * 2 hours = 4 GB/hour.\n\nStep 3: Calculate the total download time.\n- Carla spends 120 minutes downloading the"
+    },
+    {
+      "task_id": "gsm8k:test:8",
+      "gold": "45",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "To solve this problem, we need to break it down step by step.\n\n1. John drives for 3 hours at 60 mph. Distance = Speed * Time\n   Distance = 60 * 3 = 180 miles\n\n2. He then turns around and drives for 4 hours. Distance = Speed * Time\n   Distance = 60 * 4 = 240 miles\n\n3. However, he spends the first 2 hours in standstill traffic. Distance = 0 miles\n\n4. So, the distance he covers in the first 2 hours is 0 miles.\n\n5. Then, he spends the next half-hour (1 hour) driving at 30 mph. Distance = Speed * Time\n   Distance = 30 * 1 = 30 miles\n\n6. Finally, he drives for the remaining 4 hours at 80 mph. Distance = Speed * Time\n   Distance = 80 * 4 = "
+    },
+    {
+      "task_id": "gsm8k:test:9",
+      "gold": "460",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "To find Eliza's earnings for the week, we need to calculate her regular pay and overtime pay separately.\n\nRegular pay: 40 hours x $10/hour = $400\nOvertime pay: 45 hours x 1.2 x $10/hour = $1,080\n\nTotal earnings: $400 + $1,080 = $1,480"
+    },
+    {
+      "task_id": "gsm8k:test:10",
+      "gold": "366",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "60 + (3 * 60) - (30/100) * 60 = 180"
+    },
+    {
+      "task_id": "gsm8k:test:11",
+      "gold": "694",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "To find the total cost, we need to calculate the cost of each item and then add them up.\n\n3 dozen donuts = 3 x 12 = 36 donuts\nCost of donuts = 36 x $68 = $24,624\n\n2 dozen mini cupcakes = 2 x 12 = 24 cupcakes\nCost of cupcakes = 24 x $80 = $19,200\n\n6 dozen mini cheesecakes = 6 x 12 = 72 cheesecakes\nCost of cheesecakes = 72 x $55 = $4,050\n\nTotal cost = $24,624 + $19,200 + $4,050 = $48,874\n\nThe final answer is: $48,874"
+    },
+    {
+      "task_id": "gsm8k:test:12",
+      "gold": "13",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "To find out how many years it will take for Carlos to start earning money on the lemon tree, we need to calculate the total revenue he will get each year.\n\nFirst, let's calculate the total revenue for each year:\n- Year 1: 7 lemons * $1.5 = $10.50\n- Year 2: 7 lemons * $1.5 = $10.50\n- Year 3: 7 lemons * $1.5 = $10.50\n- Year 4: 7 lemons * $1.5 = $10.50\n- Year 5: 7 lemons * $1.5 = $10.50\n- Year 6: 7 lemons * $1.5 = $10.50\n- Year 7: 7 lemons * $1.5 = $10.50\n- Year 8: 7"
+    },
+    {
+      "task_id": "gsm8k:test:13",
+      "gold": "18",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "16"
+    },
+    {
+      "task_id": "gsm8k:test:14",
+      "gold": "60",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "To find the percentage of students enrolled in hip-hop dance, we need to calculate the number of students enrolled in hip-hop dance.\n\n20 students enrolled in contemporary dance.\nRemaining students = 20 - 20 = 0\n0 students enrolled in jazz dance.\n\n20% of the remaining 0 students enrolled in hip-hop dance.\n0 * 0.20 = 0\n\nSo, the number of students enrolled in hip-hop dance is 0. \n\nThe percentage of students enrolled in hip-hop dance is 0%."
+    },
+    {
+      "task_id": "gsm8k:test:15",
+      "gold": "125",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "$5,000 x 2.5% = $5,000 x 0.025 = $125\n\n$8,000 x 1.2% = $8,000 x 0.012 = $96\n\n$5,000 + $125 = $5,125\n\n$8,000 + $96 = $8,096\n\nThe merchant's profit would be $5,125."
+    },
+    {
+      "task_id": "gsm8k:test:16",
+      "gold": "230",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "The trains are traveling in opposite directions. \n\nTrain 1: 80 miles\nTrain 2: 80 miles"
+    },
+    {
+      "task_id": "gsm8k:test:17",
+      "gold": "57500",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "$20 * 50 = $1,000\n$30 * 35 = $1,050\n$1,000 + $1,050 = $2,050"
+    },
+    {
+      "task_id": "gsm8k:test:18",
+      "gold": "7",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "To solve this problem, we need to calculate the total number of eggs Claire will eat in 4 weeks.\n\nFirst, let's calculate the number of eggs Claire will eat in 4 weeks:\n- 1 egg per omelet = 3 eggs per day\n- 7 days per week = 7 eggs per day\n- 4 weeks = 28 days\n- 28 days x 3 eggs per day = 84 eggs\n\nNow, let's convert the number of eggs to dozens:\n- 1 dozen = 12 eggs\n- 84 eggs / 12 eggs per dozen = 7 dozens\n\nSo, Claire will eat 7 dozens of eggs in 4 weeks."
+    },
+    {
+      "task_id": "gsm8k:test:19",
+      "gold": "6",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "To find the speed, we need to find the total distance Marissa walked and divide it by the total time taken.\n\nDistance walked = 4 miles\nTime taken = 1 hour + 2 hours = 3 hours\nTotal distance walked = 4 miles + 2 miles = 6 miles\nTotal time taken = 1 hour + 2 hours = 3 hours\n\nNow, let's find the average speed:\nAverage speed = Total distance walked / Total time taken\n= 6 miles / 3 hours\n= 2 miles per hour\n\nSince Marissa wants her average speed to be 4 miles per hour, we need to find the remaining distance she needs to walk.\n\nRemaining distance = Total distance - Total distance walked\n= 12 miles - 6 miles\n= 6 miles\n\nNow, let's find the speed:\nSpeed = Remaining distance / Total time taken\n= 6 miles / 3 hours\n="
+    },
+    {
+      "task_id": "gsm8k:test:20",
+      "gold": "15",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "To solve this problem, we need to find the total amount of liquid and then subtract the spilled water.\n\nFirst, let's find the total amount of liquid without the spilled water.\n\nFor the orange drink:\n- 10 liters = 10 * (2/3) = 6.67 liters (round to 6.67, as we can't have a fraction of a liter)\n- 1 liter spilled = 1 - 0.67 = 0.33 liters\n\nFor the pineapple drink:\n- 15 liters = 15 * (3/5) = 9 liters (3/5 is the same as 3/5)\n- 0.33 liters spilled = 0.33 liters\n\nNow, let's add the two drinks together:\n6.67 + 9 = 15.67 liters\n\nNow, subtract the spilled water:\n15.67 - 0.33 = 15.34 liters"
+    },
+    {
+      "task_id": "gsm8k:test:21",
+      "gold": "14",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "30"
+    },
+    {
+      "task_id": "gsm8k:test:22",
+      "gold": "7",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "12"
+    },
+    {
+      "task_id": "gsm8k:test:23",
+      "gold": "8",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "To solve this problem, we need to calculate the total melting of the candle from 1:00 PM to 5:00 PM.\n\nFrom 1:00 PM to 2:00 PM, the candle melts 2 hours * 2 cm/h = 4 cm.\nFrom 2:00 PM to 3:00 PM, the candle melts 1 hour * 2 cm/h = 2 cm.\nFrom 3:00 PM to 4:00 PM, the candle melts 1 hour * 2 cm/h = 2 cm.\nFrom 4:00 PM to 5:00 PM, the candle melts 1 hour * 2 cm/h = 2 cm.\n\nTotal melting = 4 cm + 2 cm + 2 cm + 2 cm = 10 cm.\n\nNow, let's subtract the total melting from the burning time:\n5:00 PM - 1:00 PM = "
+    },
+    {
+      "task_id": "gsm8k:test:24",
+      "gold": "26",
+      "correct": 1.0,
+      "format": 0.0,
+      "completion": "$19.50 / (1 - 0.25) = $19.50 / 0.75 = $26.00"
+    },
+    {
+      "task_id": "gsm8k:test:25",
+      "gold": "2",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "$50 - $12 - $15 - $18 = $13\n\nAnswer: $13"
+    },
+    {
+      "task_id": "gsm8k:test:26",
+      "gold": "243",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "$245.50"
+    },
+    {
+      "task_id": "gsm8k:test:27",
+      "gold": "16",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "$240"
+    },
+    {
+      "task_id": "gsm8k:test:28",
+      "gold": "25",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "50"
+    },
+    {
+      "task_id": "gsm8k:test:29",
+      "gold": "104",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "$78"
+    },
+    {
+      "task_id": "gsm8k:test:30",
+      "gold": "109",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "To solve this problem, we need to set up an equation using the given ratio. \n\nLet's say Darrell's age is 7x and Allen's age is 11x. \n\nSince their total age is 162, we can set up the equation:\n\n7x + 11x = 162\n\nCombine like terms:\n\n18x = 162\n\nDivide both sides by 18:\n\nx = 9\n\nNow that we know x, we can find Darrell's age (7x) and Allen's age (11x):\n\nDarrell's age: 7x = 7(9) = 63\nAllen's age: 11x = 11(9) = 99\n\nAllen's age 10 years from now will be:\n\n11x + 10 = 11(9) + 10 = 99 + 10 = 109\n\nSo, Allen's age 10 years from now"
+    },
+    {
+      "task_id": "gsm8k:test:31",
+      "gold": "80",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "To find the average guess, we need to calculate the total number of jelly beans and divide it by the number of guesses.\n\nGuess 1: 80\nGuess 2: 80 + 20 = 100\nGuess 3: 80 + 20 = 100 + 25% = 125\n\nTotal number of jelly beans: 80 + 100 + 125 = 305\n\nNumber of guesses: 3\n\nAverage guess: 305 / 3 = 102.33\n\nSo, the average guess is approximately 102.33."
+    },
+    {
+      "task_id": "gsm8k:test:32",
+      "gold": "35",
+      "correct": 1.0,
+      "format": 0.0,
+      "completion": "To find the total hours per week, we need to multiply the number of dogs by the hours per day and then by the number of days in a week.\n\n10 dogs *.5 hours per dog per day = 5 hours per dog per day\n5 hours per dog per day * 7 days per week = 35 hours per week\n\n<Answer> 35"
+    },
+    {
+      "task_id": "gsm8k:test:33",
+      "gold": "70",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "100"
+    },
+    {
+      "task_id": "gsm8k:test:34",
+      "gold": "23",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "5 + (40 / 2) = 5 + 20 = 25"
+    },
+    {
+      "task_id": "gsm8k:test:35",
+      "gold": "9",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "100"
+    },
+    {
+      "task_id": "gsm8k:test:36",
+      "gold": "75",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "To find out how much Terry spends on yogurt, we need to calculate how much he spends per day and then multiply that by 30.\n\nFirst, let's calculate how much he spends per day:\n2 yogurts/day * $5.00 = $10.00/day\n\nNow, let's calculate how much he spends on yogurt over 30 days:\n$10.00/day * 30 days = $300.00\n\nSo, Terry spends $300.00 on yogurt over 30 days."
+    },
+    {
+      "task_id": "gsm8k:test:37",
+      "gold": "2",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "48"
+    },
+    {
+      "task_id": "gsm8k:test:38",
+      "gold": "10",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "To find John's speed, we need to calculate the total distance he runs in a week.\n\nDistance = Speed x Time\nWe know John runs 60 miles a week. Let's assume he runs for 7 days (3 days a week x 7 days).\n\nDistance = 60 miles\nTime = 7 days\nSpeed = 60 miles / 7 days = 8.57 miles/day\n\nSo, John runs at an average speed of 8.57 miles per day."
+    },
+    {
+      "task_id": "gsm8k:test:39",
+      "gold": "18",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "9.6"
+    }
+  ]
+}

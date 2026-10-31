@@ -1,0 +1,51 @@
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 1393.61it/s]
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+1/40 acc=0.000 gold=18 ok=0.0
+2/40 acc=0.000 gold=3 ok=0.0
+3/40 acc=0.000 gold=70000 ok=0.0
+4/40 acc=0.250 gold=540 ok=1.0
+5/40 acc=0.200 gold=20 ok=0.0
+6/40 acc=0.167 gold=64 ok=0.0
+7/40 acc=0.143 gold=260 ok=0.0
+8/40 acc=0.125 gold=160 ok=0.0
+9/40 acc=0.111 gold=45 ok=0.0
+10/40 acc=0.100 gold=460 ok=0.0
+11/40 acc=0.091 gold=366 ok=0.0
+12/40 acc=0.083 gold=694 ok=0.0
+13/40 acc=0.077 gold=13 ok=0.0
+14/40 acc=0.071 gold=18 ok=0.0
+15/40 acc=0.067 gold=60 ok=0.0
+16/40 acc=0.062 gold=125 ok=0.0
+17/40 acc=0.059 gold=230 ok=0.0
+18/40 acc=0.056 gold=57500 ok=0.0
+19/40 acc=0.053 gold=7 ok=0.0
+20/40 acc=0.050 gold=6 ok=0.0
+21/40 acc=0.048 gold=15 ok=0.0
+22/40 acc=0.045 gold=14 ok=0.0
+23/40 acc=0.087 gold=7 ok=1.0
+24/40 acc=0.083 gold=8 ok=0.0
+25/40 acc=0.080 gold=26 ok=0.0
+26/40 acc=0.077 gold=2 ok=0.0
+27/40 acc=0.074 gold=243 ok=0.0
+28/40 acc=0.107 gold=16 ok=1.0
+29/40 acc=0.103 gold=25 ok=0.0
+30/40 acc=0.100 gold=104 ok=0.0
+31/40 acc=0.129 gold=109 ok=1.0
+32/40 acc=0.125 gold=80 ok=0.0
+33/40 acc=0.152 gold=35 ok=1.0
+34/40 acc=0.147 gold=70 ok=0.0
+35/40 acc=0.171 gold=23 ok=1.0
+36/40 acc=0.167 gold=9 ok=0.0
+37/40 acc=0.162 gold=75 ok=0.0
+38/40 acc=0.158 gold=2 ok=0.0
+39/40 acc=0.154 gold=10 ok=0.0
+40/40 acc=0.150 gold=18 ok=0.0
+{
+  "n": 40,
+  "exact_match": 0.175,
+  "tool_match": 0.15,
+  "tool_call_rate": 1.0,
+  "expression_f1": 0.2160750360750361,
+  "hack_rate": 0.025
+}
+wrote /Users/shantanu/Desktop/repos/rl_env/gsm8k_rl/results/baselines/expr_1_exec.json

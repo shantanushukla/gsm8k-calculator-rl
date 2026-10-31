@@ -1,0 +1,132 @@
+{
+  "split": "test",
+  "n": 8,
+  "offset": 0,
+  "model": "mlx-community/Llama-3.2-1B-Instruct-4bit",
+  "adapter": "gsm8k_rl/results/adapters/gsm8k-sft-v7",
+  "protocol": "code-built formula choices, frozen model picks the letter, previous result is required after step 1",
+  "tool_match": 0.0,
+  "correct": 0,
+  "buckets": {
+    "wrong-first": {
+      "n": 6,
+      "correct": 0
+    },
+    "continuation": {
+      "n": 0,
+      "correct": 0
+    },
+    "no-formula": {
+      "n": 0,
+      "correct": 0
+    },
+    "other": {
+      "n": 0,
+      "correct": 0
+    },
+    "v7-correct": {
+      "n": 2,
+      "correct": 0
+    }
+  },
+  "records": [
+    {
+      "task_id": "gsm8k:test:0",
+      "gold": "18",
+      "value": "5.333333",
+      "correct": 0.0,
+      "steps": [
+        "16/3"
+      ],
+      "v7_bucket": "v7-correct"
+    },
+    {
+      "task_id": "gsm8k:test:1",
+      "gold": "3",
+      "value": "2",
+      "correct": 0.0,
+      "steps": [
+        "2-2",
+        "2-0",
+        "2-0",
+        "2-0"
+      ],
+      "v7_bucket": "wrong-first"
+    },
+    {
+      "task_id": "gsm8k:test:2",
+      "gold": "70000",
+      "value": "149.999929",
+      "correct": 0.0,
+      "steps": [
+        "80000/50000",
+        "1.6/150",
+        "0.010667/150",
+        "150-0.000071"
+      ],
+      "v7_bucket": "wrong-first"
+    },
+    {
+      "task_id": "gsm8k:test:3",
+      "gold": "540",
+      "value": "59",
+      "correct": 0.0,
+      "steps": [
+        "3-3",
+        "60-0",
+        "60/60",
+        "60-1"
+      ],
+      "v7_bucket": "wrong-first"
+    },
+    {
+      "task_id": "gsm8k:test:4",
+      "gold": "20",
+      "value": "0",
+      "correct": 0.0,
+      "steps": [
+        "3-3"
+      ],
+      "v7_bucket": "wrong-first"
+    },
+    {
+      "task_id": "gsm8k:test:5",
+      "gold": "64",
+      "value": "-0.292969",
+      "correct": 0.0,
+      "steps": [
+        "1-16",
+        "-15-60",
+        "-75/16",
+        "-4.6875/16"
+      ],
+      "v7_bucket": "wrong-first"
+    },
+    {
+      "task_id": "gsm8k:test:6",
+      "gold": "260",
+      "value": "12",
+      "correct": 0.0,
+      "steps": [
+        "20-2",
+        "18-2",
+        "16-2",
+        "14-2"
+      ],
+      "v7_bucket": "v7-correct"
+    },
+    {
+      "task_id": "gsm8k:test:7",
+      "gold": "160",
+      "value": "140",
+      "correct": 0.0,
+      "steps": [
+        "200-20",
+        "180-40",
+        "40-140",
+        "40--100"
+      ],
+      "v7_bucket": "wrong-first"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 2729.78it/s]
+gsm8k:train:827 best=1.000 f1=1.000
+gsm8k:train:801 best=0.125 f1=0.000
+gsm8k:train:359 best=0.150 f1=0.000
+gsm8k:train:513 best=0.527 f1=0.444
+gsm8k:train:176 best=1.000 f1=1.000
+gsm8k:train:622 best=1.000 f1=1.000
+gsm8k:train:16 best=0.150 f1=0.000
+gsm8k:train:688 best=0.150 f1=0.000
+gsm8k:train:637 best=1.000 f1=1.000
+gsm8k:train:522 best=0.308 f1=0.667
+gsm8k:train:121 best=0.086 f1=0.000
+gsm8k:train:631 best=0.450 f1=0.857
+groups 12 reward>=0.8 4 perfect 4 some_formula 7

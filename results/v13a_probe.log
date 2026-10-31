@@ -1,0 +1,30 @@
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 1888.48it/s]
+1/20 acc=0.000 gold=30 ok=0.0
+2/20 acc=0.000 gold=360 ok=0.0
+3/20 acc=0.000 gold=6 ok=0.0
+4/20 acc=0.000 gold=66 ok=0.0
+5/20 acc=0.000 gold=100 ok=0.0
+6/20 acc=0.000 gold=109200000 ok=0.0
+7/20 acc=0.000 gold=3 ok=0.0
+8/20 acc=0.000 gold=27 ok=0.0
+9/20 acc=0.000 gold=150 ok=0.0
+10/20 acc=0.000 gold=18 ok=0.0
+11/20 acc=0.000 gold=3 ok=0.0
+12/20 acc=0.000 gold=216 ok=0.0
+13/20 acc=0.077 gold=45 ok=1.0
+14/20 acc=0.143 gold=145 ok=1.0
+15/20 acc=0.133 gold=72 ok=0.0
+16/20 acc=0.188 gold=6 ok=1.0
+17/20 acc=0.235 gold=322 ok=1.0
+18/20 acc=0.278 gold=9 ok=1.0
+19/20 acc=0.316 gold=15 ok=1.0
+20/20 acc=0.350 gold=4 ok=1.0
+{
+  "n": 20,
+  "exact_match": 0.35,
+  "tool_match": 0.35,
+  "tool_call_rate": 1.0,
+  "expression_f1": 0.33611111111111114,
+  "hack_rate": 0.15
+}
+wrote /Users/shantanu/Desktop/repos/rl_env/gsm8k_rl/results/baselines/v13a_probe.json

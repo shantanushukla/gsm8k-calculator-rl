@@ -1,0 +1,341 @@
+{
+  "dataset": "openai/gsm8k",
+  "config": "main",
+  "split": "test",
+  "n": 40,
+  "model": "mlx-community/Llama-3.2-1B-Instruct-4bit",
+  "adapter": "results/adapters/gsm8k-rft",
+  "protocol": "0-shot, answer in <answer>, exact number",
+  "max_tokens": 256,
+  "exact_match": 0.275,
+  "format_rate": 0.0,
+  "boxed_match": 0.25,
+  "published_reference": {
+    "value": 0.444,
+    "protocol": "Llama-3.2-1B-Instruct GSM8K 8-shot CoT maj@1, full test",
+    "url": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"
+  },
+  "dataset_url": "https://huggingface.co/datasets/openai/gsm8k",
+  "records": [
+    {
+      "task_id": "gsm8k:test:0",
+      "gold": "18",
+      "correct": 1.0,
+      "format": 0.0,
+      "boxed": 1.0,
+      "completion": "She eats 3 eggs for breakfast every morning. She bakes 4 muffins for her friends every day. She sells 16-3-4= 9 eggs at the farmers' market daily. She makes 9*2= <<9*2=18>>18 dollars every day at the farmers' market.\n#### 18"
+    },
+    {
+      "task_id": "gsm8k:test:1",
+      "gold": "3",
+      "correct": 1.0,
+      "format": 0.0,
+      "boxed": 1.0,
+      "completion": "It takes 2 bolts of blue fiber and 1 bolt of white fiber, so it takes 2 + 1 = <<2+1=3>>3 bolts in total.\n#### 3"
+    },
+    {
+      "task_id": "gsm8k:test:2",
+      "gold": "70000",
+      "correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "completion": "Josh bought the house for $80,000 and put in $50,000 in repairs.  This increased the value of the house by 150%.  So the house is worth $80,000 + $50,000 = $130,000.  Josh made $130,000 - $80,000 = $50,000 profit."
+    },
+    {
+      "task_id": "gsm8k:test:3",
+      "gold": "540",
+      "correct": 1.0,
+      "format": 0.0,
+      "boxed": 1.0,
+      "completion": "James runs 3 sprints * 3 times a week = <<3*3=9>>9 times a week\nHe runs 60 meters * 9 times = <<60*9=540>>540 meters a week\n#### 540"
+    },
+    {
+      "task_id": "gsm8k:test:4",
+      "gold": "20",
+      "correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "completion": "Wendi needs 15 + 25 = <<15+25=40>>40 cups of feed for her chickens.\nShe needs 40 cups of feed for her chickens.\n#### 40"
+    },
+    {
+      "task_id": "gsm8k:test:5",
+      "gold": "64",
+      "correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "completion": "Kylar needs to pay 5*16 + 5*16*0.6 = <<5*16+5*16*0.6=140>>140\n#### 140"
+    },
+    {
+      "task_id": "gsm8k:test:6",
+      "gold": "260",
+      "correct": 1.0,
+      "format": 0.0,
+      "boxed": 1.0,
+      "completion": "Seattle has 20 sheep.\nCharleston has 4 * 20 = <<4*20=80>>80 sheep.\nToulouse has 2 * 80 = <<2*80=160>>160 sheep.\nTogether, Toulouse, Charleston, and Seattle have 160 + 80 + 20 = <<160+80+20=260>>260 sheep.\n#### 260"
+    },
+    {
+      "task_id": "gsm8k:test:7",
+      "gold": "160",
+      "correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "completion": "Carla can download 2 GB/minute for 200 GB / 2 GB/minute = <<200/2=100>> 100 minutes.\nCarla can download 2 GB/minute for 100 minutes * 2 GB/minute = <<100*2=200>> 200 GB in 100 minutes.\nCarla can download 2 GB/minute for 200 GB / 2 GB/minute = <<200/2=100>> 100 GB in 100 minutes.\nCarla can download 2 GB/minute for 100 GB / 2 GB/minute = <<100/2=50>> 50 GB in 100 minutes.\nCarla can download 2 GB/minute for 100 minutes * 20 minutes = <<100*20=2000>> 2000 GB in 100 minutes.\nCarla can download 2 GB/minute for 100 minutes * 20 minutes = <<100*20=2000>> 2000 GB in 100 minutes.\nCarla can download 2 GB/minute for 100 minutes * 20 minutes = <<100*20=2000>> 2000 GB in 100 minutes.\nCarla can download 2 GB/minute for 100 minutes * "
+    },
+    {
+      "task_id": "gsm8k:test:8",
+      "gold": "45",
+      "correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "completion": "He drives 60 mph for 3 hours = 180 miles\nHe drives 30 mph for 2 hours = 60 miles\nHe drives 80 mph for 2 hours = 160 miles\nTotal distance = 180 + 60 + 160 = <<180+60+160=400>>400 miles\n#### 400"
+    },
+    {
+      "task_id": "gsm8k:test:9",
+      "gold": "460",
+      "correct": 1.0,
+      "format": 0.0,
+      "boxed": 1.0,
+      "completion": "For the first 40 hours, Eliza earns 40 * $10 = $<<40*10=400>>400\nFor the 5 additional hours, she earns 5 * $10 * 1.2 = $<<5*10*1.2=60>>60\nHer total earnings for the week are $400 + $60 = $<<400+60=460>>460\n#### 460"
+    },
+    {
+      "task_id": "gsm8k:test:10",
+      "gold": "366",
+      "correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "completion": "The program had 60 downloads in the first month. \nThe second month downloads were three times the first month downloads, so 60*3 = <<60*3=180>>180 downloads.\nThe downloads in the third month were reduced by 30%, so 180*0.3 = <<180*0.3=54>>54 downloads.\nThe total downloads over the three months were 60+180+54 = <<60+180+54=294>>294 downloads.\n#### 294"
+    },
+    {
+      "task_id": "gsm8k:test:11",
+      "gold": "694",
+      "correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "completion": "Toula bought 3*12=<<3*12=36>>36 donuts\nShe bought 2*12=<<2*12=24>>24 mini cupcakes\nShe bought 6*12=<<6*12=72>>72 mini cheesecakes\nSo, the total cost is 36*68+24*80+72*55=<<36*68+24*80+72*55=27096>>27096\n#### 27,096"
+    },
+    {
+      "task_id": "gsm8k:test:12",
+      "gold": "13",
+      "correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "completion": "Carlos needs to earn $90 to plant the tree. Each year he earns $1.5 x 7 = $10.5. He needs to earn $90 / $10.5 = <<90/10.5=8.57>>8.57 per year.\nCarlos needs to earn $90 to plant the tree. He needs to earn $90 / $8.57 = <<90/8.57=10>>10 per year.\nCarlos needs to earn $90 to plant the tree. He needs to earn $90 / 10 = <<90/10=9>>9 per year.\nCarlos needs to earn $90 to plant the tree. He needs to earn $90 / 9 = <<90/9=10>>10 per year.\nCarlos needs to earn $90 to plant the tree. He needs to earn $90 / 10 = <<90/10=9>>9 per year.\nCarlos needs to earn $90 to plant the tree. He needs to earn $90 / 9 = <<90/9=10>>10 per year.\nCarlos needs to earn $90 to plant the tree. He needs to earn $90 / 10 = <<90/10=9>>9 per year.\nCarlos needs to"
+    },
+    {
+      "task_id": "gsm8k:test:13",
+      "gold": "18",
+      "correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "completion": "Melanie started with 5 + 5 = <<5+5=10>>10 vacuum cleaners.\nShe sold 2 + 10 = <<2+10=12>>12 vacuum cleaners.\nShe sold 12 / 2 = <<12/2=6>>6 vacuum cleaners at the orange house.\nSo, Melanie started with 10 + 6 = <<10+6=16>>16 vacuum cleaners.\n#### 16"
+    },
+    {
+      "task_id": "gsm8k:test:14",
+      "gold": "60",
+      "correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "completion": "20% of 20 students enrolled in contemporary dance. \n20% of 20 = 0.20 * 20 = <<20*.01*20=4>>4 students\nRemaining students = 20 - 4 = <<20-4=16>>16 students\n25% of 16 students enrolled in jazz dance. \n25% of 16 = 0.25 * 16 = <<25*.01*16=4>>4 students\nRemaining students = 16 - 4 = <<16-4=12>>12 students\nRemaining students = 20 - 12 = <<20-12=8>>8 students\n8 students enrolled in hip-hop dance.\n8% of 20 students enrolled in hip-hop dance. \n8% of 20 = 0.08 * 20 = <<8*.01*20=1.6>>1.6%\n#### 1.6%"
+    },
+    {
+      "task_id": "gsm8k:test:15",
+      "gold": "125",
+      "correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "completion": "The jewelry market will rise 2.5%: $5,000 x 2.5% = $125\nThe electronic gadgets market will rise 1.2%: $8,000 x 1.2% = $96\nThe total profit would be: $125 + $96 = $<<125+96=221>>221\n#### 221"
+    },
+    {
+      "task_id": "gsm8k:test:16",
+      "gold": "230",
+      "correct": 1.0,
+      "format": 0.0,
+      "boxed": 1.0,
+      "completion": "The two trains covered a total of 80 + 150 = <<80+150=230>>230 miles in the two days.\n#### 230"
+    },
+    {
+      "task_id": "gsm8k:test:17",
+      "gold": "57500",
+      "correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "completion": "Jill gets paid $20 per hour to teach and $30 to be a cheerleading coach. She works 35 hours a week as a teacher and 15 hours a week as a coach. So, her annual salary is:\n$20 x 35 = <<20*35=700>>700\n$30 x 15 = <<30*15=450>>450\n$700 + $450 = <<700+450=1150>>1150\n#### 1150"
+    },
+    {
+      "task_id": "gsm8k:test:18",
+      "gold": "7",
+      "correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "completion": "Claire makes 3 eggs omelet every morning. \nShe makes 7 omelets per day. \nShe makes 7*7=<<7*7=49>>49 omelets per week. \nShe makes 49*7=<<49*7=343>>343 omelets per month. \nShe makes 343*12=<<343*12=4108>>4108 omelets per year. \nShe makes 4108*4=<<4108*4=16752>>16752 omelets in 4 weeks. \nShe will eat 16752/12=<<16752/12=1408>>1408 dozens of eggs in 4 weeks."
+    },
+    {
+      "task_id": "gsm8k:test:19",
+      "gold": "6",
+      "correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "completion": "She needs to walk 8 miles."
+    },
+    {
+      "task_id": "gsm8k:test:20",
+      "gold": "15",
+      "correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "completion": "First, find the amount of water in the orange drink. Since it is two-thirds water, multiply 10 liters by 2/3:\n10 * (2/3) = <<10*(2/3)=20>>20 liters of water\nNext, find the amount of water in the pineapple drink. Since it is three-fifths water, multiply 15 liters by 3/5:\n15 * (3/5) = <<15*(3/5)=9>>9 liters of water\nNow, find the total amount of water in the orange drink after spillage:\n20 + 9 = <<20+9=29>>29 liters of water\nNow, find the total amount of water in the pineapple drink after spillage:\n9 + 9 = <<9+9=18>>18 liters of water\nNow, find the total amount of water in the orange drink after spillage:\n20 - 1 = <<20-1=19>>19 liters of water\nNow, find the total amount of water in the remaining 24 liters:\n29 + 18 + 19 = <<29+18+19=66>>66 liters of water\n#### 66"
+    },
+    {
+      "task_id": "gsm8k:test:21",
+      "gold": "14",
+      "correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "completion": "Raymond was born 6 years before Samantha. So, Raymond was born 6 years ago.\nRaymond's son was born 23 years ago.\nSo, Raymond's son was born 6 years ago.\nRaymond's son was born 6 years ago.\nRaymond's son was born 6 years ago.\nRaymond's son was born 6 years ago.\nRaymond's son was born 6 years ago.\nRaymond's son was born 6 years ago.\nRaymond's son was born 6 years ago.\nRaymond's son was born 6 years ago.\nRaymond's son was born 6 years ago.\nRaymond's son was born 6 years ago.\nRaymond's son was born 6 years ago.\nRaymond's son was born 6 years ago.\nRaymond's son was born 6 years ago.\nRaymond's son was born 6 years ago.\nRaymond's son was born 6 years ago.\nRaymond's son was born 6 years ago.\nRaymond's son was born 6 years ago.\nRaymond's son was born 6 years ago.\nRaymond's son was born 6 years ago.\nRaymond's son was born 6 years ago.\nRaymond's son"
+    },
+    {
+      "task_id": "gsm8k:test:22",
+      "gold": "7",
+      "correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "completion": "Billy sold 1 DVD for each of the first 3 customers, 2 DVDs for each of the next 2 customers, and 0 DVDs for each of the last 3 customers. So, he sold 1 + 2 + 0 = <<1+2+0=3>>3 DVDs on Tuesday.\n#### 3"
+    },
+    {
+      "task_id": "gsm8k:test:23",
+      "gold": "8",
+      "correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "completion": "The candle melts 2 centimeters every hour. \nIt burns for 4 hours. \nSo, it melts 2*4 = <<2*4=8>>8 centimeters.\nIt burns from 1:00 PM to 5:00 PM, which is 4 hours. \nSo, it melts 8 centimeters shorter.\n#### 8 - 8 = <<8-8=0>>0\n#### 0\n#### 0"
+    },
+    {
+      "task_id": "gsm8k:test:24",
+      "gold": "26",
+      "correct": 1.0,
+      "format": 0.0,
+      "boxed": 1.0,
+      "completion": "The book was bought for $19.50 after a 25% discount. To find the original price, we need to divide $19.50 by 0.75 (which is 25% expressed as a decimal).\n\n$19.50 \u00f7 0.75 = $26.00\n\n#### 26"
+    },
+    {
+      "task_id": "gsm8k:test:25",
+      "gold": "2",
+      "correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "completion": "Marie ordered 5 packs of milk that cost $3 each, so 5 * $3 = $<<5*3=15>>15\nShe also ordered 4 apples that cost $1.50 each, so 4 * $1.50 = $<<4*1.5=6>>6\nSo, the total cost of milk and apples is $15 + $6 = $<<15+6=21>>21\nMarie paid a total of $50, so the total cost of milk, apples, and pizza is $50 - $21 = $<<50-21=29>>29\nEach box of pizza costs $8.50, so the number of boxes of pizza Marie ordered is $<<29/8.5=<<29/8.5>>4>>4\n#### 4"
+    },
+    {
+      "task_id": "gsm8k:test:26",
+      "gold": "243",
+      "correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "completion": "Mishka bought 3 pairs of shorts, 3 pairs of pants, and 3 pairs of shoes. \nShorts: 3 * $16.50 = $16.50 * 3 = $16.50 * 3 = $16.50 * 3 = $16.50 * 3 = $16.50 * 3 = $16.50 * 3 = $16.50 * 3 = $16.50 * 3 = $16.50 * 3 = $16.50 * 3 = $16.50 * 3 = $16.50 * 3 = $16.50 * 3 = $16.50 * 3 = $16.50 * 3 = $16.50 * 3 = $16.50 * 3 = $16.50 * 3 = $16.50 * 3 = $16.50 * 3 = $16.50 * 3 = $16.50 * 3 = $16.50 * 3 = $16.50 * 3 = $16.50 * 3 = $16.50 * 3 = $16.50 * 3 = $16.50 *"
+    },
+    {
+      "task_id": "gsm8k:test:27",
+      "gold": "16",
+      "correct": 1.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "completion": "She buys 60/15 = <<60/15=4>>4 cartons of ice cream.\nShe spends 4 x $4.00 = $<<4*4=16.00>>16.00 on ice cream.\n#### $16.00"
+    },
+    {
+      "task_id": "gsm8k:test:28",
+      "gold": "25",
+      "correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "completion": "He traveled 20 miles + 15 miles = <<20+15=35>>35 miles between his first and second stops.\n#### 35"
+    },
+    {
+      "task_id": "gsm8k:test:29",
+      "gold": "104",
+      "correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "completion": "The boots cost $33 + $33*2 = $<<33*2=66>>66\n####  <answer>####"
+    },
+    {
+      "task_id": "gsm8k:test:30",
+      "gold": "109",
+      "correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "completion": "Darrell's age = 162 / 7 * 11 = <<162/7*11=517>>517\nAllen's age 10 years from now = 517 + 10 = <<517+10=527>>527\n#### 527"
+    },
+    {
+      "task_id": "gsm8k:test:31",
+      "gold": "80",
+      "correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "completion": "The first person says 80.\nThe second person says 80 + 20 = 100.\nThe third person says 80 + 20 + 25 = 125.\nThe average guess is (80 + 100 + 125) / 3 = <<80+100+125=305>>305.\n#### 305"
+    },
+    {
+      "task_id": "gsm8k:test:32",
+      "gold": "35",
+      "correct": 1.0,
+      "format": 0.0,
+      "boxed": 1.0,
+      "completion": "John takes care of 10 dogs.  Each dog takes.5 hours a day to walk and take care of their business.  10 dogs *.5 hours per dog = <<10*0.5=5>>5 hours per day\n5 hours per day * 7 days per week = <<5*7=35>>35 hours per week\n#### 35"
+    },
+    {
+      "task_id": "gsm8k:test:33",
+      "gold": "70",
+      "correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "completion": "Gretchen has 110 coins. Let's say she has x silver coins and y gold coins. Then, y = x + 30. So, y = x + 30. We know that y = 110. So, x + 30 = 110. So, x = 80. Gretchen has 80 silver coins and 80 + 30 = <<80+30=110>> 110 gold coins.\n#### 110"
+    },
+    {
+      "task_id": "gsm8k:test:34",
+      "gold": "23",
+      "correct": 1.0,
+      "format": 0.0,
+      "boxed": 1.0,
+      "completion": "Raymond has 40 jewels.\nHalf of Raymond's jewels = 40/2 = <<40/2=20>>20 jewels.\nAaron has 5 more jewels than half of Raymond's jewels = 20 + 5 = <<20+5=25>>25 jewels.\nSiobhan has 2 fewer jewels than Aaron = 25 - 2 = <<25-2=23>>23 jewels.\n#### 23"
+    },
+    {
+      "task_id": "gsm8k:test:35",
+      "gold": "9",
+      "correct": 1.0,
+      "format": 0.0,
+      "boxed": 1.0,
+      "completion": "Mike scores 4 + (25/100)*4 = <<4+(25/100)*4=5>>5 points\nTotal points = 4 + 5 = <<4+5=9>>9\n#### 9"
+    },
+    {
+      "task_id": "gsm8k:test:36",
+      "gold": "75",
+      "correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "completion": "Terry eats 2 yogurts a day.  He eats for 30 days.  So he eats 2*30=<<2*30=60>>60 yogurts.\nThey are currently on sale at 4 yogurts for $5.00.  So 4*5=<<4*5=20>>20 yogurts are on sale.\nSo he spends 20*30=$<<20*30=600>>600 on yogurt.\n#### 600"
+    },
+    {
+      "task_id": "gsm8k:test:37",
+      "gold": "2",
+      "correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "completion": "He has 13 - 8 = <<13-8=5>>5 lego sets left.\nHe has 5 - 5 = <<5-5=0>>0 lego sets left.\n#### 0"
+    },
+    {
+      "task_id": "gsm8k:test:38",
+      "gold": "10",
+      "correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "completion": "He runs 3 * 3 * 3 = <<3*3*3=27>>27 miles per day.\nHe runs 3 * 3 * 0.5 = <<3*3*0.5=4.5>>4.5 miles per day.\nHe runs 60 * 3 = <<60*3=180>>180 miles per week.\nHe runs 180 * 4.5 = <<180*4.5=825>>825 miles per week.\nHe runs 825 * 7 = <<825*7=5855>>5855 miles per week.\nHe runs 5855 miles per week.\nHe runs 5855 miles per week.\n#### 5855"
+    },
+    {
+      "task_id": "gsm8k:test:39",
+      "gold": "18",
+      "correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "completion": "Dana can run at 4 * 3 = <<4*3=12>>12 miles per hour.\nShe can skip at 3 * 12 = <<3*12=36>>36 miles per hour.\nShe can walk at 3 * 3 = <<3*3=9>>9 miles per hour.\nShe spends 1/3 = <<1/3=.33>>.33 hours running.\nShe spends 2/3 = <<2/3=.67>>.67 hours walking.\nShe can run for 6 *.33 = <<6*.33=1.98>>1.98 hours.\nShe can walk for 6 *.67 = <<6*.67=4>>4 hours.\nShe can travel 1.98 + 4 = <<1.98+4=5.98>>5.98 miles.\n#### 5.98"
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "chosen": [
+    "gsm8k:train:567",
+    "gsm8k:train:423",
+    "gsm8k:train:587",
+    "gsm8k:train:209",
+    "gsm8k:train:477",
+    "gsm8k:train:257",
+    "gsm8k:train:532",
+    "gsm8k:train:619",
+    "gsm8k:train:92",
+    "gsm8k:train:568",
+    "gsm8k:train:465",
+    "gsm8k:train:329",
+    "gsm8k:train:383",
+    "gsm8k:train:572",
+    "gsm8k:train:50",
+    "gsm8k:train:230",
+    "gsm8k:train:498",
+    "gsm8k:train:307",
+    "gsm8k:train:320",
+    "gsm8k:train:799",
+    "gsm8k:train:304",
+    "gsm8k:train:680",
+    "gsm8k:train:141",
+    "gsm8k:train:766",
+    "gsm8k:train:377",
+    "gsm8k:train:363",
+    "gsm8k:train:424",
+    "gsm8k:train:283",
+    "gsm8k:train:777",
+    "gsm8k:train:571",
+    "gsm8k:train:583",
+    "gsm8k:train:638",
+    "gsm8k:train:83",
+    "gsm8k:train:788",
+    "gsm8k:train:165",
+    "gsm8k:train:108",
+    "gsm8k:train:27",
+    "gsm8k:train:338",
+    "gsm8k:train:558",
+    "gsm8k:train:720",
+    "gsm8k:train:588",
+    "gsm8k:train:783",
+    "gsm8k:train:10",
+    "gsm8k:train:431",
+    "gsm8k:train:671",
+    "gsm8k:train:756",
+    "gsm8k:train:404",
+    "gsm8k:train:60"
+  ],
+  "first_available": 191,
+  "later_available": 129,
+  "examples": [
+    {
+      "task_id": "gsm8k:train:567",
+      "step": 1,
+      "model_token": "/",
+      "gold_token": "*"
+    },
+    {
+      "task_id": "gsm8k:train:423",
+      "step": 0,
+      "model_token": "*",
+      "gold_token": "+"
+    },
+    {
+      "task_id": "gsm8k:train:587",
+      "step": 0,
+      "model_token": "*",
+      "gold_token": "/"
+    },
+    {
+      "task_id": "gsm8k:train:209",
+      "step": 0,
+      "model_token": "60",
+      "gold_token": "5"
+    },
+    {
+      "task_id": "gsm8k:train:477",
+      "step": 1,
+      "model_token": "180",
+      "gold_token": "20"
+    },
+    {
+      "task_id": "gsm8k:train:257",
+      "step": 2,
+      "model_token": "6",
+      "gold_token": "32"
+    },
+    {
+      "task_id": "gsm8k:train:532",
+      "step": 2,
+      "model_token": "48",
+      "gold_token": "60"
+    },
+    {
+      "task_id": "gsm8k:train:619",
+      "step": 0,
+      "model_token": "7",
+      "gold_token": "3"
+    },
+    {
+      "task_id": "gsm8k:train:92",
+      "step": 0,
+      "model_token": "6",
+      "gold_token": "1"
+    },
+    {
+      "task_id": "gsm8k:train:568",
+      "step": 1,
+      "model_token": "100",
+      "gold_token": "18"
+    },
+    {
+      "task_id": "gsm8k:train:465",
+      "step": 1,
+      "model_token": "14",
+      "gold_token": "19"
+    },
+    {
+      "task_id": "gsm8k:train:329",
+      "step": 0,
+      "model_token": "2",
+      "gold_token": "3"
+    },
+    {
+      "task_id": "gsm8k:train:383",
+      "step": 0,
+      "model_token": "*",
+      "gold_token": "/"
+    },
+    {
+      "task_id": "gsm8k:train:572",
+      "step": 0,
+      "model_token": "3",
+      "gold_token": "2"
+    },
+    {
+      "task_id": "gsm8k:train:50",
+      "step": 0,
+      "model_token": "100",
+      "gold_token": "4"
+    },
+    {
+      "task_id": "gsm8k:train:230",
+      "step": 1,
+      "model_token": "/",
+      "gold_token": "+"
+    },
+    {
+      "task_id": "gsm8k:train:498",
+      "step": 0,
+      "model_token": "6",
+      "gold_token": "5"
+    },
+    {
+      "task_id": "gsm8k:train:307",
+      "step": 0,
+      "model_token": "110",
+      "gold_token": "16"
+    },
+    {
+      "task_id": "gsm8k:train:320",
+      "step": 1,
+      "model_token": "50",
+      "gold_token": "25"
+    },
+    {
+      "task_id": "gsm8k:train:799",
+      "step": 0,
+      "model_token": "*",
+      "gold_token": "+"
+    },
+    {
+      "task_id": "gsm8k:train:304",
+      "step": 0,
+      "model_token": "3",
+      "gold_token": "20"
+    },
+    {
+      "task_id": "gsm8k:train:680",
+      "step": 3,
+      "model_token": "120",
+      "gold_token": "600"
+    },
+    {
+      "task_id": "gsm8k:train:141",
+      "step": 1,
+      "model_token": "*",
+      "gold_token": "/"
+    },
+    {
+      "task_id": "gsm8k:train:766",
+      "step": 1,
+      "model_token": "7",
+      "gold_token": "15"
+    },
+    {
+      "task_id": "gsm8k:train:377",
+      "step": 1,
+      "model_token": "+",
+      "gold_token": "*"
+    },
+    {
+      "task_id": "gsm8k:train:363",
+      "step": 0,
+      "model_token": "2",
+      "gold_token": "7"
+    },
+    {
+      "task_id": "gsm8k:train:424",
+      "step": 0,
+      "model_token": "9",
+      "gold_token": "10"
+    },
+    {
+      "task_id": "gsm8k:train:283",
+      "step": 1,
+      "model_token": "2",
+      "gold_token": "1"
+    },
+    {
+      "task_id": "gsm8k:train:777",
+      "step": 3,
+      "model_token": "4",
+      "gold_token": "15"
+    },
+    {
+      "task_id": "gsm8k:train:571",
+      "step": 1,
+      "model_token": "8",
+      "gold_token": "12"
+    },
+    {
+      "task_id": "gsm8k:train:583",
+      "step": 1,
+      "model_token": "/",
+      "gold_token": "."
+    },
+    {
+      "task_id": "gsm8k:train:638",
+      "step": 1,
+      "model_token": "400",
+      "gold_token": "200"
+    },
+    {
+      "task_id": "gsm8k:train:83",
+      "step": 0,
+      "model_token": "4",
+      "gold_token": "20"
+    },
+    {
+      "task_id": "gsm8k:train:788",
+      "step": 0,
+      "model_token": "-",
+      "gold_token": "*."
+    },
+    {
+      "task_id": "gsm8k:train:165",
+      "step": 1,
+      "model_token": "2",
+      "gold_token": "55"
+    },
+    {
+      "task_id": "gsm8k:train:108",
+      "step": 0,
+      "model_token": "4",
+      "gold_token": "9"
+    },
+    {
+      "task_id": "gsm8k:train:27",
+      "step": 1,
+      "model_token": "560",
+      "gold_token": "800"
+    },
+    {
+      "task_id": "gsm8k:train:338",
+      "step": 0,
+      "model_token": "12",
+      "gold_token": "5"
+    },
+    {
+      "task_id": "gsm8k:train:558",
+      "step": 1,
+      "model_token": "9",
+      "gold_token": "5"
+    },
+    {
+      "task_id": "gsm8k:train:720",
+      "step": 0,
+      "model_token": "*",
+      "gold_token": "/"
+    },
+    {
+      "task_id": "gsm8k:train:588",
+      "step": 0,
+      "model_token": "*",
+      "gold_token": "-"
+    },
+    {
+      "task_id": "gsm8k:train:783",
+      "step": 3,
+      "model_token": "-",
+      "gold_token": "/"
+    },
+    {
+      "task_id": "gsm8k:train:10",
+      "step": 0,
+      "model_token": "847",
+      "gold_token": "2"
+    },
+    {
+      "task_id": "gsm8k:train:431",
+      "step": 0,
+      "model_token": "2",
+      "gold_token": "5"
+    },
+    {
+      "task_id": "gsm8k:train:671",
+      "step": 2,
+      "model_token": "400",
+      "gold_token": "240"
+    },
+    {
+      "task_id": "gsm8k:train:756",
+      "step": 0,
+      "model_token": "28",
+      "gold_token": "1"
+    },
+    {
+      "task_id": "gsm8k:train:404",
+      "step": 1,
+      "model_token": "*",
+      "gold_token": "+"
+    },
+    {
+      "task_id": "gsm8k:train:60",
+      "step": 1,
+      "model_token": "4",
+      "gold_token": "2"
+    }
+  ]
+}

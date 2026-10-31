@@ -1,0 +1,21 @@
+{
+  "failed_grpo": 0.1,
+  "base": 0.2,
+  "base_200": 0.17,
+  "sft": 0.175,
+  "grpo": 0.1,
+  "sft_v3": 0.275,
+  "sft_v3_200": 0.25,
+  "rft": 0.275,
+  "grpo_v3": 0.25,
+  "sft_v4": 0.25,
+  "llama_tool_base": 0.0,
+  "llama_tool_base_200": 0.0,
+  "bare_calc_sft_40": 0.1,
+  "bare_calc_grpo_200": 0.095,
+  "llama_tool_v2_40": 0.025,
+  "llama_sft_v3_tools": 0.0,
+  "llama_tool_v3": 0.125,
+  "llama_tool_v3_200": 0.19,
+  "llama_tool_v3_grpo": 0.125
+}

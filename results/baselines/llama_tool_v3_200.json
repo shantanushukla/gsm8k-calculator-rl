@@ -1,0 +1,2024 @@
+{
+  "dataset": "openai/gsm8k",
+  "config": "main",
+  "split": "test",
+  "n": 200,
+  "model": "mlx-community/Llama-3.2-1B-Instruct-4bit",
+  "adapter": "results/adapters/gsm8k-tool-v3",
+  "protocol": "0-shot, calculator tool, executed calc() value",
+  "tools": true,
+  "max_tokens": 256,
+  "exact_match": 0.17,
+  "tool_match": 0.19,
+  "format_rate": 0.8,
+  "boxed_match": 0.17,
+  "tool_call_rate": 0.915,
+  "published_reference": {
+    "value": 0.444,
+    "protocol": "Llama-3.2-1B-Instruct GSM8K 8-shot CoT maj@1, full test",
+    "url": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"
+  },
+  "dataset_url": "https://huggingface.co/datasets/openai/gsm8k",
+  "records": [
+    {
+      "task_id": "gsm8k:test:0",
+      "gold": "18",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "Janet\u2019s ducks lay 16 eggs per day, so she sells 16-3=calc(16-3) = 16-3=13 eggs per day.\nShe bakes muffins for her friends every day with 4, so she sells 4*13=calc(4*13) = 4*13=52 muffins per day.\nShe sells the remainder at the farmers' market daily for $2 per fresh duck egg, so she makes 13-52*2=calc(13-52*2) = 13-52*2=13-104=13-104=13-104*2=13-104*2=13-104*2=13-104*2=13-104*2=13-104*2=13-104*2=13-104*2=13-104*2=13-104*2=13-104*2=13-104*2=13-104*2=13-104*2=13-104*2=13-104*2=13-104*2=13-104*2=13-104*2=13-104*2=13-104*2=13-"
+    },
+    {
+      "task_id": "gsm8k:test:1",
+      "gold": "3",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "It takes 2 bolts of blue fiber and 2*2=calc(2*2) bolts of white fiber, so 2+2=calc(2+2) total bolts.\n<answer>2+2=calc(2+2) total bolts</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:2",
+      "gold": "70000",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 2,
+      "completion": "Josh bought a house for $80,000 and then put in $50,000 in repairs, so the house was worth $80,000+$50,000=$calc(80,000+50,000) = 80,000+50,000*1.5 = 80,000+75,000 = 155,000\nHe made a profit of $155,000-$80,000=calc(155,000-80,000) = 155,000-80,000*1.5 = 155,000-120,000 = 35,000\n<answer>35,000</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:3",
+      "gold": "540",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 2,
+      "completion": "James runs 3 sprints 3 times a week, so he runs 3*3=calc(3*3) = 9 times a week.\nHe runs 60 meters each sprint, so he runs 9*60=calc(9*60) = 540 meters a week.\n<answer>540</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:4",
+      "gold": "20",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "Wendi needs 15+25=calc(15+25) = 40 cups of feed for her chickens in the final meal.\n<answer>40</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:5",
+      "gold": "64",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "Kylar needs to pay 16 x $5 = calc(16*5) = 80 for the first 16 glasses.\nHe needs to pay 16 x 0.6 x $5 = calc(16*0.6*5) = 80 for the next 16 glasses.\nSo, Kylar needs to pay 80 + 80 = calc(80+80) = 160 for all 32 glasses.\n<answer>160</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:6",
+      "gold": "260",
+      "correct": 0.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 4,
+      "completion": "Charleston has 4*20=calc(4*20) = 80 sheep.\nToulouse has twice as many sheep as Charleston, so 2*80=calc(2*80) = 160 sheep.\nSeattle has 20 sheep, so 20/2=calc(20/2) = 10 sheep.\nTogether, Toulouse, Charleston, and Seattle have 160+80+10=calc(160+80+10) = 260 sheep.\n<answer>260</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:7",
+      "gold": "160",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 7,
+      "completion": "Carla can download 200 GB in 100 minutes.\nThe file is 200 GB, so it takes 100/2 = calc(100/2) = 50 minutes to download the file normally.\nThe file is 200 GB, so it takes 200/2 = calc(200/2) = 100 minutes to download the file normally after the restart.\nThe total download time is 50 + 20 + 50 = calc(50+20+50) = 120 minutes.\nIt takes 120/60 = calc(120/60) = 2 hours to download the file normally.\nIt takes 120/90 = calc(120/90) = 1.33 hours to download the file normally after the restart.\nIt takes 120/1.33 = calc(120/1.33) = 90 minutes to download the file normally after the restart.\nIt takes 120/1.33 + 120/1.33 = calc(120/1.33+120/1.33) = 90 minutes to download the file normally after the restart.\nIt takes 120/1.33 + 120/1.33 + 120/1.33 = calc(120/1"
+    },
+    {
+      "task_id": "gsm8k:test:8",
+      "gold": "45",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 9,
+      "completion": "He drives for 3 hours at 60 mph, so he drives 3*60=calc(3*60) = 180 miles.\nHe drives for 2 hours at 30 mph, so he drives 2*30=calc(2*30) = 60 miles.\nHe drives for 4 hours at 80 mph, so he drives 4*80=calc(4*80) = 320 miles.\nSo, he drives 180+60+320=calc(180+60+320) = 560 miles.\nHe drives for 4 hours at 80 mph, so he drives 4*80=calc(4*80) = 320 miles.\nSo, he drives 560+320=calc(560+320) = 880 miles.\nHe drives for 4 hours at 80 mph, so he drives 4*80=calc(4*80) = 320 miles.\nSo, he drives 880+320=calc(880+320) = 1100 miles.\nHe drives for 4 hours at 80 mph, so he drives 4*80=calc(4*80) = 320 miles.\nSo, he drives 1100+320=calc"
+    },
+    {
+      "task_id": "gsm8k:test:9",
+      "gold": "460",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 2,
+      "completion": "Eliza's rate per hour for the first 40 hours she works each week is $10 calc(10*40) = 400.\nShe also receives an overtime pay of 1.2 times her regular hourly rate, which is $10*1.2 = $120.\nSo, her total earnings for the week are $400+$120 = calc(400+120) = 520.\n<answer>520</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:10",
+      "gold": "366",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 4,
+      "completion": "The program started with 60 downloads in the first month.\nThe number of downloads in the second month was three times as many as the downloads in the first month, so 3*60 = calc(3*60) = 180 downloads.\nThe total number of downloads in the first two months was 60+180 = calc(60+180) = 240 downloads.\nThe number of downloads in the third month was reduced by 30% of 240, so 30/100*240 = calc(30/100*240) = 72 downloads.\nThe total number of downloads over the three months was 240+72 = calc(240+72) = 312 downloads.\n<answer>312</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:11",
+      "gold": "694",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 2,
+      "completion": "Toula bought 3*12=calc(3*12) = 36 donuts for $68 each, so 36*68=calc(36*68) = 36*68= $36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*68= 36*"
+    },
+    {
+      "task_id": "gsm8k:test:12",
+      "gold": "13",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 2,
+      "completion": "Carlos needs to grow 90 lemons to make $90.\nEach lemon will grow 7 lemons, so he needs to grow 90 lemons / 7 lemons = calc(90/7) = 13 years.\nCarlos needs to water and feed the tree for 13 years.\nCarlos will start earning money on the lemon tree in 13 years + 13 years = calc(13+13) = 26 years.\n<answer>26</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:13",
+      "gold": "18",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 4,
+      "completion": "She started with 5*3=calc(5*3) = 15 vacuum cleaners.\nShe sold 2 more to the red house, so she had 15-2=calc(15-2) = 13 vacuum cleaners.\nShe sold half of what was left at the orange house, so she had 13/2=calc(13/2) = 6.5 vacuum cleaners.\nShe has 5 vacuum cleaners left, so she started with 5+6.5=calc(5+6.5) = 11.5 vacuum cleaners.\n<answer>11.5</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:14",
+      "gold": "60",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "20 students enrolled in contemporary dance.\n20% of the remaining 20 students enrolled in jazz dance, which is 20*0.2 = calc(20*0.2) = 4 students.\nThe remaining students are 20-4 = calc(20-4) = 16 students.\n16 students enrolled in hip-hop dance.\n16/20 = calc(16/20) = 0.8 or 80% of the entire students enrolled in hip-hop dance.\n<answer>80</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:15",
+      "gold": "125",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "The jewelry market will go up 2.5% so the profit from jewelry will be 5,000*0.025 = calc(5,000*0.025) = 125\nThe electronic gadgets market will rise 1.2% so the profit from electronic gadgets will be 8,000*0.012 = calc(8,000*0.012) = 96\nThe merchant's choice of purchase will maximize profit at the end of this month by making a choice between the jewelry market and the electronic gadgets market, so the merchant's profit will be 125+96 = calc(125+96) = 221\n<answer>221</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:16",
+      "gold": "230",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "The trains cover a total of 80 + 150 = calc(80+150) = 230 miles in the first day.\nThe trains cover a total of 80 + 80 = calc(80+80) = 160 miles in the second day.\nThe total distance covered by each train in the two days is 230 + 160 = calc(230+160) = 390 miles.\n<answer>390</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:17",
+      "gold": "57500",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 9,
+      "completion": "Jill gets paid $20 per hour to teach and $30 to be a cheerleading coach. She works 35 hours a week as a teacher and 15 hours a week as a coach. So she works 35*50+15=calc(35*50+15) = 35*50+15=calc(35*50+15) = 35*50+15=350+15=calc(350+15) = 350+15=calc(350+15) = 350+15=calc(350*15) = 350*15=calc(350*15) = 350*15=350*15=calc(350*15) = 350*15=350*15=350*15=20*35+30*15=calc(20*35+30*15) = 20*35+30*15=calc(20*35+30*15) = 20*35+30*15=20*35+30*15=20*35+30*15=20*35+30*15=20*35+30*15=20*35+30*15=20*35+30*15=20*"
+    },
+    {
+      "task_id": "gsm8k:test:18",
+      "gold": "7",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Claire makes 3 eggs omelets every morning for breakfast.\nShe eats 3 eggs omelets every morning for breakfast.\nShe eats 3 eggs omelets every morning for breakfast for 4 weeks.\nShe eats 3 eggs omelets every morning for breakfast for 4 weeks * 7 days/week = 28 days.\nShe eats 3 eggs omelets every morning for breakfast for 4 weeks * 7 days/week = 28 days * 4 weeks = 112 days.\nShe eats 3 eggs omelets every morning for breakfast for 4 weeks * 7 days/week = 28 days * 4 weeks = 112 days * 4 weeks = 112*4 = 448 eggs.\nShe eats 3 eggs omelets every morning for breakfast for 4 weeks * 7 days/week = 28 days * 4 weeks = 112 days * 4 weeks = 448 eggs * 4 weeks = 448*4 = 1792 dozens.\n<answer>448</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:19",
+      "gold": "6",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 15,
+      "completion": "She needs to walk 12-4=calc(12-4) miles.\nShe needs to walk 12-2=calc(12-2) miles.\nShe needs to walk 12-8=calc(12-8) miles.\nShe needs to walk 12-16=calc(12-16) miles.\nShe needs to walk 12-20=calc(12-20) miles.\nShe needs to walk 12-24=calc(12-24) miles.\nShe needs to walk 12-28=calc(12-28) miles.\nShe needs to walk 12-32=calc(12-32) miles.\nShe needs to walk 12-36=calc(12-36) miles.\nShe needs to walk 12-40=calc(12-40) miles.\nShe needs to walk 12-44=calc(12-44) miles.\nShe needs to walk 12-48=calc(12-48) miles.\nShe needs to walk 12-52=calc(12-52) miles.\nShe needs to walk 12-56=calc(12-56) miles.\nShe needs to walk 12-60=calc(12-60) miles.\nShe"
+    },
+    {
+      "task_id": "gsm8k:test:20",
+      "gold": "15",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 5,
+      "completion": "The orange drink contains 10*2/3=calc(10*2/3) = 20 liters of water.\nThe pineapple drink contains 15*3/5=calc(15*3/5) = 9 liters of water.\nThe orange drink contains 20-1=calc(20-1) = 19 liters of water.\nThe total water is 19+20=calc(19+20) = 39 liters of water.\nThe remaining water is 24-1=calc(24-1) = 23 liters of water.\n<answer>23</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:21",
+      "gold": "14",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 8,
+      "completion": "Raymond was born 6 years before Samantha, so he was born 31-6 = calc(31-6) = 25 years ago.\nRaymond had a son at the age of 23, so the son was born 23-6 = calc(23-6) = 17 years ago.\nSamantha is now 31, so she is 31-17 = calc(31-17) = 14 years old.\nRaymond and Samantha are cousins, so they are 14-6 = calc(14-6) = 8 years old.\nRaymond's son was born 17 years ago, so the son was born 17-6 = calc(17-6) = 11 years ago.\nRaymond's son was born 11 years ago, so the son was born 11-6 = calc(11-6) = 5 years ago.\nRaymond's son was born 5 years ago, so the son was born 5-6 = calc(5-6) = 1 year ago.\nRaymond's son was born 1 year ago, so the son was born 1-6 = calc(1-6) = 0 years ago.\nRaymond's son"
+    },
+    {
+      "task_id": "gsm8k:test:22",
+      "gold": "7",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 1,
+      "completion": "Billy sold 1 DVD to each of his first 3 customers, so he sold 3 DVDs.\nHe sold 2 DVDs to each of his next 2 customers, so he sold 4 DVDs.\nHe didn't sell any DVDs to his last 3 customers, so he sold 0 DVDs.\nSo, Billy sold 3 + 4 + 0 = calc(3+4+0) = 7 DVDs on Tuesday.\n<answer>7</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:23",
+      "gold": "8",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "The candle melts 2 centimeters every hour it burns, so after 4 hours it melts 4 centimeters.\nAfter 5 hours it melts 5 centimeters.\nSo after burning from 1:00 PM to 5:00 PM it melts 5-4=calc(5-4) = 1 centimeter.\nTherefore, the candle will be 1 centimeter shorter.\n<answer>1</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:24",
+      "gold": "26",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "The book was discounted by 25%, so the price Kyle paid is 75% of the original price.\ncalc(19.50*0.75) = 14.75\n<answer>14.75</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:25",
+      "gold": "2",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 4,
+      "completion": "Marie ordered 12/5 = calc(12/5) = 2.4 packs of milk.\nMarie ordered 4/4 = calc(4/4) = 1.0 boxes of pizza.\nMarie ordered 2.4 + 1.0 = calc(2.4+1.0) = 3.4 boxes of pizza.\nMarie ordered 3.4 * 8.50 = calc(3.4*8.50) = 29.6 boxes of pizza.\nMarie ordered 29.6 boxes of pizza.\n<answer>29.6</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:26",
+      "gold": "243",
+      "correct": 1.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 11,
+      "completion": "Mishka bought 3 pairs of shorts, 3 pairs of pants, and 3 pairs of shoes, so she bought 3*16.50+3*22.50+3*42=calc(3*16.50+3*22.50+3*42) dollars.\n<answer>calc(3*16.50+3*22.50+3*42)=calc(3*16.50+3*22.50+3*42)=calc(3*16.50+3*22.50+3*42)=calc(3*16.50+3*22.50+3*42)=calc(3*16.50+3*22.50+3*42)=calc(3*16.50+3*22.50+3*42)=calc(3*16.50+3*22.50+3*42)=calc(3*16.50+3*22.50+3*42)=calc(3*16.50+3*22.50+3*42)=calc(3*16.50+3*22.50+3*42)=calc(3*16.50+3*"
+    },
+    {
+      "task_id": "gsm8k:test:27",
+      "gold": "16",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 2,
+      "completion": "She buys 60/15 = calc(60/15) = 4 cartons.\nEach carton costs $4.00, so she spends 4*4 = calc(4*4) = 16 dollars on ice cream.\n<answer>16</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:28",
+      "gold": "25",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "He traveled 20 miles + 15 miles = calc(20+15) = 35 miles between his first and second stops.\n<answer>35</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:29",
+      "gold": "104",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "The boots cost $33 + $33*2 = calc(33+33*2) = 33 + 66 = 99 dollars.\n<answer>99</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:30",
+      "gold": "109",
+      "correct": 1.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 4,
+      "completion": "Darrell's age is 7x, and Allen's age is 11x.\n7x + 11x = 162\n18x = 162\nx = 162/18 = calc(162/18) = 9\nDarrell's age is 7x = 7*9 = calc(7*9) = 63\nAllen's age is 11x = 11*9 = calc(11*9) = 99\nAllen's age 10 years from now is 11x+10 = 11*9+10 = calc(11*9+10) = 119\n<answer>119</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:31",
+      "gold": "80",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 4,
+      "completion": "Gunter thinks there are 80 + 20 = calc(80+20) = 100 jelly beans in the jar.\nThe second one thinks there are 80 + 20*2 = calc(80+20*2) = 100 + 40 = 140 jelly beans in the jar.\nThe third one thinks there are 80 + 80*0.25 = calc(80+80*0.25) = 80 + 20 = 100 jelly beans in the jar.\nSo, the average guess is 100/3 = calc(100/3) = 33.33 jelly beans in the jar.\n<answer>33.33</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:32",
+      "gold": "35",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "John spends 10*0.5=calc(10*0.5) hours a day taking care of dogs.\nHe spends 10*0.5*7=calc(10*0.5*7) hours a week taking care of dogs.\n<answer>7=calc(7) hours a week taking care of dogs.\n<answer>7</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:33",
+      "gold": "70",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "Gretchen has 110 coins, and there are 30 more gold coins than silver coins, so she has 110 + 30 = calc(110+30) = 140 gold coins.\n<answer>140</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:34",
+      "gold": "23",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 5,
+      "completion": "Siobhan has 40 - 5 = calc(40-5) jewels.\nSince Siobhan has 2 fewer jewels than Aaron, Siobhan has 40 - 2 = calc(40-2) jewels.\nSince Aaron has 5 more jewels than half of Raymond's jewels, Aaron has 40/2 = calc(40/2) jewels.\nSo, Siobhan has 40/2 + 5 = calc(40/2+5) jewels.\nSo, Siobhan has 40/7 = calc(40/7) jewels.\nSo, Siobhan has 40/7 jewels.\n<answer>40/7</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:35",
+      "gold": "9",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "Mike scores 4 + 25% of 40 = calc(4+25/100*40) = 4 + 10 = 14 points in the first 20 minutes.\nHe scores 14 + 25% of 40 = calc(14+25/100*40) = 14 + 10 = 24 points in the second 20 minutes.\nSo, Mike scores 40 + 24 = calc(40+24) = 64 points in total.\n<answer>64</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:36",
+      "gold": "75",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 2,
+      "completion": "Terry eats 2 yogurts a day, so he eats 2*30=calc(2*30) = 60 yogurts in 30 days.\nThey are on sale for 4 yogurts for $5.00, so 4 yogurts cost 4*5=calc(4*5) = 20 dollars.\nSo, Terry spends 20 dollars on yogurt over 30 days.\n<answer>20</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:37",
+      "gold": "2",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "He has 13 sets and sells them for $15 each, so he gets 13*15 = calc(13*15) = 198\nHe spends 8 sets on video games for $20 each, so he spends 8*20 = calc(8*20) = 160\nHe has $5 left, so he has 198-160+5 = calc(198-160+5) = 33\n<answer>33</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:38",
+      "gold": "10",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 5,
+      "completion": "John runs 60 miles a week, and he runs 3 days a week, so he runs 60*3=calc(60*3) = 180 miles a week.\nHe runs 3 hours the first day, so he runs 3*3=calc(3*3) = 9 miles the first day.\nHe runs half as much the other two days, so he runs 3/2*3=calc(3/2*3) = 1.5 miles the other two days.\nSo, he runs 9+1.5=calc(9+1.5) = 10.5 miles the other two days.\nTherefore, John runs 180+10.5=calc(180+10.5) = 190.5 miles a week.\n<answer>190.5</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:39",
+      "gold": "18",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 10,
+      "completion": "She can run at 4*3=calc(4*3) miles per hour.\nShe can run for 6/3=calc(6/3) hours.\nShe can run for 6*calc(6/3) hours.\nShe can run for 6*calc(6*3/4) hours.\nShe can run for 6*calc(6*3/4*2) hours.\nShe can run for 6*calc(6*3/4*2*3/2) hours.\nShe can run for 6*calc(6*3/4*2*3/2*3/4) hours.\nShe can run for 6*calc(6*3/4*2*3/2*3/4*3) hours.\nShe can run for 6*calc(6*3/4*2*3/2*3/4*3*3) hours.\nShe can run for 6*calc(6*3/4*2*3/2*3/4*3*3*3) hours.\nShe can run for 6*calc(6*3/4*2*3/2*3/4*3"
+    },
+    {
+      "task_id": "gsm8k:test:40",
+      "gold": "8",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Brandon's iPhone is 4 years old because it is four times as old as Ben's iPhone, which is 2 years old because Ben's iPhone is two times older than Suzy's iPhone, which is 1 year old.\n<answer>4</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:41",
+      "gold": "200",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 5,
+      "completion": "Polly could throw the gold javelin for a distance of 400 feet.\nThe sapphire gemstone allows Polly to throw the javelin three times farther than when not holding the gemstone, so she could throw the javelin for a distance of 400*3 = calc(400*3) = 1200 feet.\nThe gold javelin is 400 feet long, so Polly could throw the javelin for a distance of 400-1200 = calc(400-1200) = 800 feet.\nThe dragon's flames are 1000 feet long, so Polly could throw the javelin for a distance of 800-1000 = calc(800-1000) = 100 feet.\nThe dragon's flames are 1000 feet long, so Polly could throw the javelin for a distance of 100-1000 = calc(100-1000) = 0 feet.\nThe dragon's flames are 1000 feet long, so Polly could throw the javelin for a distance of 0+1000 = calc(0+1000) = 100 feet.\nThe dragon's flames are 1000 feet long, so Polly could throw the javelin for a distance of 100+1000 = calc("
+    },
+    {
+      "task_id": "gsm8k:test:42",
+      "gold": "26",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 2,
+      "completion": "Grandma Jones cut each pie into 8 pieces, so she cut 5 pies into 8 pieces each, for a total of 5*8=calc(5*8) = 40 pieces of pie.\nThere were 14 pieces of pie remaining, so the guests took 40-14=calc(40-14) = 26 pieces of pie.\n<answer>26</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:43",
+      "gold": "48",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "You can eat 250*5-1800=calc(250*5-1800)grams of chips.\n<answer>1800</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:44",
+      "gold": "20",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 10,
+      "completion": "For every pound of beeswax, he can make 10 tapered candles.\nSo, for 20 candles, he can make 20*10 = calc(20*10) = 200 candles.\nFor 20 candles, he can make 20*10 = calc(20*10) = 200 candles.\nFor 20 candles, he can make 20*10 = calc(20*10) = 200 candles.\nFor 20 candles, he can make 20*10 = calc(20*10) = 200 candles.\nFor 20 candles, he can make 20*10 = calc(20*10) = 200 candles.\nFor 20 candles, he can make 20*10 = calc(20*10) = 200 candles.\nFor 20 candles, he can make 20*10 = calc(20*10) = 200 candles.\nFor 20 candles, he can make 20*10 = calc(20*10) = 200 candles.\nFor 20 candles, he can make 20*10 = calc(20*10) = 200 candles.\nFor 20 candles, he can make 20*10 = calc(20*10) = 200"
+    },
+    {
+      "task_id": "gsm8k:test:45",
+      "gold": "104",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 4,
+      "completion": "Meredith wrote 5 articles on Monday and 2/5*5 = calc(2/5*5) = 2*5 = 10 articles on Tuesday.\nOn Wednesday, she wrote 2*10 = calc(2*10) = 20 articles.\nSo, she wrote 5+10+20 = calc(5+10+20) = 35 articles in total.\nThe average time she spent writing articles is 4 hours, so she spent 35*4 = calc(35*4) = 140 hours writing articles in the three days.\n<answer>140</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:46",
+      "gold": "163",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "Candice had 80 post-it notes in her purse.\nShe used 23 post-it notes in total.\nSo she had 80-23=calc(80-23) = 57 post-it notes in the package.\n<answer>57</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:47",
+      "gold": "800",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 6,
+      "completion": "John buys twice as many red ties as blue ties, so he buys 2*2=calc(2*2) = 4 blue ties.\nThe red ties cost 50% more than blue ties, so they cost 1.5*40=$calc(1.5*40) = 60 each.\nHe spent $200 on blue ties that cost $40 each, so he spent 200*40=$calc(200*40) = 8000 on blue ties.\nHe bought 4 blue ties for $40 each, so he spent 4*40=$calc(4*40) = 160 on blue ties.\nHe bought 4 red ties for $60 each, so he spent 4*60=$calc(4*60) = 240 on red ties.\nSo, he spent $8000 on blue ties and $240 on red ties, for a total of $calc(8000+240) = 8200 on ties.\n<answer>8200</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:48",
+      "gold": "8",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "Tracy cut the wire into pieces 6 inches long, so she cut it into 4 pieces of 6 inches each, so she cut it into 4*6=calc(4*6) = 24 pieces.\n<answer>24</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:49",
+      "gold": "30",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 2,
+      "completion": "Richard lives in an apartment building with 15 floors. Each floor contains 8 units, and 3/4 of the building is occupied. What's the total number of unoccupied units In the building?\ncalc(15*8*3/4) = calc(360) = 360/4 = 360\n<answer>360</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:50",
+      "gold": "294",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "Lloyd's chickens produce 252 eggs per day, so they produce 252*7=calc(252*7) = 1764 eggs per week.\nHe sells them for $2 per dozen, so he makes 1764/12=calc(1764/12) = 148 eggs per week.\nHe makes 148*2=calc(148*2) = 296 dollars per week.\n<answer>296</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:51",
+      "gold": "5",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 4,
+      "completion": "Tom's trip from 1 to 4 PM is 3 hours long.\nHe travels at 10 mph for 3 hours, so he travels 3*10=calc(3*10) = 30 miles.\nHe travels back at 6 mph for 3 hours, so he travels 3*6=calc(3*6) = 18 miles.\nSo, the total distance Tom travels is 30+18=calc(30+18) = 48 miles.\nThe time it takes Tom to get back is 48/6=calc(48/6) = 8 hours.\nSo, it takes Tom 8 hours to get back.\n<answer>8</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:52",
+      "gold": "15",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "Uriah needs to remove 15/4 = calc(15/4) = 3.75 pounds from his book bag.\nHe needs to remove 30/2 = calc(30/2) = 15 pounds of comic books.\nSo, he needs to remove 15 - 3.75 = calc(15-3.75) = 11.75 pounds of toys.\n<answer>11.75</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:53",
+      "gold": "40",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "On Thursday, the mechanic repairs 6 truck tires and 4 car tires, for a total of 10 tires repaired.\nThe mechanic charges $60 for each truck tire repaired, so the mechanic earns 10 * 60 = $calc(10*60) = 600\nOn Friday, the mechanic repairs 12 car tires and doesn't repair any truck tires, for a total of 12 tires repaired.\nThe mechanic charges $40 for each car tire repaired, so the mechanic earns 12 * 40 = $calc(12*40) = 480\nThe mechanic earns $600 on Thursday and $480 on Friday, for a total of $calc(600+480) = 1080\nThe mechanic earns $1080 on the day with the higher revenue.\n<answer>1080</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:54",
+      "gold": "40",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 2,
+      "completion": "The Doubtfire family has 7 kittens adopted from the local animal shelter.\nPatchy, the first cat, has had thrice the number of adopted kittens, so 7*3 = calc(7*3) = 21 kittens.\nTrixie, the other cat, has had 12 kittens.\nThe total number of kittens is 21+12 = calc(21+12) = 33 kittens.\nThe Doubtfire family now has 33 kittens.\n<answer>33</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:55",
+      "gold": "14",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 2,
+      "completion": "Jean has 30 lollipops.\nJean eats 2 lollipops.\nSo Jean has 30 - 2 = calc(30-2) = 28 lollipops left.\nJean wants to package 2 lollipops in one bag.\nSo Jean can fill 28 / 2 = calc(28/2) = 14 bags.\n<answer>14</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:56",
+      "gold": "3",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "Peter can go to the movies 42/7=calc(42/7) = 6 times.\n<answer>6</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:57",
+      "gold": "83",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "The driver and the empty truck together weigh 3755 pounds.\nThe driver and the empty truck together weigh 3755 pounds.\nThe driver and the empty truck together weigh 3755 pounds.\nThe driver and the empty truck together weigh 3755 pounds.\nThe driver and the empty truck together weigh 3755 pounds.\nThe driver and the empty truck together weigh 3755 pounds.\nThe driver and the empty truck together weigh 3755 pounds.\nThe driver and the empty truck together weigh 3755 pounds.\nThe driver and the empty truck together weigh 3755 pounds.\nThe driver and the empty truck together weigh 3755 pounds.\nThe driver and the empty truck together weigh 3755 pounds.\nThe driver and the empty truck together weigh 3755 pounds.\nThe driver and the empty truck together weigh 3755 pounds.\nThe driver and the empty truck together weigh 3755 pounds.\nThe driver and the empty truck together weigh 3755 pounds.\nThe driver and the empty truck together weigh 3755 pounds.\nThe driver and the empty truck together weigh 3755 pounds.\nThe driver and the empty truck together weigh 3755 pounds.\nThe driver and the empty truck together weigh 3755 pounds.\nThe driver and the empty truck together weigh "
+    },
+    {
+      "task_id": "gsm8k:test:58",
+      "gold": "57",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 3,
+      "completion": "$40.00 + 0.25*40.00 = calc(40.00+0.25*40.00) = 40.00+10.00 = 50.00\n$50.00 + $3.00 = calc(50.00+3.00) = 53.00\n$53.00 + $4.00 = calc(53.00+4.00) = 57.00\n<answer>57.00</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:59",
+      "gold": "187",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 2,
+      "completion": "The raspberry bush has 6 clusters of 20 fruit each, so there are 6*20=calc(6*20) = 120 clusters of fruit.\nThere are 67 individual fruit scattered across the bush.\nThe total number of raspberries is 120+67=calc(120+67) = 187 raspberries.\n<answer>187</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:60",
+      "gold": "17",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "The basket contains 25 oranges, 20% of which are unripe.\nCalculation: 25 * 0.2 = 5 good oranges\nThe basket contains 25 oranges, 2 of which are sour.\nCalculation: 25 - 2 = 23 good oranges\nThe basket contains 25 oranges, 1 bad and 2 sour.\nCalculation: 25 - 1 - 2 = 22 good oranges\nThe basket contains 25 oranges, 1 bad and 2 sour, and 25 good oranges.\nCalculation: 25 - 1 - 2 + 25 = 25 good oranges\nThe basket contains 25 oranges, 1 bad and 2 sour, and 23 good oranges.\nCalculation: 25 - 1 - 2 + 23 = 25 good oranges\nThe basket contains 25 oranges, 1 bad and 2 sour, and 5 good oranges.\nCalculation: 25 - 1 - 2 + 5 = 25 good oranges\nThe basket contains 25 oranges, 1 bad and 2 sour, and 20% of which are unripe.\nCalculation: 25 * 0.2 = 5 good oranges\n"
+    },
+    {
+      "task_id": "gsm8k:test:61",
+      "gold": "1430",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "Janet pays $500 + $800 = calc(500+800) = 1300 for the brooch.\nShe pays $1300 x 10% = calc(1300*10%) = 1300 for the insurance.\nSo Janet pays $1300 + $1300 = calc(1300+1300) = 2600 for the brooch and insurance.\n<answer>2600</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:62",
+      "gold": "25000",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 6,
+      "completion": "Marcy worked for 40 years, so she worked 40-20=calc(40-20)20 years.\nShe gets an annual pension of $50,000/year for 20 years, so that's 20*50,000=$calc(20*50,000)20,000 annual pension.\nShe becomes entitled to 5% of the value of the pension per year after 20 years, so that's 5% of $20,000,000,000=$calc(5%*20,000)20,000,000,000 annual pension.\nShe quits after 30 years, so she worked for 30-20=calc(30-20)10 years more.\nShe becomes entitled to 5% of the value of the pension per year after 30 years, so that's 5% of $30,000,000,000,000=$calc(5%*30,000,000,000)30,000,000,000,000 annual pension.\nShe quits after 30 years, so she worked for 30-30=calc(30-30)0 years more.\nShe becomes entitled to 5% of the value of the pension per year after 30 years, so"
+    },
+    {
+      "task_id": "gsm8k:test:63",
+      "gold": "1596",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 17,
+      "completion": "$140/2=calc(140/2) = 70\n$70*1.1=calc(70*1.1) = 77\n$140-77=calc(140-77) = 63\n$63*2=calc(63*2) = 126\n$140-126=calc(140-126) = 14\n$140-14=calc(140-14) = 126\n$140-126=calc(140-126) = 14\n$140-14=calc(140-14) = 126\n$140-126=calc(140-126) = 14\n$140-14=calc(140-14) = 126\n$140-126=calc(140-126) = 14\n$140-126=calc(140-126) = 14\n$140-126=calc(140-126) = 14\n$140-126=calc(140-126) = 14\n$140-126=calc(140-126) = 14\n$140-126=calc(140-126) = 14\n$140-126=calc(140-126) ="
+    },
+    {
+      "task_id": "gsm8k:test:64",
+      "gold": "300",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "She can drive 100 miles + 4 gallons = calc(100+4) = 104 miles on a single tank of gas.\n<answer>104</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:65",
+      "gold": "36",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 6,
+      "completion": "He spends 2 hours watching TV and then goes to bed for 1 hour, so he spends 2+1=calc(2+1) = 3 hours on TV each week.\nHe spends 2 hours watching TV and then reads for 1.5 hours, so he spends 2+1.5=calc(2+1.5) = 3.5 hours on reading each week.\nHe spends 2 hours watching TV and then reads for 3 hours, so he spends 2+3=calc(2+3) = 5 hours on reading each week.\nHe spends 2 hours watching TV and then reads for 4.5 hours, so he spends 2+4.5=calc(2+4.5) = 6.5 hours on reading each week.\nHe spends 2 hours watching TV and then reads for 5 hours, so he spends 2+5=calc(2+5) = 7 hours on reading each week.\nHe spends 2 hours watching TV and then reads for 6 hours, so he spends 2+6=calc(2+6) = 8 hours on reading each week.\nHe spends 2 hours watching TV and then reads"
+    },
+    {
+      "task_id": "gsm8k:test:66",
+      "gold": "48",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "There are 4 schools competing at a basketball tournament.\nEach school has sent a girls\u2019 basketball team and a boys\u2019 basketball team, so each school has sent 2 teams * 5 players = calc(2*5) = 10 people.\nEach school has also sent a coach for each team, so each school has sent 10 coaches * 5 players = calc(10*5) = 50 people.\nIn total, the schools have sent 10 people + 50 people = calc(10+50) = 60 people.\n<answer>60</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:67",
+      "gold": "595",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 12,
+      "completion": "The treasure hunter found 175 diamonds and 35 fewer rubies than diamonds, so there were 175-35=calc(175-35) = 175-35*2=175-70=calc(175-70) = 175-70*2=175-140=calc(175-140) = 175-140*2=175-280=calc(175-280) = 175-280*2=175-560=calc(175-560) = 175-560*2=175-1120=calc(175-1120) = 175-1120*2=175-2240=calc(175-2240) = 175-2240*2=175-4480=calc(175-4480) = 175-4480*2=175-8960=calc(175-8960) = 175-8960*2=175-17920=calc(175-17920) = 175-17920*2=175-35840=calc(175-35840) = 175-35840*2=175-71680=calc(175-71680) = 175-71680*2"
+    },
+    {
+      "task_id": "gsm8k:test:68",
+      "gold": "36",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 2,
+      "completion": "There are 60 girls and 60 boys.\nThere are 60 girls and 60 boys, so there are 60+60=calc(60+60) = 120 boys.\nThere are 120 boys and 5 students to every teacher, so there are 120/5=calc(120/5) = 24 teachers.\n<answer>24</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:69",
+      "gold": "60",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "Bailey starts with $100 - $5 = calc(100-5) = 95\nBailey receives $5/week for 8 weeks, so she receives $5*8 = calc(5*8) = 40\nBailey starts with $95 + $40 = calc(95+40) = 135\n<answer>135</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:70",
+      "gold": "7425",
+      "correct": 1.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 4,
+      "completion": "Judy teaches 5 dance classes on weekdays, so she teaches 5*5=calc(5*5) = 25 classes.\nShe also teaches 8 classes on Saturday, so she teaches 25+8=calc(25+8) = 33 classes.\nIn total, Judy teaches 33 classes.\nEach class has 15 students, so she has 33*15=calc(33*15) = 495 students.\nShe charges $15.00 per student, so she makes 495*15=calc(495*15) = 7,475.00 in 1 week.\n<answer>7,475.00</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:71",
+      "gold": "60",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 2,
+      "completion": "Kelian has to read 20+2*20 = calc(20+2*20) = 20+40 = 60 dishes.\nHe has to read 60+2*60 = calc(60+2*60) = 60+120 = 180 dishes.\n<answer>180</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:72",
+      "gold": "221",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 3,
+      "completion": "Tommy sells 43 brownies for $3 each, so he makes 43*3 = calc(43*3) = 129 dollars.\nTommy sells 23 slices of cheesecake for $4 each, so he makes 23*4 = calc(23*4) = 92 dollars.\nTommy raises $129 + $92 = calc(129+92) = 221 dollars.\n<answer>221</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:73",
+      "gold": "255",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "Shiela will pay $150*2*3*5/12=$calc(150*2*3*5/12) = 450\n<answer>450</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:74",
+      "gold": "88",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 4,
+      "completion": "Artie sells 12 pots of marigolds for $2.74 each, so he makes 12*2.74 = calc(12*2.74) = 33.92 dollars.\nArtie sells 9 pots of petunias for $1.87 each, so he makes 9*1.87 = calc(9*1.87) = 84.33 dollars.\nArtie sells 17 pots of begonias for $2.12 each, so he makes 17*2.12 = calc(17*2.12) = 360.64 dollars.\nArtie will make $33.92 + $84.33 + $360.64 = calc(33.92+84.33+360.64) = 509.49 dollars.\n<answer>509.49</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:75",
+      "gold": "60",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "The average square footage of a level is 16/2 = calc(16/2) = 8.\n<answer>8</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:76",
+      "gold": "5",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "Cecilia needs 1 cup of dog food per day for the first 180 days, so she needs 180 cups of dog food.\nShe needs 2 cups of dog food per day for the rest of its life, which is 365 days, so she needs 730 cups of dog food.\nOne bag of dog food contains 110 cups, so she needs 730/110 = calc(730/110) = 6.5 bags of dog food.\n<answer>6.5</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:77",
+      "gold": "100",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 5,
+      "completion": "Raymond does 400/2 = calc(400/2) = 200 pounds of laundry.\nDavid does 400/4 = calc(400/4) = 100 pounds of laundry.\nRaymond does 200-100 = calc(200-100) = 100 pounds of laundry.\nDavid does 100-100 = calc(100-100) = 0 pounds of laundry.\nThe difference in the amount of laundry Raymond and David do is 100-0 = calc(100-0) = 100 pounds.\n<answer>100</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:78",
+      "gold": "6",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "Vincent can buy 18 flowers in 2 packages of 3 flowers each for 2*3*18=$486.\nHe can buy 18 flowers in 9 packages of 2 flowers each for 2*2*9*18=$486.\nSo he saves 486-486=calc(486-486)=$0.\n<answer>0</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:79",
+      "gold": "70",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 1,
+      "completion": "The groomer offers John a 30% discount for being a new customer, so the cost of the grooming is 100 - 30 = $calc(100-30) = 70.\n<answer>70</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:80",
+      "gold": "10",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 2,
+      "completion": "The two girls got 1/6*24=calc(1/6*24) = 4 liters of water.\nThe boy got 6 liters of water.\nSo, the total amount of water left is 4+6=calc(4+6) = 10 liters.\n<answer>10</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:81",
+      "gold": "17",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Charlie had 10 stickers.\nHe bought 21 stickers.\nHe got 23 stickers.\nHe gave 9 stickers.\nHe used 28 stickers.\nSo Charlie has 10-21+23-9-28 stickers left.\nCalculation: 10-21+23-9-28 = -1\n<answer> -1</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:82",
+      "gold": "623",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 2,
+      "completion": "Grace weighs 125 pounds.\nAlex weighs 4*125-2=calc(4*125-2) = 500 pounds.\nTheir combined weights are 125+500=calc(125+500) = 625 pounds.\n<answer>625</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:83",
+      "gold": "600",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "Dan plants 3 rose bushes, so he plants 3*3=calc(3*3) = 9 rose bushes.\nEach rose bush has 25 roses, so there are 9*25=calc(9*25) = 225 roses.\nEach rose has 8 thorns, so there are 225*8=calc(225*8) = 1800 thorns.\n<answer>1800</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:84",
+      "gold": "15",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "They lost 22-8=calc(22-8) = 14 games.\n<answer>14</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:85",
+      "gold": "44",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 2,
+      "completion": "Gene has 4 vacations a year for 23 years, so he has been on 4*23=calc(4*23) = 92 vacations.\nHe has one shirt from each of those vacations, so he has 92*4=calc(92*4) = 368 quilt blocks.\n<answer>368</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:86",
+      "gold": "22",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 10,
+      "completion": "The alarm rang for 4*3/2 = calc(4*3/2) = 6 times.\nThe alarm rang for 3*2/2 = calc(3*2/2) = 3 times.\nThe alarm rang for 2*1/2 = calc(2*1/2) = 1 time.\nThe alarm rang for 1*1/1 = calc(1*1/1) = 1 time.\nThe alarm rang for 1*1/1 = calc(1*1/1) = 1 time.\nThe alarm rang for 1*1/1 = calc(1*1/1) = 1 time.\nThe alarm rang for 1*1/1 = calc(1*1/1) = 1 time.\nThe alarm rang for 1*1/1 = calc(1*1/1) = 1 time.\nThe alarm rang for 1*1/1 = calc(1*1/1) = 1 time.\nThe alarm rang for 1*1/1 = calc(1*1/1) = 1 time.\nThe alarm rang for 1*1/1 = calc(1*1"
+    },
+    {
+      "task_id": "gsm8k:test:87",
+      "gold": "9360",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 2,
+      "completion": "After 5 years, Sylvie's initial salary is $600*1.1*1.1*1.1*1.1 = calc(600*1.1*1.1*1.1*1.1) = 600*1.1*1.1*1.1*1.1 = 600*1.151 = 700\nAfter 6 years, Sylvie's salary will be $600*1.1*1.1*1.1*1.1*1.1*1.1 = calc(600*1.1*1.1*1.1*1.1*1.1*1.1) = 600*1.1*1.1*1.1*1.1*1.1*1.1 = 600*1.151*1.1 = 700*1.151 = 800\nAfter 7 years, Sylvie's salary will be $600*1.1*1.1*1.1*1.1*1.1*1.1*1.1*1.1 = calc(600*1.1*1.1*1.1"
+    },
+    {
+      "task_id": "gsm8k:test:88",
+      "gold": "8000",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "Harald sold 88,000/10 = calc(88,000/10) = 8,800 copies.\n<answer>8,800</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:89",
+      "gold": "24",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "Christina needs 16/4 = calc(16/4) = 4 gift bags.\nShe needs 4*.75 = calc(4*.75) = 3 gift bags.\nShe needs 3*2 = calc(3*2) = 6 dollars.\n<answer>6</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:90",
+      "gold": "225",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "Ted the T-Rex needs 10*2=calc(10*2) = 20 lbs of potato salad to feed the adults.\nHe needs 10*5/2=calc(10*5/2) = 25 lbs of potato salad to feed the children.\nSo, Ted needs 20+25=calc(20+25) = 45 lbs of potato salad to feed everyone.\n<answer>45</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:91",
+      "gold": "28",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 13,
+      "completion": "Jan has 2*4+3=calc(2*4+3) = 11 pets.\nMarcia has 11-2=calc(11-2) = 9 pets.\nCindy has 9-4=calc(9-4) = 5 pets.\nJan has 5+3=calc(5+3) = 8 pets.\nMarcia has 8+2=calc(8+2) = 10 pets.\nCindy has 10-1=calc(10-1) = 9 pets.\nJan has 9+1=calc(9+1) = 10 pets.\nMarcia has 10+2=calc(10+2) = 12 pets.\nCindy has 12-3=calc(12-3) = 9 pets.\nJan has 9+4=calc(9+4) = 13 pets.\nMarcia has 13-5=calc(13-5) = 8 pets.\nCindy has 8+6=calc(8+6) = 14 pets.\nJan has 14-7=calc(14-7) = 7 pets.\nMarcia has 7+8=calc("
+    },
+    {
+      "task_id": "gsm8k:test:92",
+      "gold": "4",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Jackson is 10 years old.\nCorey is 10 + 1 = 10 + 1 = 1 year old.\nAmy is 10 - 2 = 10 - 2 = 8 years old.\nSo, Jackson is 8 + 2 = 8 + 2 = 10 years old.\n<answer>10</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:93",
+      "gold": "36",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 2,
+      "completion": "Lee can run the hurdles in 38 seconds - 2 seconds = calc(38-2) = 36 seconds faster.\nGerald can run the hurdles in 36 seconds / 1.1 = calc(36/1.1) = 36*1/1.1 = 36/1.1 = 32 seconds faster.\nGerald can run the hurdles in 32 seconds.\n<answer>32</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:94",
+      "gold": "348",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 16,
+      "completion": "The number of rabbits pets is 12 less than the number of pet dogs and cats, so it is 60-12=calc(60-12) = 60-12=calc(60-12*2) = 60-12*2=calc(60-12*2*2) = 60-12*2*2=calc(60-12*4) = 60-12*4=calc(60-48) = 60-48=calc(60-48*2) = 60-48*2=calc(60-96) = 60-96=calc(60-96*2) = 60-96*2=calc(60-192) = 60-192=calc(60-192*2) = 60-192*2=calc(60-384) = 60-384=calc(60-384*2) = 60-384*2=calc(60-768) = 60-768=calc(60-768*2) = 60-768*2=calc(60-1536) = 60-1536=calc(60-1536*2) = 60"
+    },
+    {
+      "task_id": "gsm8k:test:95",
+      "gold": "40",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "2/5*200=calc(2/5*200) = 80 girls\n2/3*80=calc(2/3*80) = 160 girls in the girl scout\n160-80=calc(160-80) = 80 girls are not in the girl scout\n<answer>80</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:96",
+      "gold": "3",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "Harry slept 9*2=calc(9*2) = 18 hours.\nJames slept 9*2/3 = calc(9*2/3) = 6 hours.\nSo, Harry slept 18-6=calc(18-6) = 12 hours more than James.\n<answer>12</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:97",
+      "gold": "12",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "Freda used 3*32=calc(3*32) = 96 tomatoes.\n<answer>96</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:98",
+      "gold": "5",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 2,
+      "completion": "In the first 15 minutes of the traffic jam, 15 + 20 = calc(15+20) = 35 cars drove through the traffic jam.\nIn the remaining 15 minutes of the jam, 30 - 5 = calc(30-5) = 25 cars drove through the traffic jam.\n<answer>25</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:99",
+      "gold": "58",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "Mary has 2 potted plants on each of the 40 window ledges, so she has 2*40 = calc(2*40) = 80 potted plants.\nShe will give 1 potted plant from each ledge to friends and family tomorrow, so she will give 80*1 = calc(80*1) = 80 potted plants to friends and family.\nSo Mary will remain with 80-80 = calc(80-80) = 0 potted plants.\n<answer>0</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:100",
+      "gold": "175",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "Jerome's doorbell made 20 + 1/4*60 = calc(20+1/4*60) = 20 + 15 = 35 doorbell rings.\n<answer>35</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:101",
+      "gold": "6",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 15,
+      "completion": "He needs to read 4+20+7+8=35 pages in total.\nHe needs to read 35-15=calc(35-15) pages in the next 4 days.\ncalc(35-15) = 20 pages\ncalc(20/4) = 5 pages\ncalc(5) = 5 pages\ncalc(5/4) = 1.25 pages\ncalc(1.25) = 1.25 pages\ncalc(1.25/4) = 0.3125 pages\ncalc(0.3125) = 0.3125 pages\ncalc(0.3125/4) = 0.078125 pages\ncalc(0.078125) = 0.078125 pages\ncalc(0.078125/4) = 0.01953125 pages\ncalc(0.01953125) = 0.01953125 pages\ncalc(0.01953125/4) = 0.00488235294117647 pages\ncalc(0.00488235294117647) = 0.00488235294117647 pages\ncalc(0.00488235294117647/4) = "
+    },
+    {
+      "task_id": "gsm8k:test:102",
+      "gold": "26",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "John drinks 1 glass of water with breakfast, lunch, and dinner, so that's 3 glasses a day.\nHe drinks 1 glass of water before bed, so that's 1 more glass a day.\nSo, he drinks 4 glasses of water a day.\nHe drinks 4 glasses of water a week.\n<answer>4</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:103",
+      "gold": "140",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "The city is 42 miles across from the oceanfront to the opposite inland edge, so it takes 42/3=calc(42/3) = 14 minutes for the fog bank to cover the whole city.\n<answer>14</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:104",
+      "gold": "500",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 4,
+      "completion": "Poppy has 1000 pieces left to place.\nShe places a quarter of the pieces on the board, so she places 1000/4 = calc(1000/4) = 250 pieces on the board.\nThere are 1000 - 250 = calc(1000-250) = 750 pieces left to place.\nHer mom places a third of the remaining pieces, so she places 750/3 = calc(750/3) = 250 pieces on the board.\nThere are 750 - 250 = calc(750-250) = 500 pieces left to place.\nSo, there are 500 pieces left to place.\n<answer>500</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:105",
+      "gold": "20",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 2,
+      "completion": "Amir eats 5 cookies.\nCody eats 3 x 5 = calc(3*5) = 15 cookies.\nTogether, they eat 5 + 15 = calc(5+15) = 20 cookies.\n<answer>20</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:106",
+      "gold": "72",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "The total inner volume of all 3 boxes is 3*5*6*4*1 inch^3 = calc(3*5*6*4*1) = 360\n<answer>360</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:107",
+      "gold": "3",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 11,
+      "completion": "On Monday and Tuesday, Frankie watched 1*2=calc(1+2) = 2 hours of TV.\nOn Wednesday, he watched 30/2=calc(30/2) = 15 hours of TV.\nOn Thursday, he watched 1+30=calc(1+30) = 31 hours of TV.\nOn Friday, he watched 2*2=calc(2*2) = 4 hours of TV.\nOn Friday, he watched 2*1=calc(2*1) = 2 hours of TV.\nOn Friday, he watched 2*30=calc(2*30) = 60 hours of TV.\nOn Friday, he watched 2*1=calc(2*1) = 2 hours of TV.\nOn Friday, he watched 2*30=calc(2*30) = 60 hours of TV.\nOn Friday, he watched 2*1=calc(2*1) = 2 hours of TV.\nOn Friday, he watched 2*30=calc(2*30) = 60 hours of TV.\nOn Friday, he watched 2*1=calc(2*1) = 2 hours of TV.\nOn"
+    },
+    {
+      "task_id": "gsm8k:test:108",
+      "gold": "50",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 2,
+      "completion": "Henry baked 110 cookies.\nHe made twice as many cookies as he did last year, so he made 110*2 = calc(110*2) = 220 cookies last year.\nBut he baked 15 more cookies than he meant to, so he meant to bake 220-15 = calc(220-15) = 205 cookies last year.\n<answer>205</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:109",
+      "gold": "28",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "The app company's cashback rewards are $0.20 per gallon, so the total cashback is 10 * $0.20 = $2.00.\nThe gas station's price is $3.00 per gallon, so the total price for 10 gallons is 10 * $3.00 = $30.00.\nThe total price after the cashback rewards is $30.00 + $2.00 = $32.00.\n<answer>32</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:110",
+      "gold": "45",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 10,
+      "completion": "Beatrice ate 2*14=calc(2*14) = 28 roll-ups.\nMarcell ate 3*24=calc(3*24) = 72 roll-ups.\nBeatrice ate 2*3=calc(2*3) = 6 roll-ups.\nMarcell ate 2*24=calc(2*24) = 48 roll-ups.\nBeatrice ate 2*14+2=calc(2*14+2) = 30 roll-ups.\nMarcell ate 2*14+24=calc(2*14+24) = 58 roll-ups.\nBeatrice ate 2*14+24+2=calc(2*14+24+2) = 60 roll-ups.\nMarcell ate 2*14+24+24=calc(2*14+24+24) = 82 roll-ups.\nBeatrice ate 2*14+24+24+2=calc(2*14+24+24+2) = 88 roll-ups.\nMarcell ate 2*14+24+24+24+2=calc(2*14+24+24+24+2) = 110 roll-ups.\nBeatrice ate "
+    },
+    {
+      "task_id": "gsm8k:test:111",
+      "gold": "16",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "Julia rowed back 20 feet, so the boat took on 2 liters of water for every 10 feet she rowed back, which means she took on 2*20 = calc(2*20) = 40 liters of water.\nThe boat took on 40 liters of water in 16 seconds, so it took on 40/16 = calc(40/16) = 2.5 liters of water for every 64 seconds Julia took to reach shore.\nJulia took on 2.5 liters of water for every 64 seconds she took to reach shore, so she took on 2.5*64 = calc(2.5*64) = 160 liters of water by the time Julia reached shore.\n<answer>160</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:112",
+      "gold": "24",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "The whiteboard is cleaned 3 times per lesson, and each lesson has 2 lessons, so the whiteboard is cleaned 3*2=calc(3*2) = 6 times per day.\n<answer>6</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:113",
+      "gold": "25",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 2,
+      "completion": "Ryan plants 2 flowers a day, so he plants 2*15=calc(2*15) = 30 flowers.\nHe has 30-5=calc(30-5) = 25 flowers.\n<answer>25</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:114",
+      "gold": "6",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "Brittany's phone can hold 1800/50 = calc(1800/50) = 36 photographs.\nJamal's phone can hold 6*36 = calc(6*36) = 216 photographs.\nThe number of ducks in Jamal's photograph of the ducks at the zoo is 216/1 = calc(216/1) = 216.\n<answer>216</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:115",
+      "gold": "90",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 10,
+      "completion": "She has 10 boards for $10 each, so 10*10 = calc(10*10) = 100\nShe has 5 boards for $16 each, so 5*16 = calc(5*16) = 80\nShe has 10 boards for $10 each, so 10*10 = calc(10*10) = 100\nShe has 5 boards for $16 each, so 5*16 = calc(5*16) = 80\nShe has 10 boards for $10 each, so 10*10 = calc(10*10) = 100\nShe has 5 boards for $16 each, so 5*16 = calc(5*16) = 80\nShe has 10 boards for $10 each, so 10*10 = calc(10*10) = 100\nShe has 5 boards for $16 each, so 5*16 = calc(5*16) = 80\nShe has 10 boards for $10 each, so 10*10 = calc(10*10) = 100\nShe has 5 boards for $16 each, so 5*16 = calc(5*16)"
+    },
+    {
+      "task_id": "gsm8k:test:116",
+      "gold": "42",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "Katy used 120 teaspoons of sugar and 120 cups of water.\nThe ratio of sugar to water is 7:13, so the total number of cups of water is 120/13 = calc(120/13) = 9.\nThe total number of cups of water is 120, so the number of cups of water used is 120-9 = calc(120-9) = 11.\nThe total number of cups of water used is 120, so the number of teaspoons of sugar used is 120/7 = calc(120/7) = 17.\nThe final number of teaspoons of sugar used is 17.\n<answer>17</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:117",
+      "gold": "360",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 2,
+      "completion": "John buys 2 pairs of shoes for each of his 3 children, so he buys 2*3=calc(2*3) = 6 pairs of shoes.\nThey cost $60 each, so he pays 6*60=$calc(6*60) = 360\n<answer>360</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:118",
+      "gold": "4",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "The total number of vehicles at the port on the second day was 30, and each container has 5 vehicles, so the number of containers imported on the second day is 30/5 = calc(30/5) = 6.\n<answer>6</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:119",
+      "gold": "95200",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 4,
+      "completion": "Adrien's salary was 40000*1.3=calc(40000*1.3) = 52000\nLylah's salary was 40000*0.4=calc(40000*0.4) = 160000\nTogether they were earning 40000+160000=calc(40000+160000) = 200000\nThe total salary they were earning four years later was 200000+52000=calc(200000+52000) = 252000\n<answer>252000</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:120",
+      "gold": "240",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 2,
+      "completion": "Miguel uses 2 pads of paper a week for his drawing, and there are 30 sheets of paper on a pad of paper, so he uses 2*30 = calc(2*30) = 60 sheets of paper every week.\nHe uses 60 sheets of paper every week, and there are 52 weeks in a month, so he uses 60*52 = calc(60*52) = 3120 sheets of paper every month.\n<answer>3120</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:121",
+      "gold": "27",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 2,
+      "completion": "Morisette brought 5 apples and 8 oranges, so she has 5+8=calc(5+8) = 13 fruits.\nKael brought twice the amount of apples, so he brought 2*5 = 2*13 = 13 apples.\nKael brought half the number of oranges than Morisette, so he brought 8/2 = 13 oranges.\nMorisette and Kael have 13+13=calc(13+13) = 26 fruits in total.\n<answer>26</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:122",
+      "gold": "48",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 5,
+      "completion": "Sadie slept 8 hours on Monday, then 8-2=calc(8-2) = 6 hours on Tuesday.\nShe slept 6+2=calc(6+2) = 8 hours on Wednesday.\nShe slept 8+1=calc(8+1) = 9 hours on Thursday.\nShe slept 9+1=calc(9+1) = 10 hours on Friday.\nSo, Sadie slept 8+6+8+9+10=calc(8+6+8+9+10) = 43 hours in total throughout the week.\n<answer>43</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:123",
+      "gold": "50",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "She runs 10 miles per hour for 3 hours, so she runs 10*3=calc(10*3) = 30 miles.\nThen she runs 5 miles per hour for 7 hours, so she runs 5*7=calc(5*7) = 35 miles.\nSo she can run 30+35=calc(30+35) = 65 miles in 7 hours.\n<answer>65</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:124",
+      "gold": "10",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 2,
+      "completion": "Jennie has 60 letters in the pile needing stamps, and she puts stamps on one-third of them, so she puts stamps on 60/3 = calc(60/3) = 20 letters.\nThere are now 30 letters in the pile of already-stamped letters, so there were 30 - 20 = calc(30-20) = 10 letters in the pile when Jennie began.\n<answer>10</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:125",
+      "gold": "10",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 2,
+      "completion": "Julia bought 5 spoons and gave 3 to her husband, so she had 5+3=calc(5+3) = 8 spoons.\nJulia had 12 spoons in total, so she bought 12-8=calc(12-8) = 4 spoons.\nThe package that Julia bought contained 4 spoons.\n<answer>4</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:126",
+      "gold": "82",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 2,
+      "completion": "Dylan bought 38 chicken sausages and 6 more fish sausages than chicken sausages, so he bought 38+6=calc(38+6) = 44 fish sausages.\nIn total, he bought 38+44=calc(38+44) = 82 sausages.\n<answer>82</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:127",
+      "gold": "120",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 2,
+      "completion": "Amy made 20 more friends than Lily, so Amy made 50+20=calc(50+20) = 70 friends.\nTogether, Amy and Lily have 70+50=calc(70+50) = 120 friends.\n<answer>120</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:128",
+      "gold": "880",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 4,
+      "completion": "Dillon buys 4 watermelons for 4*3=calc(4*3) = 12 dollars\nHe buys 20 peppers for 20*15=calc(20*15) = 300 dollars\nHe buys 10 oranges for 10*5-15=calc(10*5-15) = 5 dollars\nSo, the total amount of money he will spend is 12+300+5=calc(12+300+5) = 317 dollars\n<answer>317</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:129",
+      "gold": "10000",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "The hospital charges the patients $200 an hour to the hospital, and the hospital charges the patients $200 an hour to the hospital, and the hospital charges the patients $200 an hour to the hospital, and the hospital charges the patients $200 an hour to the hospital, and the hospital charges the patients $200 an hour to the hospital, and the hospital charges the patients $200 an hour to the hospital, and the hospital charges the patients $200 an hour to the hospital, and the hospital charges the patients $200 an hour to the hospital, and the hospital charges the patients $200 an hour to the hospital, and the hospital charges the patients $200 an hour to the hospital, and the hospital charges the patients $200 an hour to the hospital, and the hospital charges the patients $200 an hour to the hospital, and the hospital charges the patients $200 an hour to the hospital, and the hospital charges the patients $200 an hour to the hospital, and the hospital charges the patients $200 an hour to the hospital, and the hospital charges the patients $200 an hour to the hospital, and the hospital charges the patients $200 an hour to the hospital, and the hospital charges the patients $200 an hour to the hospital, and the hospital charges the"
+    },
+    {
+      "task_id": "gsm8k:test:130",
+      "gold": "30",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 3,
+      "completion": "Nissa has 60 elves.\nA third of the elves quit, so 60/3 = calc(60/3) = 20 elves quit.\nSo, 60 - 20 = calc(60-20) = 40 elves remain.\nThen, 10 of the remaining elves quit, so 40 - 10 = calc(40-10) = 30 elves remain.\nSo, there are 30 elves left.\n<answer>30</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:131",
+      "gold": "940",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "In May, Joseph spent $500.\nIn June, he spent $60 less than in May, so he spent $500 - $60 = $450.\nTotal expenditure for those two months was $500 + $450 = $950.\n<answer>950</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:132",
+      "gold": "60",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "Pam rode the roller coaster 2 times, so she rode it 2*2=calc(2*2) = 4 times.\nFred rode the roller coaster 4 times, so he rode it 4*4=calc(4*4) = 16 times.\nEach ride cost 6 tickets, so they used 6*4*6=calc(6*4*6) = 144 tickets.\n<answer>144</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:133",
+      "gold": "13",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 2,
+      "completion": "On Monday, Walt walked 4 miles.\nOn Tuesday, he walked 6 times as many miles as he walked on Monday, so he walked 6*4=calc(6*4) = 24 miles.\nOn Wednesday, he walked 24+41=calc(24+41) = 65 miles.\n<answer>65</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:134",
+      "gold": "720",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 2,
+      "completion": "Tom gets 4 car washes a month, so he pays 4 x $15 = calc(4*15) = 60 in a month.\nIn a year, he pays 60 x 12 = calc(60*12) = 720.\n<answer>720</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:135",
+      "gold": "40",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 3,
+      "completion": "Brian has 20 video games.\nBrian lost 5, so he has 20-5 = calc(20-5) = 15 video games.\nBobby has 3 times as many video games as Brian, so 3*15 = calc(3*15) = 45 video games.\nBobby has 5 fewer than 3 times as many video games as Brian, so 45-5 = calc(45-5) = 40 video games.\n<answer>40</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:136",
+      "gold": "6",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 2,
+      "completion": "There are 27 unicorns left in the world.\nOne third of them are in the Scottish Highlands, so 27/3 = calc(27/3) = 9 unicorns are in the Scottish Highlands.\nTwo thirds of the Scottish unicorns are female, so 2/3 * 9 = calc(2/3 * 9) = 6 female Scottish unicorns.\n<answer>6</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:137",
+      "gold": "29",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Rory\u2019s delivery order cost is $7.50*2+2*1.50+2*1+0.20*7.50+5.00 = $15.00+3.00+2.00+1.50+5.00 = $33.00\n<answer>33</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:138",
+      "gold": "105",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 4,
+      "completion": "Mark took 8 hours to complete the first test, so he completed 5*8 = calc(5*8) = 40 questions.\nHe took 6 hours to complete the second test, so he completed 5*6 = calc(5*6) = 30 questions.\nSo, he completed 40-30 = calc(40-30) = 10 questions.\nHe left 100-10 = calc(100-10) = 90 questions incomplete.\n<answer>90</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:139",
+      "gold": "70",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 2,
+      "completion": "There are 12 blue gumballs.\nThere are 4 times the number of blue gumballs as there are pink gumballs.\nSo there are 4*12 = calc(4*12) = 48 pink gumballs.\nThere are 22 more than four times the number of pink gumballs as there are blue gumballs.\nSo there are 48+22 = calc(48+22) = 70 pink gumballs.\n<answer>70</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:140",
+      "gold": "20",
+      "correct": 0.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 3,
+      "completion": "12 automatic cars + 4 manual cars = calc(12+4) = 16 cars are semi-automatic.\nThere are 20 cars in total, so 20 - 16 = calc(20-16) = 4 cars are semi-automatic.\nThe percentage of semi-automatic cars is 4/20 * 100% = calc(4/20*100%) = 20%\n<answer>20</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:141",
+      "gold": "400",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 6,
+      "completion": "There are 700 bees in a hive.\nThere are twice as many worker bees as baby bees, so there are 700*2 = calc(700*2) = 1400 worker bees.\nThere are twice as many babies as queens, so there are 700*2 = calc(700*2) = 1400 babies.\nThere are 1400 worker bees and 1400 babies, so there are 1400+1400 = calc(1400+1400) = 2800 worker bees and 2800 babies.\nThere are 2800 worker bees and 2800 babies, so there are 2800*2 = calc(2800*2) = 5600 worker bees and 5600 babies.\nThere are 5600 worker bees and 5600 babies, so there are 5600*2 = calc(5600*2) = 11200 worker bees and 11200 babies.\nThere are 11200 worker bees and 11200 babies, so there are 11200*2 = calc(11200*2) = 22400 worker bees and 22400 babies.\nThere are 22400 worker bees and 22400 babies, so there are 22400*"
+    },
+    {
+      "task_id": "gsm8k:test:142",
+      "gold": "140",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 2,
+      "completion": "If Jordan plays video games for 2 hours every day, he spends 2*365=calc(2*365) = 730 hours in one week.\nIf he earns $10 an hour, he earns 730*10=calc(730*10) = 7300 dollars in one week.\n<answer>7300</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:143",
+      "gold": "16",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 11,
+      "completion": "John buys milk for 2*3=calc(2*3) dollars, eggs for 3*2=calc(3*2) dollars, light bulbs for 3*2=calc(3*2) dollars, cups for 3*2=calc(3*2) dollars, and roach traps for 4*2=calc(4*2) dollars.\ncalc(2*3)+calc(3*2)+calc(3*2)+calc(3*2)+calc(4*2) = 2+6+6+6+8 = calc(2+6+6+6+8) = 30\nJohn's total cost is 30 dollars.\n<answer>30</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:144",
+      "gold": "20",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 6,
+      "completion": "Kim has 3 clients and is talking to 5 more, so he has 3+5 = calc(3+5) = 8 clients.\nEach client needs 2 bottles of bleach and a pack of cloths, so 2+5 = calc(2+5) = 7 bottles of bleach and 7 packs of cloths.\nEach bottle of bleach costs $2 and each pack of cloths costs $5, so 2*2 + 7*5 = calc(2*2+7*5) = 4+35 = $39.\nKim has 8 clients and needs 7 bottles of bleach and 7 packs of cloths, so 8*7 = calc(8*7) = 56 bottles of bleach and 56 packs of cloths.\nEach bottle of bleach costs $2 and each pack of cloths costs $5, so 2*56 = calc(2*56) = 112 dollars.\nKim has 8 clients and needs 56 bottles of bleach and 56 packs of cloths, so 8*56 = calc(8*56) = 448 dollars.\nKim has 8 clients and needs 56 bottles of bleach and 56 packs of cloths"
+    },
+    {
+      "task_id": "gsm8k:test:145",
+      "gold": "4000",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 9,
+      "completion": "John can harvest 10*100=calc(10*100) = 1000 pineapples per year.\nJohn can harvest 1000/3=calc(1000/3) = 333.33 pineapples per month.\nJohn can harvest 333.33/12=calc(333.33/12) = 28.33 pineapples per week.\nJohn can harvest 28.33/52=calc(28.33/52) = 0.55 pineapples per day.\nJohn can harvest 0.55/365=calc(0.55/365) = 0.001 pineapples per day.\nJohn can harvest 0.001/12=calc(0.001/12) = 0.000083 pineapples per week.\nJohn can harvest 0.000083/52=calc(0.000083/52) = 0.000001 pineapples per day.\nJohn can harvest 0.000001/365=calc(0.000001/365) = 0.000000002 pineapples per day.\nJohn can harvest 0.000000002/12=calc(0.000000002/12) ="
+    },
+    {
+      "task_id": "gsm8k:test:146",
+      "gold": "2125",
+      "correct": 1.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 2,
+      "completion": "He picked up 500+3*500+1/4*500=calc(500+3*500+1/4*500) blocks.\n<answer>500+3*500+1/4*500=calc(500+3*500+1/4*500) blocks</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:147",
+      "gold": "75",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 2,
+      "completion": "Debra saw 30 bees leave the hive in the first 6 hours.\nCalculation: 30 bees * 1/2 = 30 bees * 0.5 = calc(30*0.5) = 15 bees return in the next 6 hours.\nCalculation: 15 bees * 2 = 15 bees * 2 = calc(15*2) = 30 bees return to the hive in the next 6 hours.\nCalculation: 30 bees return to the hive in the last 6 hours of the day.\n<answer>30</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:148",
+      "gold": "30",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Brittany's mom gave Brittany 8 dollars in change for 1 adult ticket and 1 child ticket.\nCalculation: 8 + 10 = 18\nCalculation: 18 + 12 = 30\nCalculation: 30 / 3 = 10\n<answer>10</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:149",
+      "gold": "16",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "Charlie has 12 Facebook friends, so he has 3*12=calc(3*12) = 36 Facebook friends.\nDorothy has 36 Facebook friends, so she has 36/4=calc(36/4) = 9 Facebook friends.\nJames has 9 Facebook friends, so he has 9*4=calc(9*4) = 36 Facebook friends.\n<answer>36</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:150",
+      "gold": "4",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "Steve lives 3 miles from the school, so he will bike 3 miles * 440 feet per minute = calc(3*440) = 1320 feet from the school.\nTim lives 2 miles from the school, so he will bike 2 miles * 440 feet per minute = calc(2*440) = 880 feet from the school.\nThe winner will be waiting 1320 feet - 880 feet = calc(1320-880) = 440 feet from the school before the loser finishes the race.\n<answer>440</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:151",
+      "gold": "5",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 4,
+      "completion": "Each tire costs 25 cents to inflate, so 5 people came by to get both tires inflated, that's 5*2=calc(5*2) = 10 dollars.\nEach tricycle tire costs 25 cents to inflate, so 3 people came by to get all their tricycle tires inflated, that's 3*3=calc(3*3) = 9 dollars.\nEach unicycle tire costs 25 cents to inflate, so 1 person came by on a unicycle, that's 1*2=calc(1*2) = 2 dollars.\nSo in total, she made 10+9+2=calc(10+9+2) = 21 dollars.\n<answer>21</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:152",
+      "gold": "4",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 3,
+      "completion": "Carl buys ten packs of cookies, so he buys 10*6=calc(10*6) = 60 cookies.\nEach cookie costs $0.10, so the total cost of cookies is 60*0.10=$calc(60*0.10) = 6.\nCarl pays with a $10 bill, so the change he receives is $10-$6=$calc(10-6) = 4.\n<answer>4</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:153",
+      "gold": "48",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Dave ate 14 french fries.\nHalf of the french fries that Dave ate were eaten by the seagull, so the seagull ate 14/2 = 7 french fries.\nThere were 14 - 7 = 7 french fries left.\nThree pigeons ate 3 x 3 = 9 french fries.\nThere were 7 - 9 = 7 french fries left.\nTwo thirds of the remaining fries were eaten by the raccoon, so the raccoon ate 2/3 x 7 = 4 french fries.\nThere were 7 - 4 = 7 french fries left.\nThe ants carried off 1 french fry, leaving 7 - 1 = 6 french fries.\nThe raccoon left 6 - 5 = 1 french fry behind.\nSo, when Dave bought the pack of french fries, there were 14 + 7 + 9 + 7 + 4 + 7 + 1 = 49 french fries.\n<answer>49</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:154",
+      "gold": "272",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 4,
+      "completion": "Kimo has 3 classes on Mondays, Wednesdays, and Fridays, so 3*1=calc(3*1) = 3 hours.\nHe has 2 classes on Tuesdays and Thursdays, so 2*2=calc(2*2) = 4 hours.\nSo, in total, Kimo has 3+4=calc(3+4) = 7 hours.\nIn one semester, there are 16 weeks of school, so 16*4=calc(16*4) = 64 hours.\nTherefore, Kimo spends 64 hours attending classes.\n<answer>64</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:155",
+      "gold": "280",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 5,
+      "completion": "Bill bakes 300 rolls, 120 croissants, and 60 baguettes every day.\nEach roll is 4 inches long, so 300 rolls are 300*4 = calc(300*4) = 1200 inches long.\nEach croissant is 6 inches long, so 120 croissants are 120*6 = calc(120*6) = 720 inches long.\nEach baguette is 2 feet long, so 60 baguettes are 60*2 = calc(60*2) = 120 feet long.\nAdding all the baked goods end to end, they will be 1200 + 720 + 120 = calc(1200+720+120) = 2820 inches long.\nConverting the total length from inches to feet, 2820 inches is 2820/12 = calc(2820/12) = 240 feet long.\n<answer>240</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:156",
+      "gold": "1400",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 4,
+      "completion": "The apes need 200 bananas every month, so they need 200*2=calc(200*2) = 400 bananas.\nThe gorillas need 400 bananas every month, so they need 400*2=calc(400*2) = 800 bananas.\nThe baboons need 100 bananas every month, so they need 100*2=calc(100*2) = 200 bananas.\nSo, the zookeeper needs to order 400+800+200=calc(400+800+200) = 1400 bananas.\n<answer>1400</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:157",
+      "gold": "80",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 5,
+      "completion": "Blake runs 100 yards x 2 = calc(100*2) = 200 yards\nKelly runs 100 yards x 1 = calc(100*1) = 100 yards\nBlake runs 15 x 200 = calc(15*200) = 3000 yards\nKelly runs 34 x 100 = calc(34*100) = 3400 yards\nThe winner runs 3000 - 3400 = calc(3000-3400) = 1000 yards farther than the loser.\n<answer>1000</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:158",
+      "gold": "34",
+      "correct": 1.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "Raphael spent $1.5*4=$calc(1.5*4) + $4*2=$calc(1.5*4+4*2) + $20=$calc(1.5*4+4*2+20) = 20\n<answer>20</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:159",
+      "gold": "15",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "Finn sees 11 tadpoles swimming in the pond.\nFinn sees 6 more tadpoles come out of hiding from under a lily pad.\nFinn sees 2 more tadpoles hide under a rock.\nFinn sees 11 + 6 + 2 = calc(11+6+2) = 19 tadpoles swimming in the pond now.\n<answer>19</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:160",
+      "gold": "16",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 2,
+      "completion": "On Tuesday, the tank had 7 feet more water than Monday, so it had 17+7=calc(17+7) = 24 feet of water.\nOn Wednesday, the depth of the water is two thirds of what it was on Tuesday, so it has 2/3*24=calc(2/3*24) = 16 feet of water.\n<answer>16</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:161",
+      "gold": "32",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 6,
+      "completion": "Anakin caught 10 starfish, 6 sea horses, and 3 clownfish.\nLocsin caught 10-5=calc(10-5)10-5=5 starfish, 6-3=calc(6-3)6-3=3 sea horses, and 3+2=calc(3+2)3+2=5 clownfish.\nSo, Anakin caught 10+6+3=calc(10+6+3)10+6+3=19 fish, and Locsin caught 5+3+5=calc(5+3+5)5+3+5=19 fish.\nSo, Anakin and Locsin caught 19+19=calc(19+19)19+19=38 fish.\n<answer>38</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:162",
+      "gold": "92",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 2,
+      "completion": "The cost of a bag of marbles increases by 20% every two months, so after 36 months, the cost will be 20 + (20/100)*20 = calc(20+20/100*20) = 20 + 4 = calc(20+4) = 24.\n<answer>24</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:163",
+      "gold": "50",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "The doll costs $5.\nThe action figures cost $5 each, so 3 action figures cost $5*3 = $15.\nThe red cars cost $4 each, so 5 red cars cost $4*5 = $20.\nThe total cost of all toys is $5+$15+$20=$30.\n<answer>30</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:164",
+      "gold": "15",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "She'll have 3*90-35=calc(3*90-35) = 270-35 = 270 more dollars if she hires the accountant.\n<answer>270</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:165",
+      "gold": "77",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 2,
+      "completion": "Elvira's computer costs \u20ac1090 + \u20ac157 + \u20ac102 = calc(1090+157+102) = 1500\nShe has \u20ac1500 - \u20ac1500 = calc(1500-1500) = 0\n<answer>0</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:166",
+      "gold": "5",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 2,
+      "completion": "Sandra needs 3 eggs for each flan, and she needs to make 15 flans, so she needs 15*3 = calc(15*3) = 45 eggs.\nShe needs to babysit for 9 eggs, so she needs to babysit for 45/9 = calc(45/9) = 5 babysits.\n<answer>5</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:167",
+      "gold": "16",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 4,
+      "completion": "Seth is 2 years older than Brooke, so Seth is 2*2 = calc(2*2) = 4 years old.\nIn 2 years, Seth will be 4+2 = calc(4+2) = 6 years old.\nIn 2 years, Brooke will be 6-2 = calc(6-2) = 4 years old.\nIn 2 years, the sum of their ages will be 28, so 4+6=calc(4+6) = 10 years old.\nTherefore, Seth is 10 years old.\n<answer>10</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:168",
+      "gold": "18",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 1,
+      "completion": "Jimmy has $2 more than twice the money Ethel has, so Jimmy has $2+2*8=calc(2+2*8) = 2+16 = 18.\n<answer>18</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:169",
+      "gold": "120",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "Pancho walks 20 miles a day, so he walks 20*7=calc(20*7) = 140 miles in a week.\n<answer>140</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:170",
+      "gold": "150",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "The hat costs $25, the jacket costs $25*3=$calc(25*3) = 25*3 = 25*3 = 25*3*3=$25*3*3=25*9=$calc(25*9) = 25*9 = 25*9=25*9=25*3*3*3=$25*9*3=$calc(25*9*3) = 25*9*3 = 25*9*3=25*3*3*3*3=$25*9*3*3*3=25*3*3*3*3*3=$25*9*3*3*3*3*3*3=$25*9*3*3*3*3*3*3*3*3*3=$25*9*3*3*3*3*3*3*3*3*3*3*3*3*3*3*3*3*3*3*3*3*3*3*3*3*3*3*3*3*3*3*3*3*3*3*3*3*3*3*"
+    },
+    {
+      "task_id": "gsm8k:test:171",
+      "gold": "1210",
+      "correct": 1.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 4,
+      "completion": "Jake sees 80 spiders with 8 legs each, so he sees 80*8 = calc(80*8) = 640 legs.\nJake sees 90 insects with 6 legs each, so he sees 90*6 = calc(90*6) = 540 legs.\nJake sees 3 rare mutant invertebrates with 10 legs each, so he sees 3*10 = calc(3*10) = 30 legs.\nJake sees a total of 640+540+30 = calc(640+540+30) = 1370 legs.\n<answer>1370</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:172",
+      "gold": "51",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 5,
+      "completion": "Sally Two is 8+3=calc(8+3) = 11 years old.\nGranny Red is 11*2=calc(11*2) = 22 years old.\nSally Four is 11*2=calc(11*2) = 22 years old.\nSally Thirtytwo is 11+8=calc(11+8) = 19 years old.\nThe total age of the four birds is 11+22+22+19=calc(11+22+22+19) = 76 years old.\n<answer>76</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:173",
+      "gold": "18000",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "Her minimum monthly payment is $300+$200+$500=$calc(300+200+500) = 1100\nShe wants to pay 50% more than the minimum, so she pays $1100*1.5=$calc(1100*1.5) = 1650\nShe pays $1650/month for 12 months, so she pays $calc(1650*12) = 19800\n<answer>19800</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:174",
+      "gold": "95",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "Billy needs 60/2=calc(60/2) = 30 minutes to peel and cut all the potatoes.\nHe needs 30/5=calc(30/5) = 6 minutes to cut all the potatoes.\nSo, Billy will need 30+6=calc(30+6) = 36 minutes to finish prepping the potatoes.\n<answer>36</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:175",
+      "gold": "15",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "Juan and Carlos made 20 glasses per gallon, so they made 20*0.50 = calc(20*0.50) = 10 gallons of lemonade.\nFor each gallon they made it costs $3 for lemons and $2 for sugar, so they spent 10*3 + 10*2 = calc(10*3+10*2) = 100 dollars on lemons.\nJuan and Carlos made $25 in profit, so they spent $25-$100 = calc(25-100) = 75 dollars on lemons.\n<answer>75</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:176",
+      "gold": "100",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 2,
+      "completion": "The number of Chinese on the team is 240 - 80 = calc(240-80) = 160.\nThe number of Chinese on the team is 160 - 60 = calc(160-60) = 100.\n<answer>100</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:177",
+      "gold": "350",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 9,
+      "completion": "Zaid spends 1/4*6000=$calc(1/4*6000) = 6000/4 = 1500 on rent.\nZaid spends 1/3*6000=$calc(1/3*6000) = 6000/3 = 2000 on car fuel.\nZaid spends 200+700=$calc(200+700) = 1000 on his daughter's expenses and wife's groceries.\nZaid spends 1500+2000=$calc(1500+2000) = 3500 on rent and car fuel.\nZaid spends 3500+1000=$calc(3500+1000) = 4500 on rent and car fuel.\nZaid spends 4500+2000=$calc(4500+2000) = 6500 on rent and car fuel.\nZaid spends 6500+1500=$calc(6500+1500) = 8000 on rent and car fuel.\nZaid spends 8000+2000=$calc(8000+2000) = 10000 on rent and car fuel.\nZaid spends 10000+1500=$calc(10000+1500) = 115"
+    },
+    {
+      "task_id": "gsm8k:test:178",
+      "gold": "122",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 8,
+      "completion": "Bo has 40 crabs.\nBo has 40 - 4 = 40 - 4 = calc(40-4) = 36 crabs.\nMonic has 36 - 10 = 36 - 10 = calc(36-10) = 26 crabs.\nRanic has 26 + 10 = 26 + 10 = calc(26+10) = 36 crabs.\nBo, Monic, and Rani have 36 + 26 + 36 = 36 + 26 + 36 = calc(36+26+36) = 98 crabs.\nBo, Monic, and Ranic have 98 + 98 = 98 + 98 = calc(98+98) = 196 crabs.\nBo, Monic, and Ranic have 196 + 196 = 196 + 196 = calc(196+196) = 392 crabs.\nBo, Monic, and Ranic have 392 + 392 = 392 + 392 = calc(392+392) = 784 crabs.\nBo, Monic, and Ranic have 784 + 784 = 784 + 784 = calc(784+784) = "
+    },
+    {
+      "task_id": "gsm8k:test:179",
+      "gold": "130",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 3,
+      "completion": "Lloyd earns $10/hour x 5 hours = calc(10*5) = 50\nLloyd earns $10/hour x 8 hours = calc(10*8) = 80\nLloyd earns $50 + $80 = calc(50+80) = 130\n<answer>130</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:180",
+      "gold": "20",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "The loser got 1/4 of the votes.\nCalculation: 80 * 3/4 = calc(80*3/4) = 80*3/4 = 80*3/4 = 60\n<answer>60</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:181",
+      "gold": "160",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 2,
+      "completion": "Sandra ordered 200 calla lilies, which were 5 times the number of white carnations, so she ordered 200*5 = calc(200*5) = 1000 white carnations.\nShe also ordered 4 times as many red roses as white carnations, so she ordered 4*1000 = calc(4*1000) = 4000 red roses.\n<answer>4000</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:182",
+      "gold": "23",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "Jan is 30 years old.\nJan is 30 - 2 = calc(30-2) = 30-2 = 30-2*2 = 30-4 = 30-4*2 = 30-4*2+2 = 30-4*2+2*2 = 30-4*2+2*2+2 = 30-4*2+2*2+2*2+2 = 30-4*2+2*2+2*2+2*2+2 = 30-4*2+2*2+2*2+2*2+2*2+2 = 30-4*2+2*2+2*2+2*2+2*2+2*2+2*2+2 = 30-4*2+2*2+2*2+2*2+2*2+2*2+2*2+2*2+2*2+2 = 30-4*2+2*2+2*2+2*2+2*2+2*2+2*2+2*2+2*2+2"
+    },
+    {
+      "task_id": "gsm8k:test:183",
+      "gold": "2",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 6,
+      "completion": "The first runner of the faster team will run 400 meters in 60 seconds, so the second runner will run 400 meters in 60 + 3 = calc(60+3) seconds.\nThe second runner will run 400 meters in 60 + 3 = 63 seconds, so the third runner will run 400 meters in 63 + 3 = calc(63+3) seconds.\nThe third runner will run 400 meters in 63 + 3 = 66 seconds, so the fourth runner will run 400 meters in 66 + 3 = calc(66+3) seconds.\nThe fourth runner will run 400 meters in 66 + 3 = 69 seconds, so the team will run 400 meters in 69 + 3 = calc(69+3) seconds.\nThe team will run 400 meters in 69 + 3 = 72 seconds, so the team will run 400 meters in 72 + 3 = calc(72+3) seconds.\nThe team will run 400 meters in 72 + 3 = 75 seconds, so the team will run 400 meters in 75 + 3 = calc(75+3) seconds.\nThe team will run "
+    },
+    {
+      "task_id": "gsm8k:test:184",
+      "gold": "25",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Jerry is rolling a six-sided die, so there are 6 possible outcomes.\nHe rolls a number greater than 3 in 3 out of 6 cases, so there are 3 possible outcomes that meet this condition.\nHe rolls two even numbers in a row in 2 out of 6 cases, so there are 2 possible outcomes that meet this condition.\nThe probability that he rolls a number greater than 3 is 3/6 = 1/2.\nThe probability that he rolls two even numbers in a row is 2/6 = 1/3.\nThe probability that he rolls a number greater than 3 is 1/2.\nThe probability that he rolls two even numbers in a row is 1/3.\nThe probability that he rolls a number greater than 3 is 1/2 + 1/3 = 5/6.\nThe probability that he rolls two even numbers in a row is 1/3 + 1/6 = 1/2.\nThe probability that he rolls a number greater than 3 is 5/6.\nThe probability that he rolls two even numbers in a row is 1/2.\nThe probability that he rolls a number greater than 3 is 5/6"
+    },
+    {
+      "task_id": "gsm8k:test:185",
+      "gold": "30",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 2,
+      "completion": "Jenna picked 20/2 = calc(20/2) = 10 apples.\nThey picked 10 + 20 = calc(10+20) = 30 apples.\n<answer>30</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:186",
+      "gold": "5",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 8,
+      "completion": "Russell has 160/6=calc(160/6) = 30 pieces of straw per rat.\nThere are 3*30=calc(3*30) = 90 pieces of straw per cage.\nThere are 10*20=calc(10*20) = 200 pieces of straw per hamster.\nThere are 3*200=calc(3*200) = 600 pieces of straw per cage.\nThere are 3*600=calc(3*600) = 1800 pieces of straw per pen.\nThere are 3*1800=calc(3*1800) = 5400 pieces of straw per store.\nThere are 3*5400=calc(3*5400) = 16200 pieces of straw per pet store.\nThere are 16200/160=calc(16200/160) = 10 rats per cage.\n<answer>10</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:187",
+      "gold": "106",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 2,
+      "completion": "Mandy owes Benedict $100. They agreed to have monthly interest of 2%. If Mandy was able to pay it after 3 months, how much should she give to Benedict? calc(100*0.02*3) = calc(6) = 6\n<answer>6</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:188",
+      "gold": "50",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 4,
+      "completion": "The trader bought bags of wheat at $20 each and transported them at $2 each, so the total cost per bag is $20 + $2 = $calc(20+2) = 22.\nThe trader made a total profit of $400, so the total revenue from selling the bags at $30 each is $400 + $22 = $calc(400+22) = 422.\nThe trader sold the bags at a rate of $30 each, so the total revenue from selling the bags is $30 * 422 = $calc(30*422) = 12600.\nThe total number of bags sold is 12600 / 20 = calc(12600/20) = 630.\n<answer>630</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:189",
+      "gold": "34",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "They spent $20.25 on 3 tickets to the fair.\nThey spent $20.25 - $4.50 = $15.75 on food.\nThey spent $15.75 + $33 = $48.75 on rides.\nThey spent $48.75 * 3 = $144.25 on the tickets and food.\nThey spent $144.25 / 3 = $48.25 on the tickets and food.\nThey agreed to split all the costs evenly, so each of them paid $48.25 / 3 = $16.25.\n<answer>16.25</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:190",
+      "gold": "360",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 9,
+      "completion": "John collects peaches for 3 hours, so he collects 3*60=calc(3*60) = 180 peaches.\nHe can collect 2 peaches a minute, so he collects 2*60=calc(2*60) = 120 peaches.\nJohn collects peaches for 3 hours, so he collects 3*2=calc(3*2) = 6 peaches.\nJohn collects peaches for 3 hours, so he collects 3*2=calc(3*2) = 6 peaches.\nJohn collects peaches for 3 hours, so he collects 3*2=calc(3*2) = 6 peaches.\nJohn collects peaches for 3 hours, so he collects 3*2=calc(3*2) = 6 peaches.\nJohn collects peaches for 3 hours, so he collects 3*2=calc(3*2) = 6 peaches.\nJohn collects peaches for 3 hours, so he collects 3*2=calc(3*2) = 6 peaches.\nJohn collects peaches for 3 hours, so he collects 3*2=calc(3*2)"
+    },
+    {
+      "task_id": "gsm8k:test:191",
+      "gold": "5",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "The ducks need 3.5/10=calc(3.5/10) = 0.35 pounds of insects per day.\n<answer>0.35</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:192",
+      "gold": "91",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "Tom starts with 50 trees.\nHe chops down 2 trees a year for 10 years, so he chops down 2*10=calc(2*10) = 20 trees.\nSo, he has 50-20=calc(50-20) = 30 trees left.\nAfter 10 years, 30% of the trees die, so he has 30/100*30=calc(30/100*30) = 10 trees left.\n<answer>10</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:193",
+      "gold": "24",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 10,
+      "completion": "On Friday morning, there were 18 pink flamingos.\nOn Saturday morning, there were 18/3 = calc(18/3) = 6 pink flamingos.\nOn Sunday morning, there were 18 + 6 = calc(18+6) = 24 pink flamingos.\nOn Sunday morning, there were 24 + 18 = calc(24+18) = 42 pink flamingos.\nOn Sunday morning, there were 42 + 18 = calc(42+18) = 60 pink flamingos.\nOn Sunday morning, there were 60 + 18 = calc(60+18) = 78 pink flamingos.\nOn Sunday morning, there were 78 + 18 = calc(78+18) = 96 pink flamingos.\nOn Sunday morning, there were 96 + 18 = calc(96+18) = 114 pink flamingos.\nOn Sunday morning, there were 114 + 18 = calc(114+18) = 132 pink flamingos.\nOn Sunday morning, there were 132 + 18 = calc(132+18) = 150 pink flamingos.\nOn Sunday morning, there were 150 + 18 = calc(150+18) = "
+    },
+    {
+      "task_id": "gsm8k:test:194",
+      "gold": "10",
+      "correct": 1.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 2,
+      "completion": "Violetta needs 5 different colors of crayons.\nOne crayon costs $2.\nSo, she needs 5 x $2 = $calc(5*2) = 10 crayons.\nShe prepared $20 for this purchase.\nSo, she will get $20 - $10 = $calc(20-10) = 10 change.\n<answer>10</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:195",
+      "gold": "12",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "8 pens cost $8.20.\n<answer>8.20</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:196",
+      "gold": "120",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 17,
+      "completion": "200/2*40=calc(200/2*40) = 8000\n8000-40*2=calc(8000-40*2) = 8000-80=calc(8000-80) = 8000-80=calc(8000-80) = 8000-80=calc(8000-80) = 8000-80=calc(8000-80) = 8000-80=calc(8000-80) = 8000-80=calc(8000-80) = 8000-80=calc(8000-80) = 8000-80=calc(8000-80) = 8000-80=calc(8000-80) = 8000-80=calc(8000-80) = 8000-80=calc(8000-80) = 8000-80=calc(8000-80) = 8000-80=calc(8000-80) = 8000-80=calc(8000-80) = 8000-80=calc(8000-80) = 8000-80=calc(8000"
+    },
+    {
+      "task_id": "gsm8k:test:197",
+      "gold": "6277",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 14,
+      "completion": "8417+9092=calc(8417+9092) 23786\n23786/2=calc(23786/2) 11843\n11843+23786=calc(11843+23786) 35569\n35569+23786=calc(35569+23786) 58355\n58355+23786=calc(58355+23786) 81141\n81141+23786=calc(81141+23786) 104627\n104627+23786=calc(104627+23786) 128503\n128503+23786=calc(128503+23786) 151587\n151587+23786=calc(151587+23786) 185463\n185463+23786=calc(185463+23786) 209349\n209349+23786=calc(209349+23786) 233335\n233335+23786=calc(233335+23786) 257311\n257311+23786=calc(257311+23786) 281193\n281193+23786=calc(281193+23786) 305079\n305079+23786="
+    },
+    {
+      "task_id": "gsm8k:test:198",
+      "gold": "320",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 8,
+      "completion": "Elaine collected 20*3=calc(20*3) = 60 cards in the first month.\nShe collected 60-20=calc(60-20) = 40 cards in the second month.\nShe collected 40*2=calc(40*2) = 80 cards in the third month.\nSo, Elaine has 20+3*20+20-3*20+2*20=calc(20+3*20+20-3*20+2*20) = 20+60+40-80+40=calc(20+60+40-80+40) = 20+60+40-80+40=20+60+40-80+40+80=20+60+40+80+40+20=calc(20+60+40+80+40+20) = 20+60+40+80+40+20+20=calc(20+60+40+80+40+20+20) = 20+60+40+80+40+20+20+20=calc(20+60+40+80+40+20+20+20) = 20+60+40+"
+    },
+    {
+      "task_id": "gsm8k:test:199",
+      "gold": "7500",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "Publisher A pays Mark 5 cents per sentence, so he gets 1000*5 = calc(1000*5) = 5000 cents per week.\nPublisher B pays Mark twice what Publisher A pays, so he gets 2*5000 = calc(2*5000) = 10000 cents per week.\nSo Mark makes 10000-5000 = calc(10000-5000) = 5000 cents per week.\n<answer>5000</answer>"
+    }
+  ]
+}

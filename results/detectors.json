@@ -1,0 +1,11 @@
+{
+  "flags": {
+    "always_zero": false,
+    "always_one": false,
+    "collapse_groups": false,
+    "format_hack": false,
+    "length_spike": false,
+    "eval_drop": false
+  },
+  "notes": "best greedy exact match 0.275 vs base 0.2"
+}

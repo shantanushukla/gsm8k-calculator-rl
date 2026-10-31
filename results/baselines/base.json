@@ -1,0 +1,299 @@
+{
+  "dataset": "openai/gsm8k",
+  "config": "main",
+  "split": "test",
+  "n": 40,
+  "model": "mlx-community/Llama-3.2-1B-Instruct-4bit",
+  "adapter": null,
+  "protocol": "0-shot, answer in <answer>, exact number",
+  "exact_match": 0.2,
+  "format_rate": 0.0,
+  "published_reference": {
+    "value": 0.444,
+    "protocol": "Llama-3.2-1B-Instruct GSM8K 8-shot CoT maj@1, full test",
+    "url": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"
+  },
+  "dataset_url": "https://huggingface.co/datasets/openai/gsm8k",
+  "records": [
+    {
+      "task_id": "gsm8k:test:0",
+      "gold": "18",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "$32."
+    },
+    {
+      "task_id": "gsm8k:test:1",
+      "gold": "3",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "5/2 = 2.5"
+    },
+    {
+      "task_id": "gsm8k:test:2",
+      "gold": "70000",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "$80,000 + ($50,000 x 1.5) = $80,000 + $75,000 = $155,000"
+    },
+    {
+      "task_id": "gsm8k:test:3",
+      "gold": "540",
+      "correct": 1.0,
+      "format": 0.0,
+      "completion": "To find the total meters James runs a week, we need to multiply the number of sprints by the number of meters per sprint, and then multiply that by the number of times a week he runs.\n\nNumber of sprints = 3\nNumber of meters per sprint = 60\nNumber of times a week = 3\n\nTotal meters = 3 * 60 * 3\nTotal meters = 540\n\nSo, James runs 540 meters a week."
+    },
+    {
+      "task_id": "gsm8k:test:4",
+      "gold": "20",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "To find the total number of cups of feed Wendi needs for her chickens, we need to multiply the number of chickens by the number of cups each chicken gets.\n\nNumber of chickens: 20\nNumber of cups each chicken gets: 3\nTotal cups of feed: 20 x 3 = 60\n\nSo, Wendi needs 60 cups of feed for her chickens."
+    },
+    {
+      "task_id": "gsm8k:test:5",
+      "gold": "64",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "$80"
+    },
+    {
+      "task_id": "gsm8k:test:6",
+      "gold": "260",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "Toulouse has 20 x 2 = 40 sheep\nCharleston has 40 x 4 = 160 sheep\nSeattle has 20 x 5 = 100 sheep\nTotal sheep = 40 + 160 + 100 = 300"
+    },
+    {
+      "task_id": "gsm8k:test:7",
+      "gold": "160",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "It takes 200 / 2 + 20 = 220 minutes to download the file."
+    },
+    {
+      "task_id": "gsm8k:test:8",
+      "gold": "45",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "To solve this problem, we'll break it down step by step.\n\n1. John drives for 3 hours at 60 mph:\nDistance = Speed x Time\n= 60 mph x 3 hours\n= 180 miles\n\n2. He turns around and drives for 4 hours:\nDistance = Speed x Time\n= 60 mph x 4 hours\n= 240 miles\n\n3. He spends the first 2 hours in standstill traffic:\nDistance = 0 miles (since he's not moving)\nTime = 2 hours\n\n4. He spends the next half-hour driving at 30 mph:\nDistance = Speed x Time\n= 30 mph x 0.5 hours\n= 15 miles\n\n5. He drives the remaining 2 hours at 80 mph:\nDistance = Speed x Time\n= 80 mph x 2 hours\n= 160 miles\n\nNow, let's add up the distances:\n180 miles"
+    },
+    {
+      "task_id": "gsm8k:test:9",
+      "gold": "460",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "$57"
+    },
+    {
+      "task_id": "gsm8k:test:10",
+      "gold": "366",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "100"
+    },
+    {
+      "task_id": "gsm8k:test:11",
+      "gold": "694",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "$312"
+    },
+    {
+      "task_id": "gsm8k:test:12",
+      "gold": "13",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "$90 / ($1.5/lemon) - $3/lemon = $90 / ($1.5/7) - $3/7 = $90 / ($1.5/7) - $3/7 = $90 / 0.2143 - $3/7 = $90 / 1.5 - $3/7 = $60 - $3/7 = $57.14 \n\nIt will take Carlos approximately 58 years to start earning money on the lemon tree."
+    },
+    {
+      "task_id": "gsm8k:test:13",
+      "gold": "18",
+      "correct": 1.0,
+      "format": 0.0,
+      "completion": "<18>"
+    },
+    {
+      "task_id": "gsm8k:test:14",
+      "gold": "60",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "To find the percentage of students enrolled in hip-hop dance, we need to calculate the number of students enrolled in hip-hop dance.\n\n20 students enrolled in contemporary dance.\nRemaining students = 20 - 20 = 0\n0 students enrolled in jazz dance.\n\n20% of the remaining 0 students enrolled in hip-hop dance.\n0 * 0.20 = 0\n\nSo, the number of students enrolled in hip-hop dance is 0. \n\nThe percentage of students enrolled in hip-hop dance is 0%."
+    },
+    {
+      "task_id": "gsm8k:test:15",
+      "gold": "125",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "$5,000 x 2.5% = $5,000 x 0.025 = $125\n\n$8,000 x 1.2% = $8,000 x 0.012 = $96\n\n$5,000 + $125 = $5,125\n\n$8,000 + $96 = $8,096\n\n$8,096"
+    },
+    {
+      "task_id": "gsm8k:test:16",
+      "gold": "230",
+      "correct": 1.0,
+      "format": 0.0,
+      "completion": "The trains covered a total of 80 + 150 = 230 miles in the two days."
+    },
+    {
+      "task_id": "gsm8k:test:17",
+      "gold": "57500",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "$20 x 50 = $1,000\n$30 x 35 = $1,050\n$1,000 + $1,050 = $2,050"
+    },
+    {
+      "task_id": "gsm8k:test:18",
+      "gold": "7",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "To solve this problem, we need to calculate how many eggs Claire will eat in 4 weeks.\n\nFirst, we need to calculate how many days are in 4 weeks. There are 7 days in a week, so:\n\n4 weeks * 7 days/week = 28 days\n\nNext, we need to calculate how many eggs Claire makes in 28 days. She makes a 3 egg omelet every morning, so:\n\n28 days * 3 eggs/day = 84 eggs\n\nNow, we need to convert the number of eggs to dozens. There are 12 eggs in a dozen, so:\n\n84 eggs / 12 eggs/dozen = 7 dozens\n\nSo, Claire will eat 7 dozens of eggs in 4 weeks."
+    },
+    {
+      "task_id": "gsm8k:test:19",
+      "gold": "6",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "To find the speed, first calculate the total distance covered by Marissa.\n\n4 miles (first 4 miles) + 2 miles (next 2 miles) = 6 miles\n\nNow, subtract the distance covered from the total distance to find the remaining distance.\n\n12 miles - 6 miles = 6 miles\n\nNext, divide the remaining distance by the desired average speed to find the required speed.\n\n6 miles / 4 miles per hour = 1.5 miles per hour\n\nSo, Marissa needs to walk 1.5 miles per hour to cover the remaining distance."
+    },
+    {
+      "task_id": "gsm8k:test:20",
+      "gold": "15",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "To solve this problem, we need to find the total amount of liquid and then subtract the spilled water.\n\nFirst, let's find the total amount of liquid without the spilled water.\n\nFor the orange drink:\n- 10 liters = 10 * (2/3) = 6.67 liters (round to 6.67)\n- 6.67 * 3 = 20.01 liters (round to 20.01)\n\nFor the pineapple drink:\n- 15 liters = 15 * (3/5) = 9 liters (round to 9)\n- 9 * 3 = 27 liters (round to 27)\n\nNow, let's add the two liquids together:\n- 6.67 + 9 = 15.67 liters\n\nNow, subtract the spilled water:\n- 15.67 - 1 = 14.67 liters\n\nSo, the remaining 24 liters have approximately 14"
+    },
+    {
+      "task_id": "gsm8k:test:21",
+      "gold": "14",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "31 - 23 = 8\n\n8 years ago."
+    },
+    {
+      "task_id": "gsm8k:test:22",
+      "gold": "7",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "<19>"
+    },
+    {
+      "task_id": "gsm8k:test:23",
+      "gold": "8",
+      "correct": 1.0,
+      "format": 0.0,
+      "completion": "1:00 PM to 5:00 PM is a 4-hour period. \nIn 4 hours, the candle melts 4 * 2 = 8 centimeters. \nSo, the candle will be 8 centimeters shorter."
+    },
+    {
+      "task_id": "gsm8k:test:24",
+      "gold": "26",
+      "correct": 1.0,
+      "format": 0.0,
+      "completion": "$19.50 / 0.75 = $26.00"
+    },
+    {
+      "task_id": "gsm8k:test:25",
+      "gold": "2",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "$50 - $12 - $15 - $18 = $13\n\nAnswer: $13"
+    },
+    {
+      "task_id": "gsm8k:test:26",
+      "gold": "243",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "$245.50"
+    },
+    {
+      "task_id": "gsm8k:test:27",
+      "gold": "16",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "$240"
+    },
+    {
+      "task_id": "gsm8k:test:28",
+      "gold": "25",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "50"
+    },
+    {
+      "task_id": "gsm8k:test:29",
+      "gold": "104",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "$78"
+    },
+    {
+      "task_id": "gsm8k:test:30",
+      "gold": "109",
+      "correct": 1.0,
+      "format": 0.0,
+      "completion": "To solve this problem, we need to set up an equation using the given ratio. \n\nLet's say Darrell's age is 7x and Allen's age is 11x. \n\nSince their total age is 162, we can set up the equation:\n\n7x + 11x = 162\n\nCombine like terms:\n\n18x = 162\n\nDivide both sides by 18:\n\nx = 9\n\nNow that we know x, we can find Darrell's age (7x):\n\n7x = 7 * 9 = 63\n\nAnd Allen's age (11x):\n\n11x = 11 * 9 = 99\n\nSo, Allen's age 10 years from now will be 99 + 10 = 109."
+    },
+    {
+      "task_id": "gsm8k:test:31",
+      "gold": "80",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "80 + 20 = 100\n100 + (100 / 2) = 100 + 50 = 150\n150 + (150 / 1.25) = 150 + 120 = 270\n\nAverage = 270 / 3 = 90\n\nAnswer: 90"
+    },
+    {
+      "task_id": "gsm8k:test:32",
+      "gold": "35",
+      "correct": 1.0,
+      "format": 0.0,
+      "completion": "To find the total hours per week, we need to multiply the number of dogs by the hours per day and then by the number of days in a week.\n\n10 dogs *.5 hours per dog per day = 5 hours per dog per day\n5 hours per dog per day * 7 days per week = 35 hours per week\n\n<Answer> 35"
+    },
+    {
+      "task_id": "gsm8k:test:33",
+      "gold": "70",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "110 + 30 = 140"
+    },
+    {
+      "task_id": "gsm8k:test:34",
+      "gold": "23",
+      "correct": 1.0,
+      "format": 0.0,
+      "completion": "Raymond has 40 jewels.\nHalf of Raymond's jewels = 40 / 2 = 20\nAaron has 5 more jewels than half of Raymond's jewels.\nSo Aaron has 20 + 5 = 25 jewels.\nSiobhan has 2 fewer jewels than Aaron.\nSo Siobhan has 25 - 2 = 23 jewels."
+    },
+    {
+      "task_id": "gsm8k:test:35",
+      "gold": "9",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "100"
+    },
+    {
+      "task_id": "gsm8k:test:36",
+      "gold": "75",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "To find out how much Terry spends on yogurt, we need to calculate how much he spends per day and then multiply that by 30.\n\nFirst, let's calculate how much he spends per day:\n2 yogurts/day * $5.00 = $10.00/day\n\nNow, let's calculate how much he spends on yogurt over 30 days:\n$10.00/day * 30 days = $300.00\n\nSo, Terry spends $300.00 on yogurt over 30 days."
+    },
+    {
+      "task_id": "gsm8k:test:37",
+      "gold": "2",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "42"
+    },
+    {
+      "task_id": "gsm8k:test:38",
+      "gold": "10",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "To find John's speed, we need to calculate the total distance he runs in a week.\n\nDistance = Speed x Time\nWe know John runs 60 miles a week. Let's assume he runs for 7 days (3 days a week x 7 days).\n\nDistance = 60 miles\nTime = 7 days\nSpeed = 60 miles / 7 days = 8.57 miles/day\n\nSo, John runs at an average speed of 8.57 miles per day."
+    },
+    {
+      "task_id": "gsm8k:test:39",
+      "gold": "18",
+      "correct": 0.0,
+      "format": 0.0,
+      "completion": "9.6"
+    }
+  ]
+}

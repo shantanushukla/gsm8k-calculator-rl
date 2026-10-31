@@ -1,0 +1,25 @@
+# Secrets and tokens
+.env
+.env.*
+!.env.example
+secrets.env
+*.token
+
+# Local GSM8K copies (rebuild with scripts/prepare_gsm8k.py)
+data/processed/*.parquet
+data/benchmarks/*.parquet
+
+# Training artifacts (weights stay local; regenerate with the scripts)
+results/runs/
+results/adapters/
+results/failed_20step/adapter/
+*.safetensors
+wandb/
+outputs/
+__pycache__/
+.venv/
+*.pyc
+*.pid
+.DS_Store
+.ruff_cache/
+.idea/

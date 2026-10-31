@@ -1,0 +1,30 @@
+expression rows 40
+loading reference results/adapters/gsm8k-expr-1
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 1898.73it/s]
+loading policy mlx-community/Llama-3.2-1B-Instruct-4bit
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 2341.88it/s]
+trainable params 425984 init results/adapters/gsm8k-expr-1 ref results/adapters/gsm8k-expr-1
+grpo questions 40 lr 5e-07 kl_beta 0.01 temp 0.4
+grad check 1698.783936
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+step 000 loss=0.0011 kl=0.0 reward=0.45 gap=0.925 hack=0.25 updated=1 tries=3
+step 001 loss=0.0 kl=0.0 reward=0.1 gap=0.0 hack=0.0 updated=0 tries=6
+step 002 loss=-0.0051 kl=0.0 reward=0.7875 gap=0.85 hack=0.0 updated=1 tries=2
+step 003 loss=0.0 kl=0.0 reward=0.0375 gap=0.09 hack=0.0 updated=0 tries=6
+step 004 loss=0.0129 kl=0.0 reward=0.5188 gap=0.925 hack=0.0 updated=1 tries=6
+step 005 loss=-0.0013 kl=0.0 reward=0.5062 gap=0.85 hack=0.0 updated=1 tries=5
+step 006 loss=0.0 kl=0.0 reward=0.3 gap=0.0 hack=0.0 updated=0 tries=6
+step 007 loss=-0.0066 kl=0.0 reward=0.8313 gap=0.675 hack=0.0 updated=1 tries=2
+step 008 loss=-0.005 kl=0.0 reward=0.3475 gap=1.0 hack=0.0 updated=1 tries=1
+step 009 loss=0.0075 kl=0.0 reward=0.6021 gap=0.6917 hack=0.25 updated=1 tries=4
+step 010 loss=-0.0152 kl=0.0 reward=0.4062 gap=0.85 hack=0.0 updated=1 tries=2
+step 011 loss=0.0 kl=0.0 reward=0.0833 gap=0.1 hack=0.0 updated=0 tries=6
+step 012 loss=0.0 kl=0.0 reward=0.1494 gap=0.0 hack=0.0 updated=0 tries=6
+step 013 loss=-0.0083 kl=0.0 reward=0.645 gap=0.71 hack=0.0 updated=1 tries=3
+step 014 loss=0.0157 kl=0.0 reward=0.3625 gap=0.85 hack=0.0 updated=1 tries=2
+step 015 loss=0.0136 kl=0.0 reward=0.8125 gap=0.675 hack=0.25 updated=1 tries=3
+step 016 loss=0.0 kl=0.0 reward=0.2958 gap=0.0583 hack=0.0 updated=0 tries=6
+step 017 loss=0.0012 kl=0.0 reward=0.5066 gap=0.9 hack=0.0 updated=1 tries=3
+step 018 loss=-0.0315 kl=0.0 reward=0.4478 gap=1.0 hack=0.0 updated=1 tries=5
+step 019 loss=0.0002 kl=0.0 reward=0.4312 gap=0.925 hack=0.0 updated=1 tries=6
+saved results/adapters/gsm8k-expr-5 in 443s

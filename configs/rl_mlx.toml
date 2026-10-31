@@ -1,0 +1,23 @@
+# M1 Pro, 16 GB. 1B 4-bit only.
+# Train on openai/gsm8k train. Eval on the same first 40 test rows.
+# The failed 20-step adapter is not a starting point.
+
+model = "mlx-community/Llama-3.2-1B-Instruct-4bit"
+
+# Supervised warmup on train solutions that fit in max_seq.
+sft_steps = 48
+sft_lr = 1e-5
+max_seq = 384
+
+# GRPO only on questions the warmed model solves sometimes.
+max_steps = 20
+group_size = 4
+max_tokens = 192
+lr = 1e-6
+kl_beta = 0.1
+lora_layers = 8
+lora_rank = 8
+
+split = "train"
+dataset = "openai/gsm8k"
+dataset_config = "main"

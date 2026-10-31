@@ -1,0 +1,50 @@
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 1697.76it/s]
+1/40 acc=0.000 gold=18 ok=0.0
+2/40 acc=0.500 gold=3 ok=1.0
+3/40 acc=0.333 gold=70000 ok=0.0
+4/40 acc=0.500 gold=540 ok=1.0
+5/40 acc=0.400 gold=20 ok=0.0
+6/40 acc=0.333 gold=64 ok=0.0
+7/40 acc=0.429 gold=260 ok=1.0
+8/40 acc=0.375 gold=160 ok=0.0
+9/40 acc=0.333 gold=45 ok=0.0
+10/40 acc=0.300 gold=460 ok=0.0
+11/40 acc=0.273 gold=366 ok=0.0
+12/40 acc=0.333 gold=694 ok=1.0
+13/40 acc=0.308 gold=13 ok=0.0
+14/40 acc=0.286 gold=18 ok=0.0
+15/40 acc=0.267 gold=60 ok=0.0
+16/40 acc=0.250 gold=125 ok=0.0
+17/40 acc=0.294 gold=230 ok=1.0
+18/40 acc=0.333 gold=57500 ok=1.0
+19/40 acc=0.316 gold=7 ok=0.0
+20/40 acc=0.300 gold=6 ok=0.0
+21/40 acc=0.286 gold=15 ok=0.0
+22/40 acc=0.273 gold=14 ok=0.0
+23/40 acc=0.304 gold=7 ok=1.0
+24/40 acc=0.333 gold=8 ok=1.0
+25/40 acc=0.320 gold=26 ok=0.0
+26/40 acc=0.308 gold=2 ok=0.0
+27/40 acc=0.296 gold=243 ok=0.0
+28/40 acc=0.286 gold=16 ok=0.0
+29/40 acc=0.276 gold=25 ok=0.0
+30/40 acc=0.267 gold=104 ok=0.0
+31/40 acc=0.258 gold=109 ok=0.0
+32/40 acc=0.250 gold=80 ok=0.0
+33/40 acc=0.273 gold=35 ok=1.0
+34/40 acc=0.265 gold=70 ok=0.0
+35/40 acc=0.286 gold=23 ok=1.0
+36/40 acc=0.278 gold=9 ok=0.0
+37/40 acc=0.297 gold=75 ok=1.0
+38/40 acc=0.289 gold=2 ok=0.0
+39/40 acc=0.282 gold=10 ok=0.0
+40/40 acc=0.275 gold=18 ok=0.0
+{
+  "n": 40,
+  "exact_match": 0.225,
+  "tool_match": 0.275,
+  "tool_call_rate": 1.0,
+  "expression_f1": 0.3126190476190477,
+  "hack_rate": 0.025
+}
+wrote /Users/shantanu/Desktop/repos/rl_env/gsm8k_rl/results/baselines/sft_v5_vote.json

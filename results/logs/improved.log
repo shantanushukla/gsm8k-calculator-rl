@@ -1,0 +1,232 @@
+>> scripts/sft_warmup.py --steps 48 --lr 1e-5 --max-seq 384
+loading mlx-community/Llama-3.2-1B-Instruct-4bit
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 1532.91it/s]
+trainable params 425984
+sft examples 48 skipped_before_fill 1
+sft 000 loss=0.7444 tokens=143
+sft 001 loss=1.1444 tokens=140
+sft 002 loss=1.0542 tokens=195
+sft 003 loss=0.9369 tokens=211
+sft 004 loss=1.0299 tokens=148
+sft 005 loss=0.8397 tokens=251
+sft 006 loss=0.8716 tokens=185
+sft 007 loss=0.7815 tokens=274
+sft 008 loss=1.0019 tokens=260
+sft 009 loss=0.8626 tokens=262
+sft 010 loss=0.6801 tokens=278
+sft 011 loss=0.9601 tokens=167
+sft 012 loss=0.3879 tokens=198
+sft 013 loss=0.8761 tokens=149
+sft 014 loss=0.7640 tokens=272
+sft 015 loss=1.0082 tokens=205
+sft 016 loss=0.8097 tokens=341
+sft 017 loss=0.4790 tokens=253
+sft 018 loss=0.6543 tokens=206
+sft 019 loss=0.4513 tokens=199
+sft 020 loss=0.6071 tokens=223
+sft 021 loss=0.7006 tokens=196
+sft 022 loss=0.9002 tokens=241
+sft 023 loss=0.9239 tokens=182
+sft 024 loss=0.7302 tokens=275
+sft 025 loss=0.7713 tokens=192
+sft 026 loss=1.0114 tokens=294
+sft 027 loss=0.4911 tokens=176
+sft 028 loss=0.7527 tokens=280
+sft 029 loss=0.4124 tokens=234
+sft 030 loss=0.4666 tokens=225
+sft 031 loss=1.2147 tokens=253
+sft 032 loss=0.6988 tokens=239
+sft 033 loss=0.5316 tokens=155
+sft 034 loss=0.8824 tokens=170
+sft 035 loss=0.2058 tokens=171
+sft 036 loss=0.3508 tokens=299
+sft 037 loss=0.6322 tokens=177
+sft 038 loss=0.4345 tokens=224
+sft 039 loss=0.7602 tokens=253
+sft 040 loss=0.4256 tokens=201
+sft 041 loss=0.4491 tokens=242
+sft 042 loss=0.3259 tokens=216
+sft 043 loss=0.8274 tokens=214
+sft 044 loss=0.1859 tokens=249
+sft 045 loss=0.5301 tokens=241
+sft 046 loss=0.5380 tokens=191
+sft 047 loss=0.4532 tokens=141
+saved /Users/shantanu/Desktop/repos/rl_env/gsm8k_rl/results/adapters/gsm8k-sft in 18s
+>> scripts/benchmark.py --tag sft --adapter results/adapters/gsm8k-sft --n 40 --max-tokens 256
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 754.53it/s]
+1/40 acc=1.000 gold=18 ok=1.0
+2/40 acc=1.000 gold=3 ok=1.0
+3/40 acc=0.667 gold=70000 ok=0.0
+4/40 acc=0.500 gold=540 ok=0.0
+5/40 acc=0.400 gold=20 ok=0.0
+6/40 acc=0.333 gold=64 ok=0.0
+7/40 acc=0.286 gold=260 ok=0.0
+8/40 acc=0.250 gold=160 ok=0.0
+9/40 acc=0.222 gold=45 ok=0.0
+10/40 acc=0.300 gold=460 ok=1.0
+11/40 acc=0.273 gold=366 ok=0.0
+12/40 acc=0.250 gold=694 ok=0.0
+13/40 acc=0.231 gold=13 ok=0.0
+14/40 acc=0.214 gold=18 ok=0.0
+15/40 acc=0.200 gold=60 ok=0.0
+16/40 acc=0.188 gold=125 ok=0.0
+17/40 acc=0.235 gold=230 ok=1.0
+18/40 acc=0.222 gold=57500 ok=0.0
+19/40 acc=0.263 gold=7 ok=1.0
+20/40 acc=0.250 gold=6 ok=0.0
+21/40 acc=0.238 gold=15 ok=0.0
+22/40 acc=0.227 gold=14 ok=0.0
+23/40 acc=0.217 gold=7 ok=0.0
+24/40 acc=0.250 gold=8 ok=1.0
+25/40 acc=0.240 gold=26 ok=0.0
+26/40 acc=0.231 gold=2 ok=0.0
+27/40 acc=0.222 gold=243 ok=0.0
+28/40 acc=0.214 gold=16 ok=0.0
+29/40 acc=0.207 gold=25 ok=0.0
+30/40 acc=0.200 gold=104 ok=0.0
+31/40 acc=0.226 gold=109 ok=1.0
+32/40 acc=0.219 gold=80 ok=0.0
+33/40 acc=0.212 gold=35 ok=0.0
+34/40 acc=0.206 gold=70 ok=0.0
+35/40 acc=0.200 gold=23 ok=0.0
+36/40 acc=0.194 gold=9 ok=0.0
+37/40 acc=0.189 gold=75 ok=0.0
+38/40 acc=0.184 gold=2 ok=0.0
+39/40 acc=0.179 gold=10 ok=0.0
+40/40 acc=0.175 gold=18 ok=0.0
+{
+  "n": 40,
+  "exact_match": 0.175,
+  "format_rate": 0.0
+}
+wrote /Users/shantanu/Desktop/repos/rl_env/gsm8k_rl/results/baselines/sft.json
+>> scripts/select_mixed.py --scan 40 --min-keep 4 --stop-at 12 --max-tokens 192
+loading mlx-community/Llama-3.2-1B-Instruct-4bit adapter /Users/shantanu/Desktop/repos/rl_env/gsm8k_rl/results/adapters/gsm8k-sft
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 2140.68it/s]
+probe 001 gsm8k:train:9 0/4 skip
+probe 002 gsm8k:train:49 2/4 keep
+probe 003 gsm8k:train:50 0/4 skip
+probe 004 gsm8k:train:51 0/4 skip
+probe 005 gsm8k:train:52 0/4 skip
+probe 006 gsm8k:train:53 1/4 keep
+probe 007 gsm8k:train:54 0/4 skip
+probe 008 gsm8k:train:55 0/4 skip
+probe 009 gsm8k:train:56 0/4 skip
+probe 010 gsm8k:train:57 0/4 skip
+probe 011 gsm8k:train:58 0/4 skip
+probe 012 gsm8k:train:59 0/4 skip
+probe 013 gsm8k:train:60 0/4 skip
+probe 014 gsm8k:train:61 0/4 skip
+probe 015 gsm8k:train:62 0/4 skip
+probe 016 gsm8k:train:63 0/4 skip
+probe 017 gsm8k:train:64 0/4 skip
+probe 018 gsm8k:train:65 1/4 keep
+probe 019 gsm8k:train:66 0/4 skip
+probe 020 gsm8k:train:67 1/4 keep
+probe 021 gsm8k:train:68 0/4 skip
+probe 022 gsm8k:train:69 3/4 keep
+probe 023 gsm8k:train:70 1/4 keep
+probe 024 gsm8k:train:71 2/4 keep
+probe 025 gsm8k:train:72 0/4 skip
+probe 026 gsm8k:train:73 1/4 keep
+probe 027 gsm8k:train:74 0/4 skip
+probe 028 gsm8k:train:75 1/4 keep
+probe 029 gsm8k:train:76 0/4 skip
+probe 030 gsm8k:train:77 0/4 skip
+probe 031 gsm8k:train:78 0/4 skip
+probe 032 gsm8k:train:79 2/4 keep
+probe 033 gsm8k:train:80 0/4 skip
+probe 034 gsm8k:train:81 0/4 skip
+probe 035 gsm8k:train:82 2/4 keep
+probe 036 gsm8k:train:83 1/4 keep
+kept 12 of 36 -> /Users/shantanu/Desktop/repos/rl_env/gsm8k_rl/results/mixed_train.json
+>> scripts/train_mlx.py --steps 20 --lr 1e-6 --kl-beta 0.1 --max-tokens 192
+loading mlx-community/Llama-3.2-1B-Instruct-4bit
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 1397.71it/s]
+trainable params 425984 init /Users/shantanu/Desktop/repos/rl_env/gsm8k_rl/results/adapters/gsm8k-sft
+grpo questions 12 lr 1e-06 kl_beta 0.1
+scale check base -3.9882 lora -3.8401 delta 0.1481
+grad check 23702.367188
+step 000 loss=-0.1865 kl=0.7489 reward=0.75 std=0.433 updated=1
+step 001 loss=-0.1485 kl=0.1962 reward=0.25 std=0.433 updated=1
+step 002 loss=-0.0812 kl=0.4362 reward=0.25 std=0.433 updated=1
+step 003 loss=0.0 kl=0.0 reward=0.0 std=0.0 updated=0
+step 004 loss=0.0 kl=0.0 reward=1.0 std=0.0 updated=0
+step 005 loss=0.0842 kl=0.5214 reward=0.5 std=0.5 updated=1
+step 006 loss=0.0412 kl=0.3243 reward=0.5 std=0.5 updated=1
+step 007 loss=0.1093 kl=0.4091 reward=0.75 std=0.433 updated=1
+step 008 loss=0.0 kl=0.0 reward=0.0 std=0.0 updated=0
+step 009 loss=0.0498 kl=0.3231 reward=0.5 std=0.5 updated=1
+step 010 loss=0.0 kl=0.0 reward=0.0 std=0.0 updated=0
+step 011 loss=0.0 kl=0.0 reward=0.0 std=0.0 updated=0
+step 012 loss=-0.1502 kl=0.6628 reward=0.75 std=0.433 updated=1
+step 013 loss=-0.1922 kl=0.214 reward=0.5 std=0.5 updated=1
+step 014 loss=-0.0352 kl=0.4296 reward=0.25 std=0.433 updated=1
+step 015 loss=0.0 kl=0.0 reward=0.0 std=0.0 updated=0
+step 016 loss=-0.16 kl=0.4868 reward=0.5 std=0.5 updated=1
+step 017 loss=-0.1703 kl=0.7104 reward=0.5 std=0.5 updated=1
+step 018 loss=0.0 kl=0.0 reward=0.0 std=0.0 updated=0
+step 019 loss=-0.0983 kl=0.4238 reward=0.5 std=0.5 updated=1
+saved /Users/shantanu/Desktop/repos/rl_env/gsm8k_rl/results/adapters/gsm8k-grpo in 77s
+>> scripts/benchmark.py --tag grpo --adapter results/adapters/gsm8k-grpo --n 40 --max-tokens 256
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 2368.77it/s]
+1/40 acc=1.000 gold=18 ok=1.0
+2/40 acc=1.000 gold=3 ok=1.0
+3/40 acc=0.667 gold=70000 ok=0.0
+4/40 acc=0.500 gold=540 ok=0.0
+5/40 acc=0.400 gold=20 ok=0.0
+6/40 acc=0.333 gold=64 ok=0.0
+7/40 acc=0.286 gold=260 ok=0.0
+8/40 acc=0.250 gold=160 ok=0.0
+9/40 acc=0.222 gold=45 ok=0.0
+10/40 acc=0.300 gold=460 ok=1.0
+11/40 acc=0.273 gold=366 ok=0.0
+12/40 acc=0.250 gold=694 ok=0.0
+13/40 acc=0.231 gold=13 ok=0.0
+14/40 acc=0.214 gold=18 ok=0.0
+15/40 acc=0.200 gold=60 ok=0.0
+16/40 acc=0.188 gold=125 ok=0.0
+17/40 acc=0.176 gold=230 ok=0.0
+18/40 acc=0.167 gold=57500 ok=0.0
+19/40 acc=0.158 gold=7 ok=0.0
+20/40 acc=0.150 gold=6 ok=0.0
+21/40 acc=0.143 gold=15 ok=0.0
+22/40 acc=0.136 gold=14 ok=0.0
+23/40 acc=0.130 gold=7 ok=0.0
+24/40 acc=0.125 gold=8 ok=0.0
+25/40 acc=0.120 gold=26 ok=0.0
+26/40 acc=0.115 gold=2 ok=0.0
+27/40 acc=0.111 gold=243 ok=0.0
+28/40 acc=0.107 gold=16 ok=0.0
+29/40 acc=0.103 gold=25 ok=0.0
+30/40 acc=0.100 gold=104 ok=0.0
+31/40 acc=0.129 gold=109 ok=1.0
+32/40 acc=0.125 gold=80 ok=0.0
+33/40 acc=0.121 gold=35 ok=0.0
+34/40 acc=0.118 gold=70 ok=0.0
+35/40 acc=0.114 gold=23 ok=0.0
+36/40 acc=0.111 gold=9 ok=0.0
+37/40 acc=0.108 gold=75 ok=0.0
+38/40 acc=0.105 gold=2 ok=0.0
+39/40 acc=0.103 gold=10 ok=0.0
+40/40 acc=0.100 gold=18 ok=0.0
+{
+  "n": 40,
+  "exact_match": 0.1,
+  "format_rate": 0.0
+}
+wrote /Users/shantanu/Desktop/repos/rl_env/gsm8k_rl/results/baselines/grpo.json
+>> scripts/plot_training.py
+figures -> /Users/shantanu/Desktop/repos/rl_env/gsm8k_rl/report/figures
+{
+  "flags": {
+    "always_zero": false,
+    "always_one": false,
+    "collapse_groups": false,
+    "format_hack": false,
+    "length_spike": false,
+    "eval_drop": false
+  },
+  "notes": ""
+}
+scores {"failed_grpo": 0.1, "base": 0.2, "sft": 0.175, "grpo": 0.1}

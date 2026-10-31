@@ -1,0 +1,424 @@
+{
+  "dataset": "openai/gsm8k",
+  "config": "main",
+  "split": "test",
+  "n": 40,
+  "model": "mlx-community/Llama-3.2-1B-Instruct-4bit",
+  "adapter": "results/adapters/gsm8k-tool-v2",
+  "protocol": "0-shot, calculator tool, executed calc() value",
+  "tools": true,
+  "max_tokens": 256,
+  "exact_match": 0.2,
+  "tool_match": 0.025,
+  "format_rate": 0.45,
+  "boxed_match": 0.175,
+  "tool_call_rate": 0.1,
+  "published_reference": {
+    "value": 0.444,
+    "protocol": "Llama-3.2-1B-Instruct GSM8K 8-shot CoT maj@1, full test",
+    "url": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"
+  },
+  "dataset_url": "https://huggingface.co/datasets/openai/gsm8k",
+  "records": [
+    {
+      "task_id": "gsm8k:test:0",
+      "gold": "18",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Janet\u2019s ducks lay 16 eggs per day. She eats 3 for breakfast every morning and bakes muffins for her friends every day with 4. She sells the remainder at the farmers' market daily for $2 per fresh duck egg. Let's calculate the number of eggs she sells every day.\n\nShe eats 3 for breakfast every morning, so she has 16 - 3 = 13 eggs left for the day.\nShe bakes muffins for her friends every day with 4, so she has 13 - 4 = 9 eggs left for the day.\nShe sells the remainder at the farmers' market daily for $2 per fresh duck egg, so she sells 9 / 2 = 4.5 eggs every day.\n\n<answer>4.5</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:1",
+      "gold": "3",
+      "correct": 0.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 0,
+      "completion": "A robe takes 2 bolts of blue fiber and half that much white fiber, so it takes 2 + 2/2 = 2 + 1 = 3 bolts in total.\n<answer>3</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:2",
+      "gold": "70000",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Josh bought a house for $80,000 and then put in $50,000 in repairs.  This increased the value of the house by 150%.  So first we need to find the value of the house after repairs.  We know that the house was worth $80,000 before repairs.  We also know that the repairs increased the value by 150%.  So we need to find the value of the house after repairs by multiplying the value of the house before repairs by 1.5.  We can do this by using the calculator to find the value of the house after repairs.  We can call this value \"x\".  We know that the value of the house before repairs was $80,000.  We can call this value \"y\".  We know that the repairs increased the value by 150%.  We can call this value \"z\".  We know that the value of the house after repairs is \"x\".  We know that the value of the house before repairs is \"y\".  We know that the repairs increased the value by 150%.  We can call this value \"z\".  We know that the value of the house after repairs is \"x\".  We know that the value of the house"
+    },
+    {
+      "task_id": "gsm8k:test:3",
+      "gold": "540",
+      "correct": 1.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 1,
+      "completion": "James runs 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?\ncalc(3*3*60)\n<answer> 1080</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:4",
+      "gold": "20",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Wendi's chickens need 15 + 25 = 40 cups of feed.\nCalculation: 40 * 3 = 40 * 15 = 40 * 25 = 40 * 20 = 40 * 3 = 40 * 15 = 40 * 25 = 40 * 20 = 40 * 3 = 40 * 15 = 40 * 25 = 40 * 20 = 40 * 3 = 40 * 15 = 40 * 25 = 40 * 20 = 40 * 3 = 40 * 15 = 40 * 25 = 40 * 20 = 40 * 3 = 40 * 15 = 40 * 25 = 40 * 20 = 40 * 3 = 40 * 15 = 40 * 25 = 40 * 20 = 40 * 3 = 40 * 15 = 40 * 25 = 40 * 20 = 40 * 3 = 40 * 15 = 40 * 25 = 40 * 20 = 40 * 3 = 40 * 15 = 40 * 25 = 40"
+    },
+    {
+      "task_id": "gsm8k:test:5",
+      "gold": "64",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Kylar needs to pay 60% of $5 for every second glass.\n60% of $5 is 0.6 * $5 = $3\nSo Kylar needs to pay $3 for every second glass.\nHe needs to pay $3 * 16 = $48\n<answer> $48"
+    },
+    {
+      "task_id": "gsm8k:test:6",
+      "gold": "260",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 4,
+      "completion": "Toulouse has 20*2=<<20*2=40>>40 sheep.\nCharleston has 40*4=<<40*4=160>>160 sheep.\nSeattle has 160*20=<<160*20=3200>>3200 sheep.\nTogether, Toulouse, Charleston, and Seattle have 40+160+3200=<<40+160+3200=3440>>3440 sheep.\n<answer>3440</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:7",
+      "gold": "160",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Carla can download 2 GB/minute for the first 200 GB/2=200  minutes.\nCarla can download 2 GB/minute for the first 200 GB/2=200  minutes.\nCarla can download 2 GB/minute for the first 200 GB/2=200  minutes.\nCarla can download 2 GB/minute for the first 200 GB/2=200  minutes.\nCarla can download 2 GB/minute for the first 200 GB/2=200  minutes.\nCarla can download 2 GB/minute for the first 200 GB/2=200  minutes.\nCarla can download 2 GB/minute for the first 200 GB/2=200  minutes.\nCarla can download 2 GB/minute for the first 200 GB/2=200  minutes.\nCarla can download 2 GB/minute for the first 200 GB/2=200  minutes.\nCarla can download 2 GB/minute for the first 200 GB/2=200  minutes.\nCarla can download 2 GB/minute for the first 200 GB/2=200  minutes.\nCarla can download 2 GB/minute for the first 200"
+    },
+    {
+      "task_id": "gsm8k:test:8",
+      "gold": "45",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "3 hours at 60 mph = 3 * 60 = 180 miles\n2 hours of standstill traffic = 2 * 60 = 120 miles\n4 hours at 30 mph = 4 * 30 = 120 miles\n4 hours at 80 mph = 4 * 80 = 320 miles\n320 - 180 = 140 miles\n140 miles\n<answer>140</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:9",
+      "gold": "460",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Eliza's regular rate per hour is $10. Her overtime rate is 1.2 * $10 = $12. \nShe worked for 40 hours at $10/hour, so her earnings for the first 40 hours are 40 * $10 = $400.\nShe worked for 45 hours at $12/hour, so her earnings for the overtime hours are 45 * $12 = $540.\nHer total earnings for the week are $400 + $540 = $940.\n<answer> $940"
+    },
+    {
+      "task_id": "gsm8k:test:10",
+      "gold": "366",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "A new program had 60 downloads in the first month. The number of downloads in the second month was three times as many as the downloads in the first month, but then reduced by 30% in the third month. Calculating the downloads in the second month:\n60 * 3 = 180 downloads\n180 * 0.7 = 180 * 0.7 = 180 * 0.7 = 180 * 0.7 = 180 * 0.7 = 180 * 0.7 = 180 * 0.7 = 180 * 0.7 = 180 * 0.7 = 180 * 0.7 = 180 * 0.7 = 180 * 0.7 = 180 * 0.7 = 180 * 0.7 = 180 * 0.7 = 180 * 0.7 = 180 * 0.7 = 180 * 0.7 = 180 * 0.7 = 180 * 0.7 = 180 * 0.7 = 180 * 0.7 = 180 * 0.7 = 180 * 0.7 = 180"
+    },
+    {
+      "task_id": "gsm8k:test:11",
+      "gold": "694",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 6,
+      "completion": "Toula bought 3 * 12 = <<3*12=36>>36 donuts for $68 per dozen.\nShe bought 2 * 12 = <<2*12=24>>24 mini cupcakes for $80 per dozen.\nShe bought 6 * 12 = <<6*12=72>>72 mini cheesecakes for $55 per dozen.\nThe total cost is 36 * 68 = <<36*68=24 24>>24 dollars.\nThe total cost is 24 * 80 = <<24*80=1920>>1920 dollars.\nThe total cost is 1920 + 72 = <<1920+72=2002>>2002 dollars.\nThe final answer is: 2002"
+    },
+    {
+      "task_id": "gsm8k:test:12",
+      "gold": "13",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Carlos needs to grow 7 lemons to sell them for $1.5 each. He needs to earn $90 to plant the tree. He needs to water and feed the tree for 3 years. So, he needs to grow 7 lemons in 3 years. He needs to earn $90 to plant the tree. He needs to water and feed the tree for 3 years. He needs to grow 7 lemons in 3 years. He needs to earn $90 to plant the tree. He needs to water and feed the tree for 3 years. He needs to grow 7 lemons in 3 years. He needs to earn $90 to plant the tree. He needs to water and feed the tree for 3 years. He needs to grow 7 lemons in 3 years. He needs to earn $90 to plant the tree. He needs to water and feed the tree for 3 years. He needs to grow 7 lemons in 3 years. He needs to earn $90 to plant the tree. He needs to water and feed the tree for 3 years. He needs to grow 7 lemons in 3 years. He needs to earn $90 to plant the tree. He needs to"
+    },
+    {
+      "task_id": "gsm8k:test:13",
+      "gold": "18",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "<answer> = 5\nCalculation:\nMelanie started with 5 + 2 = 7 vacuum cleaners.\nCalculation:\nMelanie started with 7 - 2/2 = 7 - 1 = 6 vacuum cleaners.\nCalculation:\nMelanie started with 6 - 1/3 = 6 - 0.33 = 5.67 vacuum cleaners.\nCalculation:\nMelanie started with 5.67 vacuum cleaners.\n<answer> = 5.67"
+    },
+    {
+      "task_id": "gsm8k:test:14",
+      "gold": "60",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "20 students enrolled in contemporary dance.\n20% of 20 students enrolled in jazz dance.\nRemaining students = 20 - 20 = 0\n0 students enrolled in hip-hop dance.\n20% of 0 students enrolled in hip-hop dance = 0\n20% of 20 students enrolled in contemporary dance = 0\n25% of the remaining 20 students enrolled in jazz dance = 0\nRemaining students = 20 - 0 = 20\n20% of 20 students enrolled in contemporary dance = 0\n25% of the remaining 20 students enrolled in jazz dance = 0\nRemaining students = 20 - 0 = 20\n25% of the remaining 20 students enrolled in jazz dance = 0\nRemaining students = 20 - 0 = 20\n25% of the remaining 20 students enrolled in jazz dance = 0\nRemaining students = 20 - 0 = 20\n25% of the remaining 20 students enrolled in jazz dance = 0\nRemaining students = 20 - 0 = 20\n25% of the remaining 20 students enrolled in jazz dance = 0\nRemaining students = 20 - 0 = 20\n25% of the remaining 20"
+    },
+    {
+      "task_id": "gsm8k:test:15",
+      "gold": "125",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "First, let's calculate the profit from the jewelry market:\nJewelry market rise: 2.5% of $5,000 = 0.025 * $5,000 = $125\nJewelry market profit: $5,000 - $125 = $4,875\nNow, let's calculate the profit from the electronic gadgets market:\nElectronic gadgets market rise: 1.2% of $8,000 = 0.012 * $8,000 = $96\nElectronic gadgets market profit: $8,000 - $96 = $7,904\nNow, let's add the profits from both markets:\nProfit from jewelry market: $4,875\nProfit from electronic gadgets market: $7,904\nTotal profit: $4,875 + $7,904 = $12,779\n<answer> $12,779"
+    },
+    {
+      "task_id": "gsm8k:test:16",
+      "gold": "230",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Train A: 80 miles\nTrain B: 80 miles\nTrain A: 80 miles\nTrain B: 80 miles\nTrain A: 80 miles\nTrain B: 80 miles\nTrain A: 80 miles\nTrain B: 80 miles\nTrain A: 80 miles\nTrain B: 80 miles\nTrain A: 80 miles\nTrain B: 80 miles\nTrain A: 80 miles\nTrain B: 80 miles\nTrain A: 80 miles\nTrain B: 80 miles\nTrain A: 80 miles\nTrain B: 80 miles\nTrain A: 80 miles\nTrain B: 80 miles\nTrain A: 80 miles\nTrain B: 80 miles\nTrain A: 80 miles\nTrain B: 80 miles\nTrain A: 80 miles\nTrain B: 80 miles\nTrain A: 80 miles\nTrain B: 80 miles\nTrain A: 80 miles\nTrain B: 80 miles\nTrain A: 80 miles\nTrain B: 80 miles\nTrain A: 80 miles\nTrain B: 80 miles\nTrain A: 80 miles\nTrain B: 80 miles\nTrain A: "
+    },
+    {
+      "task_id": "gsm8k:test:17",
+      "gold": "57500",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Jill gets paid $20 per hour to teach and $30 to be a cheerleading coach. If she works 35 hours a week as a teacher and 15 hours a week as a coach, what's her annual salary? \n\nCalculation:\n- 35 hours/week * $20/hour = $700/week\n- 50 weeks/year * $700/week = $35,000/year\n- 15 hours/week * $30/hour = $450/week\n- 50 weeks/year * $450/week = $22,500/year\n- <answer>$22,500</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:18",
+      "gold": "7",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Claire makes 3 egg omelets every morning for breakfast.  She eats 3 egg omelets per day.  She eats 7 egg omelets per week.  She eats 28 egg omelets per week.  She eats 112 egg omelets per month.  She eats 336 egg omelets per month.  She eats 1008 egg omelets per year.  She eats 3024 egg omelets per decade.  She eats 9408 egg omelets per decade.  She eats 29560 egg omelets per year.  She eats 89040 egg omelets per decade.  She eats 273840 egg omelets per decade.  She eats 859536 egg omelets per year.  She eats 2735360 egg omelets per decade.  She eats 8595360 egg omelets per year.  She eats 27353600 egg omelets per decade.  She eats 859536000 egg omelets per year.  She eats 2735360000 egg omelets per decade.  She eats 8595360000 egg omelets per year.  She eats 273"
+    },
+    {
+      "task_id": "gsm8k:test:19",
+      "gold": "6",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "1. Marissa walked 4 miles in 1 hour, so her speed is 4/1 = 4 miles per hour.\n2. She walked another 2 miles in 1 hour, so her speed is 2/1 = 2 miles per hour.\n3. She walked 4 miles in 1 hour, so her speed is 4/1 = 4 miles per hour.\n4. She walked 2 miles in 1 hour, so her speed is 2/1 = 2 miles per hour.\n5. She walked 4 miles in 1 hour, so her speed is 4/1 = 4 miles per hour.\n6. She walked 2 miles in 1 hour, so her speed is 2/1 = 2 miles per hour.\n7. She walked 4 miles in 1 hour, so her speed is 4/1 = 4 miles per hour.\n8. She walked 2 miles in 1 hour, so her speed is 2/1 = 2 miles per hour.\n9. She walked 4 miles in 1 hour, so her speed is 4/1 = 4 miles per hour.\n10. She walked 2 miles in 1 hour"
+    },
+    {
+      "task_id": "gsm8k:test:20",
+      "gold": "15",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "First, I need to find the amount of water in the orange drink. Since the orange drink is two-thirds water, I can find the amount of water by multiplying the total amount of the drink by 2/3:\n10 liters * 2/3 = 10 * 2/3 = 20/3 = 6.67 liters of water\n\nNow, I need to find the amount of water in the pineapple drink. Since the pineapple drink is three-fifths water, I can find the amount of water by multiplying the total amount of the drink by 3/5:\n15 liters * 3/5 = 15 * 3/5 = 15 * 3/5 = 45/5 = 9 liters of water\n\nNow, I need to find the total amount of water in the orange drink after the spill. I need to subtract the spilled water from the total amount of the drink:\n10 liters - 1 liter = 10 - 1 = 9 liters of water\n\nNow, I need to find the total amount of water in the pineapple drink after the spill. I need to subtract the spilled water from the total amount of the drink:\n15 liters - 1 liter = 15 - 1 ="
+    },
+    {
+      "task_id": "gsm8k:test:21",
+      "gold": "14",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Raymond was born 6 years before Samantha, so Raymond was born 6 years ago.\nRaymond had a son at the age of 23, so the son was born 23 years ago.\nSamantha is now 31 years old, so she was born 31 - 23 = 8 years ago.\n<answer>8"
+    },
+    {
+      "task_id": "gsm8k:test:22",
+      "gold": "7",
+      "correct": 0.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 0,
+      "completion": "Billy sold 1 DVD for each of the first 3 customers, so he sold 1 * 3 = 3 DVDs.\nBilly sold 2 DVDs for each of the next 2 customers, so he sold 2 * 2 = 4 DVDs.\nBilly sold 0 DVDs for each of the last 3 customers, so he sold 0 * 3 = 0 DVDs.\nBilly sold 3 + 4 + 0 = 7 DVDs on Tuesday.\n<answer>7</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:23",
+      "gold": "8",
+      "correct": 0.0,
+      "text_correct": 1.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "The candle melts by 2 centimeters every hour that it burns. It burns for 4 hours from 1:00 PM to 5:00 PM. So, the total melting is 2 * 4 = 8 centimeters.\n\nThe final number is: <8</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:24",
+      "gold": "26",
+      "correct": 0.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 0,
+      "completion": "To find the original price of the book, we need to calculate the discount amount first. The discount is 25% of the original price.\n\nLet's call the original price x. Then, the discount amount is 0.25x.\n\nSince the book was discounted by 25%, the price after the discount is 0.75x (because 1 - 0.25 = 0.75).\n\nWe know that the price after the discount is $19.50. So, we can set up the equation:\n\n0.75x = 19.50\n\nNow, let's solve for x:\n\nx = 19.50 / 0.75\nx = 26\n\nSo, the original price of the book was $26.\n\n<answer>26</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:25",
+      "gold": "2",
+      "correct": 0.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 0,
+      "completion": "12 + 5*3 + 4*1.50 + x*8.50 = 50\n12 + 15 + 6 + x*8.50 = 50\n33 + x*8.50 = 50\nx*8.50 = 50 - 33\nx*8.50 = 17\nx = 17 / 8.50\nx = 2\n<answer>2</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:26",
+      "gold": "243",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Mishka bought 3 pairs of shorts, 3 pairs of pants, and 3 pairs of shoes. One pair of shorts costs $16.50. One pair of pants costs $22.50 and one pair of shoes costs $42. So Mishka spent 3*16.50 + 3*22.50 + 3*42 dollars on all the clothing items.\n<answer> 3*16.50 + 3*22.50 + 3*42 = 3*16.50 + 3*22.50 + 3*42 = 3*16.50 + 3*22.50 + 3*42 = 3*16.50 + 3*22.50 + 3*42 = 3*16.50 + 3*22.50 + 3*42 = 3*16.50 + 3*22.50 + 3*42 = 3*16.50 + 3*22.50 + 3*42 = 3*16.50 + 3*22.50 + 3*42 = 3*16.50 + 3*22.50 + 3*42 = 3"
+    },
+    {
+      "task_id": "gsm8k:test:27",
+      "gold": "16",
+      "correct": 0.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 0,
+      "completion": "Cynthia eats 1 serving of ice cream per night.  She buys cartons of ice cream with 15 servings of ice cream per carton at a cost of $4.00 per carton.  After 60 days, how much will she spend on ice cream?\n\nCalculation:\n- Number of servings eaten in 60 days = 1 * 60 = 60 servings\n- Number of cartons bought = 60 / 15 = 4 cartons\n- Total cost = 4 * $4.00 = $16.00\n- <answer>$16.00</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:28",
+      "gold": "25",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "First, we need to find out how many miles Henry traveled before his second stop. He stopped after 20 miles, so we need to subtract 20 from the total distance of the trip (60 miles). That's 60 - 20 = 40 miles.\n\nNext, we need to find out how many miles Henry traveled between his first and second stops. He stopped 15 miles before the end of the trip, so we need to subtract 15 from the distance of the first stop (20 miles). That's 20 - 15 = 5 miles.\n\n<answer> 5"
+    },
+    {
+      "task_id": "gsm8k:test:29",
+      "gold": "104",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Let's break it down step by step:\n\n1. Let B be the cost of the boots.\n2. Since the boots cost B dollars and the two pairs of heels together cost 5 dollars less than the boots, the cost of the two pairs of heels is B - 5 dollars.\n3. The cost of the two pairs of heels is 2 * 33 = 66 dollars.\n4. Since the boots cost B dollars and the two pairs of heels cost 66 dollars, we can set up the equation: B = 66\n5. Let H be the cost of the high heels.\n6. Since the two pairs of heels together cost 66 dollars and the boots cost 66 dollars, we can set up the equation: H + B = 66\n7. Since we know that B = 66, we can substitute this value into the equation: H + 66 = 66\n8. Solving for H, we get: H = 0\n9. Therefore, the cost of the boots is 66 dollars.\n\n<answer>66</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:30",
+      "gold": "109",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Darrell's age = 162 / 7 * 11 = 162 / 7 * 11 + 10 = 162 / 7 * 11 + 10 = 162 / 7 * 11 + 10 = 162 / 7 * 11 + 10 = 162 / 7 * 11 + 10 = 162 / 7 * 11 + 10 = 162 / 7 * 11 + 10 = 162 / 7 * 11 + 10 = 162 / 7 * 11 + 10 = 162 / 7 * 11 + 10 = 162 / 7 * 11 + 10 = 162 / 7 * 11 + 10 = 162 / 7 * 11 + 10 = 162 / 7 * 11 + 10 = 162 / 7 * 11 + 10 = 162 / 7 * 11 + 10 = 162 / 7 * 11 + 10 = 162 / 7 * 11 + 10 = 162 / 7 * 11 + 10 = 162 / 7 * 11 + 10 = 162"
+    },
+    {
+      "task_id": "gsm8k:test:31",
+      "gold": "80",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "80 + 20 = 100\n100 + 100 = 1000\n1000 + 1000 = 2000\n2000 + 2000 = 4000\n4000 + 4000 = 8000\n8000 + 8000 = 16000\n16000 + 16000 = 32000\n32000 + 32000 = 64000\n64000 + 64000 = 128000\n128000 + 128000 = 256000\n256000 + 256000 = 512000\n512000 + 512000 = 1024000\n1024000 + 1024000 = 2048000\n2048000 + 2048000 = 4096000\n4096000 + 4096000 = 8196000\n8196000 + 8196000 = 16368000\n16368000 + 16368000 = 32768000\n32768000 + 32768000 = 65536000\n65536000 + 65536000 = 131040000\n131040000 + 131040000 = 262080000\n262080000 + 262080000 = 524160000\n524160"
+    },
+    {
+      "task_id": "gsm8k:test:32",
+      "gold": "35",
+      "correct": 0.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 0,
+      "completion": "10 dogs * 0.5 hours per dog per day = 5 hours per day\n5 hours per day * 7 days per week = 35 hours per week\n<answer>35</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:33",
+      "gold": "70",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Gretchen has 110 coins. There are 30 more gold coins than silver coins. Let's call the number of silver coins \"s\" and the number of gold coins \"g\". We know that g = s + 30.\n\nWe also know that Gretchen has 110 coins, so s + g = 110.\n\nWe can substitute g = s + 30 into the second equation: s + s + 30 = 110.\n\nCombine like terms: 2s + 30 = 110.\n\nSubtract 30 from both sides: 2s = 80.\n\nDivide both sides by 2: s = 40.\n\nNow we know that Gretchen has 40 silver coins and 40 + 30 = 70 gold coins.\n\n<answer>40</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:34",
+      "gold": "23",
+      "correct": 0.0,
+      "text_correct": 1.0,
+      "format": 1.0,
+      "boxed": 1.0,
+      "tool_calls": 0,
+      "completion": "Raymond has 40 jewels.\nHalf of Raymond's jewels = 40/2 = 20 jewels.\nAaron has 5 more jewels than half of Raymond's jewels = 20 + 5 = 25 jewels.\nSiobhan has 2 fewer jewels than Aaron = 25 - 2 = 23 jewels.\n<answer>23</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:35",
+      "gold": "9",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Mike plays ping pong for 40 minutes.  In the first 20 minutes, he scores 4 points.  In the second 20 minutes, he scores 25% more points.  How many total points did he score? <answer>...</answer>\n\nFirst, calculate the points scored in the first 20 minutes:\n4 points * 20 minutes = 80 points\n\nNext, calculate the points scored in the second 20 minutes:\n80 points * 1.25 = 100 points\n\nNow, add the points scored in both periods:\n80 points + 100 points = 180 points\n\n<answer>180</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:36",
+      "gold": "75",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Terry eats 2 yogurts a day.  They are currently on sale at 4 yogurts for $5.00.  How much does he spend on yogurt over 30 days?\n<answer> 2*30*5 = 300\n<answer> 4*30 = 120\n<answer> 300+120 = 420\n<answer> 420\n<answer> 420\n</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:37",
+      "gold": "2",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 3,
+      "completion": "13*15=<<13*15=195>>195\n195-8*20=195-160=<<195-160=35>>35\n35-5=<<35-5=30>>30\n<answer>30</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:38",
+      "gold": "10",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 1.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "John runs 60 miles a week. He runs 3 days a week.  He runs 3 hours the first day and half as much the other two days he runs.  How fast does he run?\nCalculation:\n1. 60 miles/week * 3 days/week = 60 * 3 = 180 miles/week\n2. 180 miles/week / 3 days/week = 180 / 3 = 60 miles/day\n3. 60 miles/day * 3 hours/day = 60 * 3 = 180 miles/week\n4. 180 miles/week / 2 days/week = 180 / 2 = 90 miles/week\n5. 90 miles/week / 2 days/week = 90 / 2 = 45 miles/day\n6. 45 miles/day / 1 day = 45 / 1 = 45 miles/week\n7. 45 miles/week / 1 week = 45 / 1 = 45 miles/week\n<answer>45</answer>"
+    },
+    {
+      "task_id": "gsm8k:test:39",
+      "gold": "18",
+      "correct": 0.0,
+      "text_correct": 0.0,
+      "format": 0.0,
+      "boxed": 0.0,
+      "tool_calls": 0,
+      "completion": "Dana can run at a rate of speed four times faster than she can walk, but she can skip at a rate of speed that is half as fast as she can run. If she can skip at 3 miles per hour, we can write the following equation:\n3 = 0.5 * 4 * x\nx = 3 / 1.5\nx = 2\nDana can run at a rate of 2 miles per hour, and she can walk at a rate of 2 miles per hour. If she can skip at 3 miles per hour, we can write the following equation:\n3 = 0.5 * 2 * y\ny = 3 / 1.5\ny = 2\nDana can run at a rate of 2 miles per hour, and she can walk at a rate of 2 miles per hour. If she can skip at 3 miles per hour, we can write the following equation:\n3 = 0.5 * 2 * z\nz = 3 / 1.5\nz = 2\nDana can run at a rate of 2 miles per hour, and she can walk at a rate of 2 miles per hour. If"
+    }
+  ]
+}

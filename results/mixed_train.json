@@ -1,0 +1,20 @@
+{
+  "adapter": "results/adapters/gsm8k-sft-v3",
+  "kept": [
+    "gsm8k:train:2102",
+    "gsm8k:train:2380",
+    "gsm8k:train:1939",
+    "gsm8k:train:7001",
+    "gsm8k:train:1579",
+    "gsm8k:train:677",
+    "gsm8k:train:5550",
+    "gsm8k:train:2509",
+    "gsm8k:train:2907",
+    "gsm8k:train:255",
+    "gsm8k:train:2042",
+    "gsm8k:train:698",
+    "gsm8k:train:6927",
+    "gsm8k:train:252"
+  ],
+  "scanned": 40
+}
